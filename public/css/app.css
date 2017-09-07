@@ -12256,3 +12256,7 @@ a.text-dark:hover {
   background-size: cover;
 }
 
+.nav-top-viagens {
+  padding: 0 !important;
+}
+
