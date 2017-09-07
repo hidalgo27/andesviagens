@@ -11,19 +11,22 @@
     <title>Andes</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="{{mix("css/app.css")}}">
+    <link rel="stylesheet" href="{{asset("css/app.css")}}">
 
 </head>
 
 <body>
 
 <header>
+    <div class="header-menu">
+
+    </div>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        {{--<ol class="carousel-indicators">--}}
+            {{--<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>--}}
+            {{--<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>--}}
             {{--<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>--}}
-        </ol>
+        {{--</ol>--}}
         <div class="carousel-inner" role="listbox">
             <!-- Slide One - Set the background image for this slide in the line below -->
             <div class="carousel-item active" style="background-image: url({{asset('images/sliders/slider-1.jpg')}})">
@@ -47,19 +50,19 @@
                 {{--</div>--}}
             {{--</div>--}}
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+        {{--<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">--}}
+            {{--<span class="carousel-control-prev-icon" aria-hidden="true"></span>--}}
+            {{--<span class="sr-only">Previous</span>--}}
+        {{--</a>--}}
+        {{--<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">--}}
+            {{--<span class="carousel-control-next-icon" aria-hidden="true"></span>--}}
+            {{--<span class="sr-only">Next</span>--}}
+        {{--</a>--}}
     </div>
 </header>
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top nav-viagens">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top nav-viagens d-sm-none">
     <div class="container">
         <a class="navbar-brand" href="#"><img src="{{asset('images/logos/logo-andes.png')}}" width="180" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -95,12 +98,23 @@
     </div>
 </nav>
 
+<nav class="nav nav-pills nav-fill sticky-top nav-viagens navbar-expand-lg navbar-dark bg-dark d-none d-sm-flex">
+    {{--<a class="nav-item nav-link active" href="#">Active</a>--}}
+    <a class="nav-item nav-link" href="#">Pacotes</a>
+    <a class="nav-item nav-link" href="#">Destino</a>
+    <a class="nav-item nav-link" href="#">A Empresa</a>
+    <a class="nav-item nav-link" href="#">Dicas</a>
+    <a class="nav-item nav-link" href="#">Contato</a>
+    {{--<a class="nav-item nav-link disabled" href="#">Disabled</a>--}}
+</nav>
+<!-- /. -->
 <!-- Page Content -->
 <section class="py-5">
     <div class="container">
         <h1>Full Slider by Start Bootstrap</h1>
         <p>The background images for the slider are set directly in the HTML using inline CSS. The rest of the styles for this template are contained within the
             <code>full-slider.css</code>file.</p>
+        <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
     </div>
 </section>
 <style>

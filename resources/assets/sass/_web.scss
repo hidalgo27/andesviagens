@@ -1,3 +1,11 @@
+//header
+.header-menu{
+  position: absolute;
+  display: block;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
 .carousel-item {
   height: 100vh;
   min-height: 300px;
@@ -7,10 +15,11 @@
   -o-background-size: cover;
   background-size: cover;
 }
-
 .nav-top-viagens {
   padding: 0 !important;
 }
 .nav-viagens{
   margin-top: -56px;
+  font-size: 20px;
 }
+

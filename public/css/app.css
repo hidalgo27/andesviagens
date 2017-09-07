@@ -12249,6 +12249,14 @@ a.text-dark:hover {
   clip: auto;
 }
 
+.header-menu {
+  position: absolute;
+  display: block;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
 .carousel-item {
   height: 100vh;
   min-height: 300px;
@@ -12262,5 +12270,6 @@ a.text-dark:hover {
 
 .nav-viagens {
   margin-top: -56px;
+  font-size: 20px;
 }
 
