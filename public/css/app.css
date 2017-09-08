@@ -12255,6 +12255,11 @@ a.text-dark:hover {
   top: 0;
   width: 100%;
   z-index: 1;
+  height: 100vh;
+}
+
+.header-box-height .row {
+  height: 100vh;
 }
 
 .carousel-item {
@@ -12270,6 +12275,15 @@ a.text-dark:hover {
 
 .nav-viagens {
   margin-top: -56px;
-  font-size: 20px;
+  font-size: 18px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.nav-viagens a {
+  padding: 15px 0;
+}
+
+.mt-12p {
+  margin-top: 12%;
 }
 

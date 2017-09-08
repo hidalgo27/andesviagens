@@ -19,6 +19,62 @@
 
 <header>
     <div class="header-menu">
+        <div class="col">
+            <div class="row justify-content-between">
+                <div class="col-4">
+                    <div class="row">
+                        <div class="col border border-top-0 border-right-0 border-secondary">
+                            <div class="d-inline font-montserrat">
+                                <a href="" class="text-light">(813) 454-9707</a>
+                            </div>
+                            {{--<div class="d-inline bg-success">d-inline</div>--}}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row justify-content-center">
+                        <div class="mt-2">
+                            <img src="{{asset('images/logos/logo-andes-b.png')}}" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="row">
+                        <div class="col border border-top-0 border-left-0 border-secondary text-right">
+                            <div class="d-inline font-montserrat">
+                                <a href="" class="text-light">Register</a>
+                            </div>
+                            <div class="d-inline font-montserrat">
+                                {{--<a href="" class="text-light">(813) 454-9707</a>--}}
+                            </div>
+                            {{--<div class="d-inline">--}}
+                                {{--<a href=""><img src="{{asset('images/icons/whatsapp.png')}}" alt=""></a>--}}
+                            {{--</div>--}}
+                            {{--<div class="d-inline">--}}
+                                {{--<a href=""><img src="{{asset('images/icons/messenger.png')}}" alt=""></a>--}}
+                            {{--</div>--}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col mt-12p text-center">
+            {{--<p class="h1 text-light">Display 4</p>--}}
+            <blockquote class="blockquote text-center">
+                <p class="mb-0 h1 text-light">A <strong>BETTER</strong> WAY TO TRAVEL TO PERU</p>
+                {{--<footer class="blockquote-footer text-light">Someone famous in <cite title="Source Title">Source Title</cite></footer>--}}
+                <footer class=" text-light">$150 average saving | 24/7 local authentic assistance | 100s of testimonials</footer>
+            </blockquote>
+        </div>
+        <div class="mt-5 text-center">
+            <div class="d-inline">
+                <a href="" class="btn btn-xs btn-success"><img src="{{asset('images/icons/whatsapp.png')}}" alt="" width="30"> chatea con nosotros ahora</a>
+            </div>
+            <div class="d-inline">
+                <a href="" class="btn btn-xs btn-primary"><img src="{{asset('images/icons/messenger.png')}}" alt="" width="30"> chatea con nosotros ahora</a>
+            </div>
+        </div>
 
     </div>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -30,17 +86,17 @@
         <div class="carousel-inner" role="listbox">
             <!-- Slide One - Set the background image for this slide in the line below -->
             <div class="carousel-item active" style="background-image: url({{asset('images/sliders/slider-1.jpg')}})">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3>First Slide</h3>
-                    <p>This is a description for the first slide.</p>
-                </div>
+                {{--<div class="carousel-caption d-none d-md-block">--}}
+                    {{--<h3>First Slide</h3>--}}
+                    {{--<p>This is a description for the first slide.</p>--}}
+                {{--</div>--}}
             </div>
             <!-- Slide Two - Set the background image for this slide in the line below -->
             <div class="carousel-item" style="background-image: url({{asset('images/sliders/slider-2.jpg')}})">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3>Second Slide</h3>
-                    <p>This is a description for the second slide.</p>
-                </div>
+                {{--<div class="carousel-caption d-none d-md-block">--}}
+                    {{--<h3>Second Slide</h3>--}}
+                    {{--<p>This is a description for the second slide.</p>--}}
+                {{--</div>--}}
             </div>
             <!-- Slide Three - Set the background image for this slide in the line below -->
             {{--<div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">--}}
@@ -98,23 +154,21 @@
     </div>
 </nav>
 
-<nav class="nav nav-pills nav-fill sticky-top nav-viagens navbar-expand-lg navbar-dark bg-dark d-none d-sm-flex">
+<nav class="nav nav-pills nav-fill sticky-top nav-viagens navbar-expand-lg d-none d-sm-flex">
     {{--<a class="nav-item nav-link active" href="#">Active</a>--}}
-    <a class="nav-item nav-link" href="#">Pacotes</a>
-    <a class="nav-item nav-link" href="#">Destino</a>
-    <a class="nav-item nav-link" href="#">A Empresa</a>
-    <a class="nav-item nav-link" href="#">Dicas</a>
-    <a class="nav-item nav-link" href="#">Contato</a>
+    <a class="nav-item nav-link text-light" href="#">PACOTES</a>
+    <a class="nav-item nav-link text-light" href="#">DESTINO</a>
+    <a class="nav-item nav-link text-light" href="#">A EMPRESA</a>
+    <a class="nav-item nav-link text-light" href="#">DICAS</a>
+    <a class="nav-item nav-link text-light" href="#">CONTATO</a>
     {{--<a class="nav-item nav-link disabled" href="#">Disabled</a>--}}
 </nav>
 <!-- /. -->
 <!-- Page Content -->
 <section class="py-5">
-    <div class="container">
-        <h1>Full Slider by Start Bootstrap</h1>
-        <p>The background images for the slider are set directly in the HTML using inline CSS. The rest of the styles for this template are contained within the
-            <code>full-slider.css</code>file.</p>
-        <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+    <div class="container text-center">
+        <h1 class="text-info">PERU EÉRIAS - PASSEIOS E VIAGENS</h1>
+        <p class="text-secondary h5">100% OPERADORES DE VIAGENS PERUANOS COM ESCRITORIO PRINCIPAL EM CUSCO E SEDES EM LIMA,PUNO E AREQUIPA</p>
     </div>
 </section>
 <style>
