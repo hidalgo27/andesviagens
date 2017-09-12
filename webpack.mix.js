@@ -16,7 +16,7 @@ mix.js('resources/assets/js/app.js', 'public/js')
 
 
 mix.scripts([
-    // 'resources/assets/js/vendors/popper.js',
+    'node_modules/video.js/dist/video.js',
 
     //Customized
     // 'resources/assets/js/vendors/function-admin.js',

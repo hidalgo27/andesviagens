@@ -17,8 +17,8 @@
 
 <body>
 
-<header>
-    <div class="header-menu">
+<header class="">
+    <div class="header-menu clearfix">
         <div class="col">
             <div class="row justify-content-between">
                 <div class="col-4">
@@ -75,9 +75,11 @@
                 <a href="" class="btn btn-xs btn-primary"><img src="{{asset('images/icons/messenger.png')}}" alt="" width="30"> chatea con nosotros ahora</a>
             </div>
         </div>
-
     </div>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <video autoplay="autoplay" loop="loop" id="video_background" preload="auto" muted/>
+        <source src="{{asset('media/video1.mp4')}}" type="video/mp4" />
+    </video/>
+    <div id="carouselExampleIndicators" class="carousel slide d-none" data-ride="carousel">
         {{--<ol class="carousel-indicators">--}}
             {{--<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>--}}
             {{--<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>--}}
@@ -85,19 +87,22 @@
         {{--</ol>--}}
         <div class="carousel-inner" role="listbox">
             <!-- Slide One - Set the background image for this slide in the line below -->
-            <div class="carousel-item active" style="background-image: url({{asset('images/sliders/slider-1.jpg')}})">
+            <div class="carousel-item active" >
                 {{--<div class="carousel-caption d-none d-md-block">--}}
                     {{--<h3>First Slide</h3>--}}
                     {{--<p>This is a description for the first slide.</p>--}}
                 {{--</div>--}}
+                <video autoplay="autoplay" loop="loop" id="video_background" preload="auto" controls muted/>
+                <source src="{{asset('media/video.mp4')}}" type="video/mp4" />
+                </video/>
             </div>
             <!-- Slide Two - Set the background image for this slide in the line below -->
-            <div class="carousel-item" style="background-image: url({{asset('images/sliders/slider-2.jpg')}})">
+            {{--<div class="carousel-item" style="background-image: url({{asset('images/sliders/slider-2.jpg')}})">--}}
                 {{--<div class="carousel-caption d-none d-md-block">--}}
                     {{--<h3>Second Slide</h3>--}}
                     {{--<p>This is a description for the second slide.</p>--}}
                 {{--</div>--}}
-            </div>
+            {{--</div>--}}
             <!-- Slide Three - Set the background image for this slide in the line below -->
             {{--<div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">--}}
                 {{--<div class="carousel-caption d-none d-md-block">--}}
@@ -166,91 +171,367 @@
 <!-- /. -->
 <!-- Page Content -->
 <section class="py-5">
-    <div class="container text-center">
-        <h1 class="text-info">PERU EÉRIAS - PASSEIOS E VIAGENS</h1>
-        <p class="text-secondary h5">100% OPERADORES DE VIAGENS PERUANOS COM ESCRITORIO PRINCIPAL EM CUSCO E SEDES EM LIMA,PUNO E AREQUIPA</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-7">
+                <div class="row">
+                    <div class="col">
+                        <div class="d-block">
+                            <span class="text-secondary align-bottom">PERU EÉRIAS</span>
+                            <img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid mb-1" width="100">
+                        </div>
+                        <h1 class="h3 pt-1">PASSEIOS E VIAGENS</h1>
+                        <p class="h6 text-secondary pt-3">100% OPERADORES DE VIAGENS PERUANOS COM ESCRITORIO PRINCIPAL EM CUSCO E SEDES EM LIMA,PUNO E AREQUIPA</p>
+                        <p class="pt-3">ANDESVIAGENS é a única agência peruana especializada em viagens para o destino Perú, país herdeiro de uma cultura milenar e considerado um dos lugares mais enigmáticos da América Latina
+                            ANDESVIAGENS faz parte do Grupo GOTOPERU.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h4 class="pt-1">Nossa Promesa</h4>
+                        <p>Não deixe escapar esta oportunidade de descobrir os encantos de Peru e viver uma aventura inesquecível.</p>
+                    </div>
+                    <div class="col">
+                        <div class="row justify-content-center">
+                            <div class="col-5">
+                                <img src="{{asset('images/firma-paul.jpg')}}" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col">
+                                <p class="mb-0">PAUL CATANO</p>
+                                <small>CEO</small>
+                            </div>
+                            <div class="col">
+                                <p class="mb-0">CEL: 958.198.847</p>
+                                <small>paul@gotoperu.org</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <img src="http://machupicchu.company/images/contact.png" alt="" class="img-fluid">
+            </div>
+        </div>
     </div>
 </section>
-<style>
-    .bd-example-row-flex-cols .row {
-        min-height: 10rem;
-        background-color: rgba(255,0,0,.1);
-    }
-    .bd-example-row .row>.col, .bd-example-row .row>[class^=col-] {
-        padding-top: .75rem;
-        padding-bottom: .75rem;
-        background-color: rgba(86,61,124,.15);
-        border: 1px solid rgba(86,61,124,.2);
-    }
-    .bd-example-row .row+.row {
-        margin-top: 1rem;
-    }
-</style>
-<div class="container bd-example-row bd-example-row-flex-cols">
 
-    <div class="row align-items-end">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque nobis, numquam? Accusamus, cupiditate expedita. Aperiam autem fugit id minus neque nihil quasi quos sunt, voluptas. Ea nisi nostrum similique voluptatibus?
-        <div class="col">
-            One of three columns
-        </div>
-        <div class="col">
-            One of three columns
-        </div>
-        <div class="col">
-            One of three columns
-        </div>
-    </div>
-</div>
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3 class="text-secondary d-inline align-bottom h6">PERU EÉRIAS <img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid" width="100"></h3>
+                <h2 class="h3 pt-1">SOMENTE PASSEIOS</h2>
 
-<div class="container" id="main">
-    <h2>Hello Bootstrap 4.</h2>
-    <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-9">
-            <p>3 wolf moon retro jean shorts chambray sustainable roof party. Shoreditch vegan artisan Helvetica. Tattooed Codeply Echo Park Godard kogi, next level irony ennui twee squid fap selvage. Meggings flannel Brooklyn literally small batch, mumblecore
-                PBR try-hard kale chips. Brooklyn vinyl lumbersexual bicycle rights, viral fap cronut leggings squid chillwave pickled gentrify mustache. 3 wolf moon hashtag church-key Odd Future. Austin messenger bag normcore, Helvetica Williamsburg
-                sartorial tote bag distillery Portland before they sold out gastropub taxidermy Vice.</p>
+            </div>
         </div>
-        <div class="col-xs-6 col-md-3">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra codeply varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt codeply condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis nisi.
-                Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.
-            </p>
-            <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra codeply varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt codeply condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis nisi.
-                Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. Aliquam in felis sit amet augue.
-            </p>
+        <div class="row py-4">
+            <div class="col text-center">
+                <h5 class="text-secondary d-inline align-bottom h6">Included</h5>
+            </div>
         </div>
-    </div>
-    <div class="row ">
-        <div class="col-xs-6 col-sm-4">
-            <div class="card card-outline-primary">
-                <div class="card-block">
-                    <h3 class="card-title">Card</h3>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-outline-secondary">Outline</a>
+        <div class="row mt-2 justify-content-center">
+            <div class="col-8">
+                <div class="row text-center">
+                    <div class="col">
+                        <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="img-fluid">
+                        <small class="d-block text-secondary">Assistances</small>
+                    </div>
+                    <div class="col">
+                        <img src="{{asset('images/icons/include/breakfast.png')}}" alt="" class="img-fluid">
+                        <small class="d-block text-secondary">breakfast</small>
+                    </div>
+                    <div class="col">
+                        <img src="{{asset('images/icons/include/entrances.png')}}" alt="" class="img-fluid">
+                        <small class="d-block text-secondary">entrances</small>
+                    </div>
+                    <div class="col">
+                        <img src="{{asset('images/icons/include/flight.png')}}" alt="" class="img-fluid">
+                        <small class="d-block text-secondary">flight</small>
+                    </div>
+                    <div class="col">
+                        <img src="{{asset('images/icons/include/hotels.png')}}" alt="" class="img-fluid">
+                        <small class="d-block text-secondary">hotels</small>
+                    </div>
+                    <div class="col">
+                        <img src="{{asset('images/icons/include/tours.png')}}" alt="" class="img-fluid">
+                        <small class="d-block text-secondary">tours</small>
+                    </div>
+                    <div class="col">
+                        <img src="{{asset('images/icons/include/trains.png')}}" alt="" class="img-fluid">
+                        <small class="d-block text-secondary">trains</small>
+                    </div>
+                    <div class="col">
+                        <img src="{{asset('images/icons/include/transfers.png')}}" alt="" class="img-fluid">
+                        <small class="d-block text-secondary">transfers</small>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-xs-6 col-sm-4">
-            <div class="card card-outline-primary">
-                <div class="card-block">
-                    <h3 class="card-title">Card</h3>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-outline-secondary">Outline</a>
+        <div class="mt-5">
+            <div class="card-deck">
+                <div class="card">
+                    {{--<div class="card-header">--}}
+                        {{--<h4 class="card-title">City tour em cusco</h4>--}}
+                    {{--</div>--}}
+                    <img class="card-img-top " src="{{asset('images/packages/AV100.jpg')}}" alt="Card image cap">
+
+                    <div class="card-body text-center">
+                        <h4 class="card-title">City tour em cusco</h4>
+                        <p class="text-left"><i class="fa fa-clock-o text-primary" aria-hidden="true"></i> 7 Days</p>
+                        <p class="text-left card-text"><i class="fa fa-map-marker text-primary" aria-hidden="true"></i> Machu Picchu, Cusco, Calca.</p>
+                        {{--<a href="#" class="btn btn-primary">Go somewhere</a>--}}
+                    </div>
+                    <div class="card-footer text-muted">
+                        <div class="row">
+                            <div class="col text-left">from</div>
+                            <div class="col text-right font-weight-bold text-primary font-montserrat"><sup>$</sup>2000</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    {{--<div class="card-header">--}}
+                    {{--<h4 class="card-title">City tour em cusco</h4>--}}
+                    {{--</div>--}}
+                    <img class="card-img-top " src="{{asset('images/packages/AV100.jpg')}}" alt="Card image cap">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">City tour em cusco</h4>
+                        <p class="text-left"><i class="fa fa-clock-o text-primary" aria-hidden="true"></i> 7 Days</p>
+                        <p class="text-left card-text"><i class="fa fa-map-marker text-primary" aria-hidden="true"></i> Machu Picchu, Cusco, Calca. lorem</p>
+                        {{--<a href="#" class="btn btn-primary">Go somewhere</a>--}}
+                    </div>
+                    <div class="card-footer text-muted">
+                        <div class="row">
+                            <div class="col text-left">from</div>
+                            <div class="col text-right font-weight-bold text-primary font-montserrat"><sup>$</sup>2000</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    {{--<div class="card-header">--}}
+                    {{--<h4 class="card-title">City tour em cusco</h4>--}}
+                    {{--</div>--}}
+                    <img class="card-img-top " src="{{asset('images/packages/AV100.jpg')}}" alt="Card image cap">
+
+                    <div class="card-body text-center">
+                        <h4 class="card-title">City tour em cusco</h4>
+                        <p class="text-left"><i class="fa fa-clock-o text-primary" aria-hidden="true"></i> 7 Days</p>
+                        <p class="text-left card-text"><i class="fa fa-map-marker text-primary" aria-hidden="true"></i> Machu Picchu, Cusco, Calca.</p>
+                        {{--<a href="#" class="btn btn-primary">Go somewhere</a>--}}
+                    </div>
+                    <div class="card-footer text-muted">
+                        <div class="row">
+                            <div class="col text-left">from</div>
+                            <div class="col text-right font-weight-bold text-primary font-montserrat"><sup>$</sup>2000</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-xs-6 col-sm-4">
-            <div class="card card-outline-primary">
-                <div class="card-block">
-                    <h3 class="card-title">Card</h3>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-outline-secondary">Outline</a>
+        <div class="row mt-5">
+            <div class="col text-center">
+                <a href="" class="btn btn-lg btn-primary">All Packages</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-5">
+    <div class="container">
+
+            <div class="row pb-5 justify-content-center">
+                <div class="col-4">
+                    <img src="{{asset('images/logos/logo-andes-c.png')}}" alt="" class="img-fluid">
+                </div>
+            </div>
+
+        <div class="row pt-4">
+            <div class="col">
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <img src="{{asset('images/icons/group.png')}}" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col">
+                        One of two columns
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <img src="{{asset('images/icons/assistance.png')}}" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col">
+                        One of two columns
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <img src="{{asset('images/icons/customize.png')}}" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col">
+                        One of two columns
+                    </div>
+                </div>
+            </div>
+            <div class="w-100 py-3"></div>
+            <div class="col">
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <img src="{{asset('images/icons/location.png')}}" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col">
+                        One of two columns
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <img src="{{asset('images/icons/trip.png')}}" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col">
+                        One of two columns
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <img src="{{asset('images/icons/departure.png')}}" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col">
+                        One of two columns
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>
 
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3 class="text-secondary d-inline align-bottom h6">PERU EÉRIAS <img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid" width="100"></h3>
+                <h2 class="h3 pt-1">DESTINOS</h2>
+
+            </div>
+        </div>
+        <div class="row py-3">
+            <div class="col-8">
+                <div class="card bg-dark text-white">
+                    <img class="card-img" src="{{asset('images/destinations/home/machupicchu.jpg')}}" alt="Card image">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-dark text-white">
+                    <img class="card-img" src="{{asset('images/destinations/home/machupicchu.jpg')}}" alt="Card image">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white mt-3">
+                    <img class="card-img" src="{{asset('images/destinations/home/machupicchu.jpg')}}" alt="Card image">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col text-center">
+                <a href="" class="btn btn-lg btn-primary">All Destinations</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3 class="text-secondary d-inline align-bottom h6">PERU EÉRIAS <img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid" width="100"></h3>
+                <h2 class="h3 pt-1">Packages</h2>
+
+            </div>
+        </div>
+        <div class="row box-more py-5">
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <img src="https://cdn.goodlayers.com/traveltour/wp-content/uploads/2016/06/shutterstock_254090041-600x700.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-6 mt-4 border border-top-0 border-left-0 border-bottom-0">
+                        <h4 class="card-title">City tour em cusco</h4>
+                        <p class="text-left"><i class="fa fa-clock-o text-primary" aria-hidden="true"></i> 7 Days</p>
+                        <p class="text-left card-text"><i class="fa fa-map-marker text-primary" aria-hidden="true"></i> Machu Picchu, Cusco, Calca.</p>
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus omnis temporibus totam vel? Blanditiis dolorem, dolores ex, excepturi incidunt molestias nesciunt nisi optio possimus praesentium quaerat sint velit voluptas.</p>
+                    </div>
+                    <div class="col text-center py-5 align-items-center card-deck">
+                        <div class="card border-0">
+                            <span class="text-secondary align-self-center h3">from</span>
+                            <p class="h1 font-montserrat font-weight-bold">$5000</p>
+                            <a href="" class="btn btn-primary btn-lg btn mt-3">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{--<div class="row box-more py-5">--}}
+            {{--<div class="col">--}}
+                {{--sdsdsd--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        <div class="row">
+            <div class="col text-center">
+                <a href="#" class="btn btn-info text-center" id="loadMore">View More <i class="fa fa-chevron-down d-block" aria-hidden="true"></i></a>
+            </div>
+        </div>
+
+        <p class="totop">
+            <a href="#top">Back to top</a>
+        </p>
+    </div>
+</section>
+    {{--<section class="bg-light">--}}
+        {{--<div class="container">--}}
+            {{--<div class="row">--}}
+                {{--<div class="col">--}}
+    {{--sdsd--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</section>--}}
+{{--<video id="sdsd" class="video-js vjs-default-skin" width="640px" height="267px"--}}
+       {{--controls preload="none" poster='http://video-js.zencoder.com/oceans-clip.jpg'--}}
+       {{--data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }'>--}}
+    {{--<source src="https://vjs.zencdn.net/v/oceans.mp4" type='video/mp4' />--}}
+    {{--<source src="https://vjs.zencdn.net/v/oceans.webm" type='video/webm' />--}}
+{{--</video>--}}
 
 <!-- Footer -->
 <footer class="py-5 bg-dark">
@@ -264,6 +545,6 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="{{asset("js/app.js")}}"></script>
-<script src="{{asset("js/admin/plugins.js")}}"></script>
+<script src="{{asset("js/page/plugins.js")}}"></script>
 </body>
 </html>
