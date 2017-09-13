@@ -17,8 +17,9 @@ mix.js('resources/assets/js/app.js', 'public/js')
 
 mix.scripts([
     'node_modules/video.js/dist/video.js',
-
+    'node_modules/owl.carousel/dist/owl.carousel.js',
     //Customized
     // 'resources/assets/js/vendors/function-admin.js',
     'resources/assets/js/vendors/function.js',
 ], 'public/js/page/plugins.js');
+

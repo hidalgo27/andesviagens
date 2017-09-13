@@ -269,8 +269,9 @@
                 </div>
             </div>
         </div>
+
         <div class="mt-5">
-            <div class="card-deck">
+            <div class="card-deck owl-carousel owl-theme">
                 <div class="card">
                     {{--<div class="card-header">--}}
                         {{--<h4 class="card-title">City tour em cusco</h4>--}}
@@ -299,6 +300,25 @@
                         <h4 class="card-title">City tour em cusco</h4>
                         <p class="text-left"><i class="fa fa-clock-o text-primary" aria-hidden="true"></i> 7 Days</p>
                         <p class="text-left card-text"><i class="fa fa-map-marker text-primary" aria-hidden="true"></i> Machu Picchu, Cusco, Calca. lorem</p>
+                        {{--<a href="#" class="btn btn-primary">Go somewhere</a>--}}
+                    </div>
+                    <div class="card-footer text-muted">
+                        <div class="row">
+                            <div class="col text-left">from</div>
+                            <div class="col text-right font-weight-bold text-primary font-montserrat"><sup>$</sup>2000</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    {{--<div class="card-header">--}}
+                    {{--<h4 class="card-title">City tour em cusco</h4>--}}
+                    {{--</div>--}}
+                    <img class="card-img-top " src="{{asset('images/packages/AV100.jpg')}}" alt="Card image cap">
+
+                    <div class="card-body text-center">
+                        <h4 class="card-title">City tour em cusco</h4>
+                        <p class="text-left"><i class="fa fa-clock-o text-primary" aria-hidden="true"></i> 7 Days</p>
+                        <p class="text-left card-text"><i class="fa fa-map-marker text-primary" aria-hidden="true"></i> Machu Picchu, Cusco, Calca.</p>
                         {{--<a href="#" class="btn btn-primary">Go somewhere</a>--}}
                     </div>
                     <div class="card-footer text-muted">
@@ -382,7 +402,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-100 py-3"></div>
+            <div class="w-100 py-4"></div>
             <div class="col">
                 <div class="row justify-content-center">
                     <div class="col-4">
@@ -517,6 +537,31 @@
         </p>
     </div>
 </section>
+
+
+<div class="container-parallax">
+    <section>
+        <div class="image" data-type="background" data-speed="2"></div>
+        <div class="stuff" data-type="content">
+            <div class="row justify-content-center">
+                <div class="col-3">
+                    <img src="{{asset('images/logos/logo-andes.png')}}" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="row pt-3">
+                <div class="col">
+                    <h5 class="font-weight-light text-light">CONFIANZA</h5>
+                    {{--<h3>Andes Viagens</h3>--}}
+                    <p class="py-3 lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto autem consequuntur culpa enim est harum id illo impedit ipsa iste, minima molestiae mollitia pariatur quasi quis vitae voluptate! Tenetur!</p>
+                    <a href="" class="btn btn-xs btn-success"><img src="{{asset('images/icons/whatsapp.png')}}" alt="" width="30"> chatea con nosotros ahora</a>
+                    <a href="" class="btn btn-xs btn-primary"><img src="{{asset('images/icons/messenger.png')}}" alt="" width="30"> chatea con nosotros ahora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
     {{--<section class="bg-light">--}}
         {{--<div class="container">--}}
             {{--<div class="row">--}}
@@ -546,5 +591,33 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="{{asset("js/app.js")}}"></script>
 <script src="{{asset("js/page/plugins.js")}}"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        autoplay:true,
+        autoplayTimeout:10000,
+        autoplayHoverPause:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:false
+            },
+            600:{
+                items:2,
+                nav:false
+            },
+            1000:{
+                items:3,
+                nav:true,
+                loop:false,
+                navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 3px;stroke: #007bff;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>','<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 3px;stroke: #007bff;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
+            }
+        }
+    });
+</script>
+
+
 </body>
 </html>

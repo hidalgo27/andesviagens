@@ -110,6 +110,104 @@ header{
 
 
 
+
+
+
+
+.container-parallax {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%;
+  justify-content: space-around;
+  position: relative;
+  width: 100%;
+}
+.container-parallax section {
+  width: 100%;
+  height: 50vh;
+  flex: 1;
+  display: flex;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+}
+.container-parallax section:nth-child(1) .image {
+  background-image: url('http://viagens.nu/images/sliders/slider-2.jpg');
+}
+//.container-parallax section:nth-child(2) .image {
+//  background-image: url(https://images.unsplash.com/photo-1462819067004-905a72ea3996?iq=100&fm=jpg&w=1000);
+//}
+//.container-parallax section:nth-child(3) .image {
+//  background-image: url(https://images.unsplash.com/photo-1461770354136-8f58567b617a?iq=100&fm=jpg&w=1000);
+//}
+//.container-parallax section:nth-child(4) .image {
+//  background-image: url(https://images.unsplash.com/photo-1461080639469-66d73688fb21?iq=100&fm=jpg&w=1000);
+//}
+//.container-parallax section:nth-child(5) .image {
+//  background-image: url(https://images.unsplash.com/photo-1460804198264-011ca89eaa43?iq=100&fm=jpg&w=1000);
+//}
+//.container-parallax section:nth-child(6) .image {
+//  background-image: url(https://images.unsplash.com/photo-1463123081488-789f998ac9c4?iq=100&fm=jpg&w=1000);
+//}
+.container-parallax section .image {
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 500;
+  opacity: 0.4;
+}
+.container-parallax section .stuff {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+  max-width: 70%;
+  justify-content: center;
+  text-align: center;
+  z-index: 1000;
+  color: #ffffff;
+  margin: 0 auto;
+  //font-size: 26px;
+  position: relative;
+}
+.container-parallax section .stuff h2 {
+  margin: 0px;
+}
+.container-parallax section .stuff:before, .container-parallax section .stuff:after {
+  width: 100%;
+  height: 1px;
+  display: block;
+  background-color: #ffffff;
+  content: "";
+  margin: 30px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
   Player Skin Designer for Video.js
   http://videojs.com
@@ -235,3 +333,21 @@ $slider-bg-color: lighten($primary-background-color, 33%);
   background: rgba($slider-bg-color, 0.75);
 }
 
+
+.owl-theme {
+  position: relative;
+}
+.owl-next, .owl-prev {
+  width: 22px;
+  height: 40px;
+  margin-top: -20px;
+  position: absolute;
+  top: 50%;
+}
+.owl-prev {
+  left: -20px;
+}
+.owl-next {
+  right: -20px;
+
+}
