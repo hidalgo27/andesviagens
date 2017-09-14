@@ -16,7 +16,8 @@ mix.js('resources/assets/js/app.js', 'public/js')
 
 
 mix.scripts([
-    'node_modules/video.js/dist/video.js',
+    // 'node_modules/video.js/dist/video.js',
+    'resources/assets/js/vendors/viedolightbox/video.js',
     'node_modules/owl.carousel/dist/owl.carousel.js',
     //Customized
     // 'resources/assets/js/vendors/function-admin.js',

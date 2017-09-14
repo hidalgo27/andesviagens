@@ -19,3 +19,7 @@ Route::get('/', [
     'uses' => 'HomeController@index',
     'as' => 'home_path',
 ]);
+Route::get('/packages/{title}', [
+    'uses' => 'HomeController@show',
+    'as' => 'home_show_path',
+]);

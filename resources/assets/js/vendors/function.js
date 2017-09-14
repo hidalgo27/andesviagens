@@ -11,18 +11,18 @@ function parallaxIt() {
     });
 
     // for each of content parallax element
-    $('[data-type="content"]').each(function (index, e) {
-        var $contentObj = $(this);
-        var fgOffset = parseInt($contentObj.offset().top);
-        var yPos;
-        var speed = ($contentObj.data('speed') || 1 );
-
-        $fwindow.on('scroll resize', function (){
-            yPos = fgOffset - scrollTop / speed;
-
-            $contentObj.css('top', yPos);
-        });
-    });
+    // $('[data-type="content"]').each(function (index, e) {
+    //     var $contentObj = $(this);
+    //     var fgOffset = parseInt($contentObj.offset().top);
+    //     var yPos;
+    //     var speed = ($contentObj.data('speed') || 1 );
+    //
+    //     $fwindow.on('scroll resize', function (){
+    //         yPos = fgOffset - scrollTop / speed;
+    //
+    //         $contentObj.css('top', yPos);
+    //     });
+    // });
 
     // for each of background parallax element
     $('[data-type="background"]').each(function(){

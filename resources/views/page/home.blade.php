@@ -48,10 +48,10 @@
                                 {{--<a href="" class="text-light">(813) 454-9707</a>--}}
                             </div>
                             {{--<div class="d-inline">--}}
-                                {{--<a href=""><img src="{{asset('images/icons/whatsapp.png')}}" alt=""></a>--}}
+                            {{--<a href=""><img src="{{asset('images/icons/whatsapp.png')}}" alt=""></a>--}}
                             {{--</div>--}}
                             {{--<div class="d-inline">--}}
-                                {{--<a href=""><img src="{{asset('images/icons/messenger.png')}}" alt=""></a>--}}
+                            {{--<a href=""><img src="{{asset('images/icons/messenger.png')}}" alt=""></a>--}}
                             {{--</div>--}}
                         </div>
                     </div>
@@ -76,50 +76,13 @@
             </div>
         </div>
     </div>
-    <video autoplay="autoplay" loop="loop" id="video_background" preload="auto" muted/>
-        <source src="{{asset('media/video1.mp4')}}" type="video/mp4" />
+    <video autoplay="autoplay" loop="loop" id="video_background" preload="auto" poster="{{asset('images/sliders/slider-1.jpg')}}" muted/>
+        <source src="{{asset('media/video6.m4v')}}" type="video/mp4" />
+        <source src="{{asset('media/video6.webm')}}" type="video/webm" />
+        <source src="{{asset('media/video6.ogv')}}" type="video/ogg" />
+        <source src="{{asset('media/video6.mp4')}}" />
+        <img alt="video6" src="{{asset('images/sliders/slider-1.jpg')}}" style="position:absolute;left:0;" width="100%" title="Video playback is not supported by your browser" />
     </video/>
-    <div id="carouselExampleIndicators" class="carousel slide d-none" data-ride="carousel">
-        {{--<ol class="carousel-indicators">--}}
-            {{--<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>--}}
-            {{--<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>--}}
-            {{--<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>--}}
-        {{--</ol>--}}
-        <div class="carousel-inner" role="listbox">
-            <!-- Slide One - Set the background image for this slide in the line below -->
-            <div class="carousel-item active" >
-                {{--<div class="carousel-caption d-none d-md-block">--}}
-                    {{--<h3>First Slide</h3>--}}
-                    {{--<p>This is a description for the first slide.</p>--}}
-                {{--</div>--}}
-                <video autoplay="autoplay" loop="loop" id="video_background" preload="auto" controls muted/>
-                <source src="{{asset('media/video.mp4')}}" type="video/mp4" />
-                </video/>
-            </div>
-            <!-- Slide Two - Set the background image for this slide in the line below -->
-            {{--<div class="carousel-item" style="background-image: url({{asset('images/sliders/slider-2.jpg')}})">--}}
-                {{--<div class="carousel-caption d-none d-md-block">--}}
-                    {{--<h3>Second Slide</h3>--}}
-                    {{--<p>This is a description for the second slide.</p>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-            <!-- Slide Three - Set the background image for this slide in the line below -->
-            {{--<div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">--}}
-                {{--<div class="carousel-caption d-none d-md-block">--}}
-                    {{--<h3>Third Slide</h3>--}}
-                    {{--<p>This is a description for the third slide.</p>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        </div>
-        {{--<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">--}}
-            {{--<span class="carousel-control-prev-icon" aria-hidden="true"></span>--}}
-            {{--<span class="sr-only">Previous</span>--}}
-        {{--</a>--}}
-        {{--<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">--}}
-            {{--<span class="carousel-control-next-icon" aria-hidden="true"></span>--}}
-            {{--<span class="sr-only">Next</span>--}}
-        {{--</a>--}}
-    </div>
 </header>
 
 <!-- Navigation -->
@@ -210,13 +173,33 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <img src="http://machupicchu.company/images/contact.png" alt="" class="img-fluid">
+            <div class="col mt-5">
+
+                    <div class="content-video-1 mt-5">
+                        <img src="{{asset('images/prom-peru.jpg')}}" alt="video" class="img-fluid">
+                        <div class="content-video-btn-1">
+                            <a href="https://www.youtube.com/watch?v=RDUGFQ9tE7E&feature=youtu.be"  class="html5lightbox content-vbtn-color-blue" ><i class="fa fa-play-circle"></i></a>
+                        </div>
+                    </div>
             </div>
         </div>
     </div>
 </section>
-
+{{--<section class="bg-light">--}}
+{{--<div class="container">--}}
+{{--<div class="row">--}}
+{{--<div class="col">--}}
+{{--sdsd--}}
+{{--</div>--}}
+{{--</div>--}}
+{{--</div>--}}
+{{--</section>--}}
+{{--<video id="sdsd" class="video-js vjs-default-skin" width="640px" height="267px"--}}
+{{--controls preload="none" poster='http://video-js.zencoder.com/oceans-clip.jpg'--}}
+{{--data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }'>--}}
+{{--<source src="https://vjs.zencdn.net/v/oceans.mp4" type='video/mp4' />--}}
+{{--<source src="https://vjs.zencdn.net/v/oceans.webm" type='video/webm' />--}}
+{{--</video>--}}
 <section class="py-5 bg-light">
     <div class="container">
         <div class="row">
@@ -274,7 +257,7 @@
             <div class="card-deck owl-carousel owl-theme">
                 <div class="card">
                     {{--<div class="card-header">--}}
-                        {{--<h4 class="card-title">City tour em cusco</h4>--}}
+                    {{--<h4 class="card-title">City tour em cusco</h4>--}}
                     {{--</div>--}}
                     <img class="card-img-top " src="{{asset('images/packages/AV100.jpg')}}" alt="Card image cap">
 
@@ -359,11 +342,11 @@
 <section class="py-5">
     <div class="container">
 
-            <div class="row pb-5 justify-content-center">
-                <div class="col-4">
-                    <img src="{{asset('images/logos/logo-andes-c.png')}}" alt="" class="img-fluid">
-                </div>
+        <div class="row pb-5 justify-content-center">
+            <div class="col-4">
+                <img src="{{asset('images/logos/logo-andes-c.png')}}" alt="" class="img-fluid">
             </div>
+        </div>
 
         <div class="row pt-4">
             <div class="col">
@@ -522,9 +505,9 @@
             </div>
         </div>
         {{--<div class="row box-more py-5">--}}
-            {{--<div class="col">--}}
-                {{--sdsdsd--}}
-            {{--</div>--}}
+        {{--<div class="col">--}}
+        {{--sdsdsd--}}
+        {{--</div>--}}
         {{--</div>--}}
         <div class="row">
             <div class="col text-center">
@@ -562,21 +545,7 @@
 
 </div>
 
-    {{--<section class="bg-light">--}}
-        {{--<div class="container">--}}
-            {{--<div class="row">--}}
-                {{--<div class="col">--}}
-    {{--sdsd--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-    {{--</section>--}}
-{{--<video id="sdsd" class="video-js vjs-default-skin" width="640px" height="267px"--}}
-       {{--controls preload="none" poster='http://video-js.zencoder.com/oceans-clip.jpg'--}}
-       {{--data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }'>--}}
-    {{--<source src="https://vjs.zencdn.net/v/oceans.mp4" type='video/mp4' />--}}
-    {{--<source src="https://vjs.zencdn.net/v/oceans.webm" type='video/webm' />--}}
-{{--</video>--}}
+
 
 <!-- Footer -->
 <footer class="py-5 bg-dark">
@@ -616,6 +585,7 @@
             }
         }
     });
+
 </script>
 
 
