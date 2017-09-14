@@ -133,8 +133,199 @@
 </nav>
 <!-- /. -->
 <!-- Page Content -->
-<section class="py-5">
+<section class="py-4 bg-light">
     <div class="container">
+
+
+        <div class="">
+            <div class="mb-4 text-center">
+                <h4>FORMULÁRIO DE CONTATO</h4>
+            </div>
+            <div class="">
+                <div class="card-deck rounded">
+                    <div class="card border-top-0 border-bottom-0 border-left-0 m-0 rounded-0">
+                        <div class="card-body">
+                            <label class="d-block">Informacion Personal</label>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Nome</label>--}}
+                                        <input type="text" class="form-control" id="inputEmail4" placeholder="Nome Completo">
+                                    </div>
+                                    <div class="form-group">
+                                        {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Email</label>--}}
+                                        <input type="text" class="form-control" id="inputEmail4" placeholder="Seu Email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Data</label>--}}
+                                        <input type="text" class="form-control form-control-sm" id="inputEmail4" placeholder="Data Viagem">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Telefone</label>--}}
+                                        <input type="text" class="form-control form-control-sm" id="inputEmail4" placeholder="Número de Telefone">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Dias</label>--}}
+                                        <input type="text" class="form-control form-control-sm" id="inputEmail4" placeholder="Número de Dias">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Passageiros</label>--}}
+                                        <input type="text" class="form-control form-control-sm" id="inputEmail4" placeholder="Número de Passageiros">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 m-0">
+                        <div class="card-body">
+                            {{--<h4 class="card-title">Card title</h4>--}}
+                            <label class="d-block">Eu Gostaria de visitar</label>
+                            <div class="" data-toggle="buttons">
+                                <label class="btn btn-outline-primary">
+                                    <input type="checkbox" checked autocomplete="off"> Machupicchu
+                                </label>
+                                <label class="btn btn-outline-primary">
+                                    <input type="checkbox" autocomplete="off"> Cusco
+                                </label>
+                                <label class="btn btn-outline-primary">
+                                    <input type="checkbox" autocomplete="off"> Lago titicaca
+                                </label>
+                                <label class="btn btn-outline-primary">
+                                    <input type="checkbox" autocomplete="off"> Lima
+                                </label>
+                                <label class="btn btn-outline-primary">
+                                    <input type="checkbox" autocomplete="off"> Puno
+                                </label>
+                            </div>
+
+                            <div class="input-group mt-3">
+                                <span class="input-group-addon" id="basic-addon3">Otros</span>
+                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-top-0 border-bottom-0 border-right-0 m-0 rounded-0">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Example textarea</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="mt-4">
+                                <button type="submit" class="btn btn-lg btn-block btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <form class="py-4 d-none">
+                    {{--<div class="row">--}}
+                        {{--<div class="col text-center">--}}
+                            {{--<p class="h3 py-2">FORMULÁRIO DE CONTATO</p>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Nome</label>--}}
+                                        <input type="text" class="form-control" id="inputEmail4" placeholder="Nome Completo">
+                                    </div>
+                                    <div class="form-group">
+                                        {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Email</label>--}}
+                                        <input type="text" class="form-control" id="inputEmail4" placeholder="Seu Email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Data</label>--}}
+                                        <input type="text" class="form-control form-control-sm" id="inputEmail4" placeholder="Data Viagem">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Telefone</label>--}}
+                                        <input type="text" class="form-control form-control-sm" id="inputEmail4" placeholder="Número de Telefone">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Dias</label>--}}
+                                        <input type="text" class="form-control form-control-sm" id="inputEmail4" placeholder="Número de Dias">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Passageiros</label>--}}
+                                        <input type="text" class="form-control form-control-sm" id="inputEmail4" placeholder="Número de Passageiros">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label class="col-form-label d-block">Eu Gostaria de visitar</label>
+                            <div class="" data-toggle="buttons">
+                                <label class="btn btn-outline-primary btn-lg">
+                                    <input type="checkbox" checked autocomplete="off"> Machupicchu
+                                </label>
+                                <label class="btn btn-outline-primary btn-lg">
+                                    <input type="checkbox" autocomplete="off"> Cusco
+                                </label>
+                                <label class="btn btn-outline-primary btn-lg">
+                                    <input type="checkbox" autocomplete="off"> Lago titicaca
+                                </label>
+                                <label class="btn btn-outline-primary btn-lg">
+                                    <input type="checkbox" autocomplete="off"> Lima
+                                </label>
+                                <label class="btn btn-outline-primary btn-lg">
+                                    <input type="checkbox" autocomplete="off"> Puno
+                                </label>
+                            </div>
+
+                            <div class="input-group">
+                                <span class="input-group-addon" id="basic-addon3">Otros</span>
+                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Example textarea</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                            </div>
+                            <div class="form-group mt-4">
+                                <button type="submit" class="btn btn-lg btn-block btn-primary">sdsdSubmit</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="my-5">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col text-center">
+                <p class="h2 text-secondary pt-3">100% OPERADORES DE VIAGENS PERUANOS COM ESCRITORIO PRINCIPAL EM CUSCO E SEDES EM LIMA,PUNO E AREQUIPA</p>
+            </div>
+        </div>
         <div class="row">
             <div class="col-7">
                 <div class="row">
@@ -144,8 +335,7 @@
                             <img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid mb-1" width="100">
                         </div>
                         <h1 class="h3 pt-1">PASSEIOS E VIAGENS</h1>
-                        <p class="h6 text-secondary pt-3">100% OPERADORES DE VIAGENS PERUANOS COM ESCRITORIO PRINCIPAL EM CUSCO E SEDES EM LIMA,PUNO E AREQUIPA</p>
-                        <p class="pt-3">ANDESVIAGENS é a única agência peruana especializada em viagens para o destino Perú, país herdeiro de uma cultura milenar e considerado um dos lugares mais enigmáticos da América Latina
+                        <p class="pt-3 lead">ANDESVIAGENS é a única agência peruana especializada em viagens para o destino Perú, país herdeiro de uma cultura milenar e considerado um dos lugares mais enigmáticos da América Latina
                             ANDESVIAGENS faz parte do Grupo GOTOPERU.</p>
                     </div>
                 </div>
@@ -174,13 +364,12 @@
                 </div>
             </div>
             <div class="col mt-5">
-
-                    <div class="content-video-1 mt-5">
-                        <img src="{{asset('images/prom-peru.jpg')}}" alt="video" class="img-fluid">
-                        <div class="content-video-btn-1">
-                            <a href="https://www.youtube.com/watch?v=RDUGFQ9tE7E&feature=youtu.be"  class="html5lightbox content-vbtn-color-blue" ><i class="fa fa-play-circle"></i></a>
-                        </div>
+                <div class="content-video-1">
+                    <img src="{{asset('images/prom-peru-4.jpg')}}" alt="video" class="img-fluid">
+                    <div class="content-video-btn-1">
+                        <a href="https://www.youtube.com/watch?v=RDUGFQ9tE7E&feature=youtu.be"  class="html5lightbox content-vbtn-color-blue" ><i class="fa fa-play-circle"></i></a>
                     </div>
+                </div>
             </div>
         </div>
     </div>
@@ -200,6 +389,8 @@
 {{--<source src="https://vjs.zencdn.net/v/oceans.mp4" type='video/mp4' />--}}
 {{--<source src="https://vjs.zencdn.net/v/oceans.webm" type='video/webm' />--}}
 {{--</video>--}}
+<!-- Button trigger modal -->
+
 <section class="py-5 bg-light">
     <div class="container">
         <div class="row">
@@ -211,7 +402,7 @@
         </div>
         <div class="row py-4">
             <div class="col text-center">
-                <h5 class="text-secondary d-inline align-bottom h6">Included</h5>
+                <h5 class="text-secondary d-inline align-bottom h6">INCLUDED</h5>
             </div>
         </div>
         <div class="row mt-2 justify-content-center">
@@ -259,7 +450,7 @@
                     {{--<div class="card-header">--}}
                     {{--<h4 class="card-title">City tour em cusco</h4>--}}
                     {{--</div>--}}
-                    <img class="card-img-top " src="{{asset('images/packages/AV100.jpg')}}" alt="Card image cap">
+                    <a href="{{route('home_show_path', '1')}}"><img class="card-img-top " src="{{asset('images/packages/AV100.jpg')}}" alt="Card image cap"></a>
 
                     <div class="card-body text-center">
                         <h4 class="card-title">City tour em cusco</h4>
@@ -437,30 +628,31 @@
         </div>
         <div class="row py-3">
             <div class="col-8">
-                <div class="card bg-dark text-white">
-                    <img class="card-img" src="{{asset('images/destinations/home/machupicchu.jpg')}}" alt="Card image">
-                    <div class="card-img-overlay">
-                        <h4 class="card-title">Card title</h4>
+                <div class="card text-white clearfix">
+                    <img class="card-img" src="{{asset('images/destinations/home/machupicchu-2.jpg')}}" alt="Card image">
+                    <div class="card-img-overlay card-overlay-rgba">
+                        <h4 class="card-title">Machu Picchu</h4>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         <p class="card-text">Last updated 3 mins ago</p>
+                        <a href="" class="btn btn-success">View More</a>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card bg-dark text-white">
-                    <img class="card-img" src="{{asset('images/destinations/home/machupicchu.jpg')}}" alt="Card image">
-                    <div class="card-img-overlay">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text">Last updated 3 mins ago</p>
+                <div class="card text-white">
+                    <img class="card-img" src="{{asset('images/destinations/home/lima.jpg')}}" alt="Card image">
+                    <div class="card-img-overlay card-overlay-rgba">
+                        <h4 class="card-title">Lima</h4>
+                        <p class="card-text">This is a wider card with supporting...</p>
+                        <a href="" class="btn btn-success btn-info btn-sm">View More</a>
                     </div>
                 </div>
-                <div class="card bg-dark text-white mt-3">
-                    <img class="card-img" src="{{asset('images/destinations/home/machupicchu.jpg')}}" alt="Card image">
-                    <div class="card-img-overlay">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text">Last updated 3 mins ago</p>
+                <div class="card text-white mt-3">
+                    <img class="card-img" src="{{asset('images/destinations/home/titicaca.jpg')}}" alt="Card image">
+                    <div class="card-img-overlay card-overlay-rgba">
+                        <h4 class="card-title">Puno</h4>
+                        <p class="card-text">This is a wider card with supporting...</p>
+                        <a href="" class="btn btn-success btn-info btn-sm">View More</a>
                     </div>
                 </div>
             </div>
@@ -559,6 +751,8 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="{{asset("js/app.js")}}"></script>
+{{--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>--}}
+{{--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>--}}
 <script src="{{asset("js/page/plugins.js")}}"></script>
 <script>
     $('.owl-carousel').owlCarousel({
@@ -586,8 +780,55 @@
         }
     });
 
-</script>
 
+    function parallaxIt() {
+
+        // create variables
+        var $fwindow = $(window);
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        // on window scroll event
+        $fwindow.on('scroll resize', function() {
+            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        });
+
+        // for each of content parallax element
+        // $('[data-type="content"]').each(function (index, e) {
+        //     var $contentObj = $(this);
+        //     var fgOffset = parseInt($contentObj.offset().top);
+        //     var yPos;
+        //     var speed = ($contentObj.data('speed') || 1 );
+        //
+        //     $fwindow.on('scroll resize', function (){
+        //         yPos = fgOffset - scrollTop / speed;
+        //
+        //         $contentObj.css('top', yPos);
+        //     });
+        // });
+
+        // for each of background parallax element
+        $('[data-type="background"]').each(function(){
+            var $backgroundObj = $(this);
+            var bgOffset = parseInt($backgroundObj.offset().top);
+            var yPos;
+            var coords;
+            var speed = ($backgroundObj.data('speed') || 0 );
+
+            $fwindow.on('scroll resize', function() {
+                yPos = - ((scrollTop - bgOffset) / speed);
+                coords = yPos + 'px';
+
+                $backgroundObj.css({ backgroundPosition: coords });
+            });
+        });
+
+        // triggers winodw scroll for refresh
+        $fwindow.trigger('scroll');
+    };
+
+    parallaxIt();
+
+</script>
 
 </body>
 </html>

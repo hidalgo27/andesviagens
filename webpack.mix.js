@@ -16,11 +16,13 @@ mix.js('resources/assets/js/app.js', 'public/js')
 
 
 mix.scripts([
+    'resources/assets/js/vendors/popper.min.js',
+    'resources/assets/js/vendors/bootstrap.min.js',
     // 'node_modules/video.js/dist/video.js',
     'resources/assets/js/vendors/viedolightbox/video.js',
-    'node_modules/owl.carousel/dist/owl.carousel.js',
     //Customized
     // 'resources/assets/js/vendors/function-admin.js',
+    'node_modules/owl.carousel/dist/owl.carousel.js',
     'resources/assets/js/vendors/function.js',
 ], 'public/js/page/plugins.js');
 

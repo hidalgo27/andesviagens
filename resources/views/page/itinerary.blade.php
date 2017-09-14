@@ -15,7 +15,7 @@
 
 </head>
 
-<body>
+<body class="position-relative">
 
 <header>
     <div class="header-menu-d clearfix">
@@ -117,7 +117,7 @@
     </div>
 </nav>
 
-<nav class="nav nav-pills nav-fill sticky-top nav-viagens navbar-expand-lg d-none d-sm-flex">
+<nav class="nav nav-pills nav-fill  nav-viagens navbar-expand-lg d-none d-sm-flex">
     {{--<a class="nav-item nav-link active" href="#">Active</a>--}}
     <a class="nav-item nav-link text-light" href="#">PACOTES</a>
     <a class="nav-item nav-link text-light" href="#">DESTINO</a>
@@ -126,50 +126,55 @@
     <a class="nav-item nav-link text-light" href="#">CONTATO</a>
     {{--<a class="nav-item nav-link disabled" href="#">Disabled</a>--}}
 </nav>
+
 <!-- /. -->
 <!-- Page Content -->
 <section class="py-5">
     <div class="container">
         <div class="row">
-            <div class="col-7">
+            <div class="col-8">
+
                 <div class="row">
                     <div class="col">
                         <div class="d-block">
-                            <span class="text-secondary align-bottom">PERU EÉRIAS</span>
+                            <span class="text-secondary align-bottom">Travel Packages</span>
                             <img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid mb-1" width="100">
                         </div>
-                        <h1 class="h3 pt-1">PASSEIOS E VIAGENS</h1>
-                        <p class="h6 text-secondary pt-3">100% OPERADORES DE VIAGENS PERUANOS COM ESCRITORIO PRINCIPAL EM CUSCO E SEDES EM LIMA,PUNO E AREQUIPA</p>
-                        <p class="pt-3">ANDESVIAGENS é a única agência peruana especializada em viagens para o destino Perú, país herdeiro de uma cultura milenar e considerado um dos lugares mais enigmáticos da América Latina
-                            ANDESVIAGENS faz parte do Grupo GOTOPERU.</p>
+                        <h1 class="h3 pt-1">MACHU PICCHU FULL DAY</h1>
                     </div>
                 </div>
-                <div class="row">
+
+
+                <div class="row position-relative">
                     <div class="col">
-                        <h4 class="pt-1">Nossa Promesa</h4>
-                        <p>Não deixe escapar esta oportunidade de descobrir os encantos de Peru e viver uma aventura inesquecível.</p>
-                    </div>
-                    <div class="col">
-                        <div class="row justify-content-center">
-                            <div class="col-5">
-                                <img src="{{asset('images/firma-paul.jpg')}}" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="row text-center">
-                            <div class="col">
-                                <p class="mb-0">PAUL CATANO</p>
-                                <small>CEO</small>
-                            </div>
-                            <div class="col">
-                                <p class="mb-0">CEL: 958.198.847</p>
-                                <small>paul@gotoperu.org</small>
-                            </div>
+                        <ul id="navbar-example" class="nav nav-pills nav-fill sticky-top bg-light my-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#fat">@fat</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#mdo">@mdo</a>
+                            </li>
+
+                        </ul>
+                        <div data-spy="scroll" data-target="#navbar-example" data-offset="0" class="scrollspy-example py-3">
+                            <h4 id="fat">@fat</h4>
+                            <p>...</p>
+                            <h4 id="mdo">@mdo</h4>
+                            <p>...</p>
+
                         </div>
                     </div>
                 </div>
+
             </div>
             <div class="col">
-                <img src="http://machupicchu.company/images/contact.png" alt="" class="img-fluid">
+                <div class="card">
+                    <div class="card-body">
+                        <h3>from</h3>
+                        <h2>5000</h2>
+                        <a href="" class="btn btn-info btn-lg btn-info">BOOK NOW</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -574,9 +579,13 @@
             }
         }
     });
-
+    $('body').scrollspy({ target: '#navbar-example' })
 </script>
+<!-- Popper -->
 
+<!-- Latest compiled and minified Bootstrap JavaScript -->
+{{--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>--}}
+{{--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>--}}
 
 </body>
 </html>

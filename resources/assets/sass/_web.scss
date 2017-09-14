@@ -27,9 +27,11 @@ header{
   padding: 0 !important;
 }
 .nav-viagens{
+  position: relative;
   margin-top: -56px;
   font-size: 18px;
   background: rgba(0,0,0,.8);
+  z-index: 2;
 }
 .nav-viagens a{
   padding: 15px 0;
@@ -204,19 +206,14 @@ header{
   margin: 30px 0;
 }
 
-
 #html5-watermark{
   display: none !important;
 }
 
-
-
-
-
-
-
-
-
+//destinos
+.card-overlay-rgba{
+  background: rgba(0,0,0,.3);
+}
 
 
 
@@ -237,3 +234,9 @@ header{
   right: -20px;
 
 }
+
+//.scrollspy-example {
+//  position: relative;
+//  height: 250px;
+//  overflow: auto;
+//}
