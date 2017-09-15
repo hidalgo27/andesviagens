@@ -15,7 +15,7 @@
 
 </head>
 
-<body class="position-relative">
+<body>
 
 <header>
     <div class="header-menu-d clearfix">
@@ -147,20 +147,217 @@
 
                 <div class="row position-relative">
                     <div class="col">
-                        <ul id="navbar-example" class="nav nav-pills nav-fill sticky-top bg-light my-3">
+                        <ul id="navbar-example" class="nav nav-pills nav-fill sticky-top bg-light mt-3">
                             <li class="nav-item">
-                                <a class="nav-link" href="#fat">@fat</a>
+                                <a class="nav-link" href="#Overview">Overview</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#mdo">@mdo</a>
+                                <a class="nav-link" href="#Itinerary">Itinerary</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Optionals">Optionals</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Prices">Prices</a>
                             </li>
 
                         </ul>
-                        <div data-spy="scroll" data-target="#navbar-example" data-offset="0" class="scrollspy-example py-3">
-                            <h4 id="fat">@fat</h4>
-                            <p>...</p>
-                            <h4 id="mdo">@mdo</h4>
-                            <p>...</p>
+                        <div data-spy="scroll" data-target="#navbar-example" data-offset="200" class="scrollspy-example">
+                            <div id="Overview" class="pt-4">
+                                <h3 class="h3 py-2">Overview</h3>
+                                <div class="col my-4">
+                                    <div class="row">
+                                        <div class="col-3 text-center align-items-center  card-deck border bg-light m-0">
+                                            <div class="card">
+                                                <h3>
+                                                    <i class="fa fa-map-marker"></i>
+                                                    Route
+                                                </h3>
+                                            </div>
+                                        </div>
+                                        <div class="col border box-route-ininerary">
+                                            <p>
+                                                <strong>Day 1: </strong> Arrival in lima
+                                            </p>
+                                            <p>
+                                                <strong>Day 1: </strong> Arrival in lima
+                                            </p>
+                                            <p>
+                                                <strong>Day 1: </strong> Arrival in lima
+                                            </p>
+                                            <p>
+                                                <strong>Day 1: </strong> Arrival in lima
+                                            </p>
+                                            <p>
+                                                <strong>Day 1: </strong> Arrival in lima
+                                            </p>
+                                            <p>
+                                                <strong>Day 1: </strong> Arrival in lima
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-5">
+                                        <div class="col">
+                                            <h4>Included:</h4>
+                                            <ul>
+                                                <li>Guia Local</li>
+                                                <li>Transporte</li>
+                                                <li>Embarque e desembarque no hotel</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col">
+                                            <h4>Not Included:</h4>
+                                            <ul>
+                                                <li>Almoço $16 usd</li>
+                                                <li>axas de entrada $22 usd</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="Itinerary" class="">
+                                <h3 class="h3 py-5">Itinerary</h3>
+                                <div class="timeline">
+                                    <div class="timeline-title">
+                                        <span class="rounded-circle bg-info text-white py-4 font-weight-bold">DAY 1</span>
+                                    </div>
+                                    {{--<div class="col bg-dark">--}}
+                                        {{--sdsdskl--}}
+                                    {{--</div>--}}
+                                    <div class="col">
+                                        {{--<div class="col">--}}
+                                            {{--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorum error esse eveniet, inventore maxime, modi nam nisi nulla saepe vitae voluptatem voluptatum! Corporis deserunt eos fugiat numquam quidem voluptas?--}}
+                                        {{--</div>--}}
+                                        <div class="timeline-content position-relative">
+                                            <div class="row">
+                                                <div class="timeline-point">
+                                                    <i class="fa fa-circle-o"></i>
+                                                </div>
+                                                <div class="timeline-custom-col content-col ">
+                                                    <div class="timeline-location-block">
+                                                        <p class="location-name">Machu picchu <i class="fa fa-map-marker icon-marker"></i></p>
+                                                        <div class="description">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad, esse iste, magnam maiores nobis non odio porro qui repudiandae similique voluptatem. Architecto, blanditiis earum maiores ratione repellat voluptate voluptates!
+                                                        </div>
+                                                    </div>
+                                                    {{--<div class="timeline-custom-col">--}}
+                                                        {{--<div class="timeline-image-block">--}}
+                                                            {{--<img src="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/london.png" alt="">--}}
+                                                        {{--</div>--}}
+                                                    {{--</div>--}}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline">
+                                    <div class="timeline-title">
+                                        <span class="rounded-circle bg-info text-white py-4 font-weight-bold">DAY 1</span>
+                                    </div>
+                                    {{--<div class="col bg-dark">--}}
+                                    {{--sdsdskl--}}
+                                    {{--</div>--}}
+                                    <div class="col">
+                                        {{--<div class="col">--}}
+                                        {{--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorum error esse eveniet, inventore maxime, modi nam nisi nulla saepe vitae voluptatem voluptatum! Corporis deserunt eos fugiat numquam quidem voluptas?--}}
+                                        {{--</div>--}}
+                                        <div class="timeline-content position-relative">
+                                            <div class="row">
+                                                <div class="timeline-point">
+                                                    <i class="fa fa-circle-o"></i>
+                                                </div>
+                                                <div class="timeline-custom-col content-col ">
+                                                    <div class="timeline-location-block">
+                                                        <p class="location-name">Machu picchu <i class="fa fa-map-marker icon-marker"></i></p>
+                                                        <div class="description">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad, esse iste, magnam maiores nobis non odio porro qui repudiandae similique voluptatem. Architecto, blanditiis earum maiores ratione repellat voluptate voluptates!
+                                                        </div>
+                                                    </div>
+                                                    {{--<div class="timeline-custom-col">--}}
+                                                    {{--<div class="timeline-image-block">--}}
+                                                    {{--<img src="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/london.png" alt="">--}}
+                                                    {{--</div>--}}
+                                                    {{--</div>--}}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="timeline timeline-f">
+                                    <div class="timeline-title">
+                                        <span class="rounded-circle bg-info text-white py-4 font-weight-bold">DAY 1</span>
+                                    </div>
+                                    {{--<div class="col bg-dark">--}}
+                                    {{--sdsdskl--}}
+                                    {{--</div>--}}
+                                    <div class="col">
+                                        {{--<div class="col">--}}
+                                        {{--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolorum error esse eveniet, inventore maxime, modi nam nisi nulla saepe vitae voluptatem voluptatum! Corporis deserunt eos fugiat numquam quidem voluptas?--}}
+                                        {{--</div>--}}
+                                        <div class="timeline-content position-relative">
+                                            <div class="row">
+                                                <div class="timeline-point">
+                                                    <i class="fa fa-circle-o"></i>
+                                                </div>
+                                                <div class="timeline-custom-col content-col ">
+                                                    <div class="timeline-location-block">
+                                                        <p class="location-name">Machu picchu <i class="fa fa-map-marker icon-marker"></i></p>
+                                                        <div class="description">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad, esse iste, magnam maiores nobis non odio porro qui repudiandae similique voluptatem. Architecto, blanditiis earum maiores ratione repellat voluptate voluptates!
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi, at atque, cupiditate dicta dolore ea earum ex illo ipsam iste nam nostrum, porro qui quis repellat tempora vero voluptatem?
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi atque, cumque enim, facere in ipsa libero minus praesentium quaerat quidem quo repellendus sit totam, ut vitae! Fugiat quos repudiandae sint!
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolores earum hic libero officiis, velit voluptates! Animi consequatur culpa fugiat libero neque nihil placeat porro, possimus quisquam voluptas. Rem, unde?
+                                                        </div>
+                                                    </div>
+                                                    {{--<div class="timeline-custom-col">--}}
+                                                    {{--<div class="timeline-image-block">--}}
+                                                    {{--<img src="http://wp.swlabs.co/exploore/wp-content/uploads/2016/05/london.png" alt="">--}}
+                                                    {{--</div>--}}
+                                                    {{--</div>--}}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="Optionals" class="pt-4">
+                                <h3 class="h3 py-2">Optionals</h3>
+                                <ul>
+                                    <li>dsjhdshdg</li>
+                                </ul>
+
+                            </div>
+                            <div id="Prices" class="pt-4">
+                                <h3 class="h3 pt-2">Prices</h3>
+                                <div class="card my-4">
+                                    <p class="card-header">Preco por pessoa tendo em conta acomodacao quarto duplo</p>
+                                    <div class="card-body p-0">
+                                        <table class="table table-responsive m-0">
+                                            <thead class="thead-inverse">
+                                            <tr>
+                                                <th>2 Estrellas</th>
+                                                <th>3 Estrellas</th>
+                                                <th>4 Estrellas</th>
+                                                <th>5 Estrellas</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>$123</td>
+                                                <td>$123</td>
+                                                <td>$345</td>
+                                                <td>$3545</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
@@ -168,243 +365,47 @@
 
             </div>
             <div class="col">
-                <div class="card">
-                    <div class="card-body">
-                        <h3>from</h3>
-                        <h2>5000</h2>
-                        <a href="" class="btn btn-info btn-lg btn-info">BOOK NOW</a>
+                <div class="sticky-top">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <div class="d-block text-left">
+                                <span class="text-primary h4 font-weight-bold align-bottom">10 Days</span>
+                                <img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid mb-1" width="100">
+                            </div>
+                            {{--<p class="text-primary h4 font-weight-bold">10 Day</p>--}}
+                            <p class="h3 text-secondary"></p>
+                            <p class="h1 font-montserrat py-2"><small class="text-secondary h5">from </small><sup>$</sup>5000 <small>USD</small></p>
+                            <a href="" class="btn btn-warning btn-block btn-lg btn-info">BOOK NOW</a>
+
+                        </div>
                     </div>
+
+                    <div class="card bg-light my-4">
+                        {{--<img class="card-img-top" src="..." alt="Card image cap">--}}
+                        <div class="content-video-1 card-img-top">
+                            <img src="{{asset('images/prom-peru-4.jpg')}}" alt="video" class="img-fluid">
+                            <div class="content-video-btn-1">
+                                <a href="https://www.youtube.com/watch?v=RDUGFQ9tE7E&feature=youtu.be"  class="html5lightbox content-vbtn-color-blue" ><i class="fa fa-play-circle"></i></a>
+                            </div>
+                        </div>
+                        {{--<img src="{{asset('images/prom-peru-4.jpg')}}" alt="video" class="img-fluid card-img-top" >--}}
+                        <div class="card-body">
+                            <h4 class="card-title">Destinations</h4>
+                            <div class="box-route-ininerary p-0">
+                                <p class="font-weight-bold text-secondary"><i class="fa fa-check"></i> Lima</p>
+                                <p class="font-weight-bold text-secondary"><i class="fa fa-check"></i> Lima</p>
+                                <p class="font-weight-bold text-secondary"><i class="fa fa-check"></i> Lima</p>
+                                <p class="font-weight-bold text-secondary"><i class="fa fa-check"></i> Lima</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="py-5 bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h3 class="text-secondary d-inline align-bottom h6">PERU EÉRIAS <img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid" width="100"></h3>
-                <h2 class="h3 pt-1">SOMENTE PASSEIOS</h2>
-
-            </div>
-        </div>
-        <div class="row py-4">
-            <div class="col text-center">
-                <h5 class="text-secondary d-inline align-bottom h6">Included</h5>
-            </div>
-        </div>
-        <div class="row mt-2 justify-content-center">
-            <div class="col-8">
-                <div class="row text-center">
-                    <div class="col">
-                        <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="img-fluid">
-                        <small class="d-block text-secondary">Assistances</small>
-                    </div>
-                    <div class="col">
-                        <img src="{{asset('images/icons/include/breakfast.png')}}" alt="" class="img-fluid">
-                        <small class="d-block text-secondary">breakfast</small>
-                    </div>
-                    <div class="col">
-                        <img src="{{asset('images/icons/include/entrances.png')}}" alt="" class="img-fluid">
-                        <small class="d-block text-secondary">entrances</small>
-                    </div>
-                    <div class="col">
-                        <img src="{{asset('images/icons/include/flight.png')}}" alt="" class="img-fluid">
-                        <small class="d-block text-secondary">flight</small>
-                    </div>
-                    <div class="col">
-                        <img src="{{asset('images/icons/include/hotels.png')}}" alt="" class="img-fluid">
-                        <small class="d-block text-secondary">hotels</small>
-                    </div>
-                    <div class="col">
-                        <img src="{{asset('images/icons/include/tours.png')}}" alt="" class="img-fluid">
-                        <small class="d-block text-secondary">tours</small>
-                    </div>
-                    <div class="col">
-                        <img src="{{asset('images/icons/include/trains.png')}}" alt="" class="img-fluid">
-                        <small class="d-block text-secondary">trains</small>
-                    </div>
-                    <div class="col">
-                        <img src="{{asset('images/icons/include/transfers.png')}}" alt="" class="img-fluid">
-                        <small class="d-block text-secondary">transfers</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="mt-5">
-            <div class="card-deck owl-carousel owl-theme">
-                <div class="card">
-                    {{--<div class="card-header">--}}
-                    {{--<h4 class="card-title">City tour em cusco</h4>--}}
-                    {{--</div>--}}
-                    <img class="card-img-top " src="{{asset('images/packages/AV100.jpg')}}" alt="Card image cap">
-
-                    <div class="card-body text-center">
-                        <h4 class="card-title">City tour em cusco</h4>
-                        <p class="text-left"><i class="fa fa-clock-o text-primary" aria-hidden="true"></i> 7 Days</p>
-                        <p class="text-left card-text"><i class="fa fa-map-marker text-primary" aria-hidden="true"></i> Machu Picchu, Cusco, Calca.</p>
-                        {{--<a href="#" class="btn btn-primary">Go somewhere</a>--}}
-                    </div>
-                    <div class="card-footer text-muted">
-                        <div class="row">
-                            <div class="col text-left">from</div>
-                            <div class="col text-right font-weight-bold text-primary font-montserrat"><sup>$</sup>2000</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    {{--<div class="card-header">--}}
-                    {{--<h4 class="card-title">City tour em cusco</h4>--}}
-                    {{--</div>--}}
-                    <img class="card-img-top " src="{{asset('images/packages/AV100.jpg')}}" alt="Card image cap">
-                    <div class="card-body text-center">
-                        <h4 class="card-title">City tour em cusco</h4>
-                        <p class="text-left"><i class="fa fa-clock-o text-primary" aria-hidden="true"></i> 7 Days</p>
-                        <p class="text-left card-text"><i class="fa fa-map-marker text-primary" aria-hidden="true"></i> Machu Picchu, Cusco, Calca. lorem</p>
-                        {{--<a href="#" class="btn btn-primary">Go somewhere</a>--}}
-                    </div>
-                    <div class="card-footer text-muted">
-                        <div class="row">
-                            <div class="col text-left">from</div>
-                            <div class="col text-right font-weight-bold text-primary font-montserrat"><sup>$</sup>2000</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    {{--<div class="card-header">--}}
-                    {{--<h4 class="card-title">City tour em cusco</h4>--}}
-                    {{--</div>--}}
-                    <img class="card-img-top " src="{{asset('images/packages/AV100.jpg')}}" alt="Card image cap">
-
-                    <div class="card-body text-center">
-                        <h4 class="card-title">City tour em cusco</h4>
-                        <p class="text-left"><i class="fa fa-clock-o text-primary" aria-hidden="true"></i> 7 Days</p>
-                        <p class="text-left card-text"><i class="fa fa-map-marker text-primary" aria-hidden="true"></i> Machu Picchu, Cusco, Calca.</p>
-                        {{--<a href="#" class="btn btn-primary">Go somewhere</a>--}}
-                    </div>
-                    <div class="card-footer text-muted">
-                        <div class="row">
-                            <div class="col text-left">from</div>
-                            <div class="col text-right font-weight-bold text-primary font-montserrat"><sup>$</sup>2000</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    {{--<div class="card-header">--}}
-                    {{--<h4 class="card-title">City tour em cusco</h4>--}}
-                    {{--</div>--}}
-                    <img class="card-img-top " src="{{asset('images/packages/AV100.jpg')}}" alt="Card image cap">
-
-                    <div class="card-body text-center">
-                        <h4 class="card-title">City tour em cusco</h4>
-                        <p class="text-left"><i class="fa fa-clock-o text-primary" aria-hidden="true"></i> 7 Days</p>
-                        <p class="text-left card-text"><i class="fa fa-map-marker text-primary" aria-hidden="true"></i> Machu Picchu, Cusco, Calca.</p>
-                        {{--<a href="#" class="btn btn-primary">Go somewhere</a>--}}
-                    </div>
-                    <div class="card-footer text-muted">
-                        <div class="row">
-                            <div class="col text-left">from</div>
-                            <div class="col text-right font-weight-bold text-primary font-montserrat"><sup>$</sup>2000</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col text-center">
-                <a href="" class="btn btn-lg btn-primary">All Packages</a>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="py-5">
-    <div class="container">
-
-        <div class="row pb-5 justify-content-center">
-            <div class="col-4">
-                <img src="{{asset('images/logos/logo-andes-c.png')}}" alt="" class="img-fluid">
-            </div>
-        </div>
-
-        <div class="row pt-4">
-            <div class="col">
-                <div class="row justify-content-center">
-                    <div class="col-4">
-                        <img src="{{asset('images/icons/group.png')}}" alt="" class="img-fluid">
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col">
-                        One of two columns
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="row justify-content-center">
-                    <div class="col-4">
-                        <img src="{{asset('images/icons/assistance.png')}}" alt="" class="img-fluid">
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col">
-                        One of two columns
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="row justify-content-center">
-                    <div class="col-4">
-                        <img src="{{asset('images/icons/customize.png')}}" alt="" class="img-fluid">
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col">
-                        One of two columns
-                    </div>
-                </div>
-            </div>
-            <div class="w-100 py-4"></div>
-            <div class="col">
-                <div class="row justify-content-center">
-                    <div class="col-4">
-                        <img src="{{asset('images/icons/location.png')}}" alt="" class="img-fluid">
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col">
-                        One of two columns
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="row justify-content-center">
-                    <div class="col-4">
-                        <img src="{{asset('images/icons/trip.png')}}" alt="" class="img-fluid">
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col">
-                        One of two columns
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="row justify-content-center">
-                    <div class="col-4">
-                        <img src="{{asset('images/icons/departure.png')}}" alt="" class="img-fluid">
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col">
-                        One of two columns
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <section class="py-5 bg-light">
     <div class="container">

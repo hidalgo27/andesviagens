@@ -14189,6 +14189,126 @@ header {
   right: -20px;
 }
 
+.scrollspy-example {
+  position: relative;
+  height: auto;
+  overflow: auto;
+}
+
+.box-route-ininerary {
+  column-count: 2;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  -o-column-count: 2;
+  column-gap: 1.5em;
+  -webkit-column-gap: 1.5em;
+  -moz-column-gap: 1.5em;
+  -o-column-gap: 1.5em;
+  padding: 15px 0 15px 60px;
+}
+
+.timeline {
+  position: relative;
+  padding-top: 10px;
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 35px;
+  height: 100%;
+  width: 2px;
+  background: #d7d7d7;
+  z-index: -99;
+}
+
+.timeline-f:before {
+  height: 50% !important;
+}
+
+.timeline-title span {
+  background-color: #ffdd00;
+  padding: 7px 15px 6px;
+}
+
+.timeline-point {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  background-color: #FFF;
+  border: 3px solid #FFF;
+  margin-top: -8px;
+}
+
+.timeline-point:before {
+  content: "";
+  height: 2px;
+  width: 80px;
+  position: absolute;
+  background-color: #d7d7d7;
+  left: 16px;
+  top: 11px;
+  z-index: -9999;
+}
+
+.timeline-custom-col {
+  margin: 4rem 0 4rem 4rem;
+  position: relative;
+  min-height: 1px;
+  float: left;
+}
+
+.timeline-custom-col:before {
+  content: "";
+  height: 2px;
+  width: 0;
+  position: absolute;
+  background-color: #d7d7d7;
+  left: -40px;
+  top: 50%;
+  z-index: -9999;
+}
+
+.timeline-location-block {
+  padding: 30px 30px 20px 69px;
+  position: relative;
+  background-color: #fafafa;
+  min-height: 250px;
+  border-right: 2px solid #FFF;
+}
+
+.timeline-location-block .location-name {
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: bold;
+  position: relative;
+}
+
+.timeline-location-block .location-name .icon-marker {
+  position: absolute;
+  left: -40px;
+  top: -5px;
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 1%;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.timeline-custom-col.image-col:before {
+  width: 15%;
+}
+
+.timeline-image-block {
+  border-left: 2px solid #FFF;
+  overflow: hidden;
+  cursor: pointer;
+  height: 250px;
+}
+
 /*
  *  Owl Carousel - Core
  */
