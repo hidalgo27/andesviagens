@@ -26,10 +26,10 @@ $(function(){
 */
 
 $(function () {
-    $(".box-more").slice(0, 4).show();
+    $(".box-more").slice(0, 1).show();
     $("#loadMore").on('click', function (e) {
         e.preventDefault();
-        $(".box-more:hidden").slice(0, 4).slideDown();
+        $(".box-more:hidden").slice(0, 1).slideDown();
         if ($(".box-more:hidden").length == 0) {
             $("#loadMore").fadeOut('slow');
         }
@@ -39,19 +39,22 @@ $(function () {
     });
 });
 
-$('a[href=#top]').click(function () {
+$('.totop a.top').click(function () {
     $('body,html').animate({
         scrollTop: 0
-    }, 600);
+    }, 800);
     return false;
 });
 
 $(window).scroll(function () {
-    if ($(this).scrollTop() > 50) {
+    if ($(this).scrollTop() > 250) {
         $('.totop a').fadeIn();
     } else {
         $('.totop a').fadeOut();
     }
 });
 
+
+
+//
 

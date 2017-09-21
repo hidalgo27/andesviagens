@@ -11,6 +11,12 @@ header{
   z-index: 1;
   height: 100vh;
 }
+.header-packages{
+ height: 93vh;
+}
+.bg-light-t{
+  background: rgba(255,255,255,.9);
+}
 //.header-box-height .row{
 //  height: 100vh;
 //}
@@ -23,22 +29,87 @@ header{
   -o-background-size: cover;
   background-size: cover;
 }
+
+
+.carousel-fade .carousel-inner .carousel-item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*
+WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+now override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .carousel-fade .carousel-inner > .carousel-item.next,
+  .carousel-fade .carousel-inner > .carousel-item.active.right {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .carousel-item.prev,
+  .carousel-fade .carousel-inner > .carousel-item.active.left {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .carousel-item.next.left,
+  .carousel-fade .carousel-inner > .carousel-item.prev.right,
+  .carousel-fade .carousel-inner > .carousel-item.active {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+form.registration-form fieldset {
+  display: none;
+}
+
+
 .nav-top-viagens {
   padding: 0 !important;
 }
 .nav-viagens{
-  position: relative;
-  margin-top: -56px;
+  position: sticky;
+  margin-top: -7vh;
   font-size: 18px;
   background: rgba(0,0,0,.8);
   z-index: 2;
+  height: 7vh;
 }
 .nav-viagens a{
-  padding: 15px 0;
+  padding: 2vh 0;
 }
 //margin
 .mt-12p{
   margin-top: 12%;
+}
+.mt-40vh{
+  margin-top: 40vh;
+}
+.mt-25vh{
+  margin-top: 25vh;
 }
 //video
 #video_background {
@@ -83,9 +154,10 @@ header{
 
 }
 .totop {
+  z-index: 999;
   position: fixed;
-  bottom: 10px;
-  right: 20px;
+  bottom: 8rem;
+  right: 1rem;
 }
 .totop a {
   display: none;

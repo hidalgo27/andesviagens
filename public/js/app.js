@@ -794,6 +794,8 @@ try {
 
   // require('./vendors/popper.min');
   // require('./vendors/bootstrap.min');
+  // require('jquery-ui-dist/');
+  // require('jquery-ui');
 } catch (e) {}
 
 /**

@@ -1,0 +1,1 @@
+<a href="/"><img src="{{asset('images/logos/logo-andes-b.png')}}" alt="" class="img-fluid"></a>

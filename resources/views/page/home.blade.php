@@ -34,7 +34,7 @@
                 <div class="col-3">
                     <div class="row justify-content-center">
                         <div class="mt-2">
-                            <img src="{{asset('images/logos/logo-andes-b.png')}}" alt="" class="img-fluid">
+                            @include('page.include.logo')
                         </div>
                     </div>
                 </div>
@@ -85,76 +85,34 @@
     </video/>
 </header>
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top nav-viagens d-sm-none">
-    <div class="container">
-        <a class="navbar-brand" href="#"><img src="{{asset('images/logos/logo-andes.png')}}" width="180" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pacotes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Destino</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">A empresa</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Depoimentos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Dicas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contato</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<nav class="nav nav-pills nav-fill sticky-top nav-viagens navbar-expand-lg d-none d-sm-flex">
-    {{--<a class="nav-item nav-link active" href="#">Active</a>--}}
-    <a class="nav-item nav-link text-light" href="#">PACOTES</a>
-    <a class="nav-item nav-link text-light" href="#">DESTINO</a>
-    <a class="nav-item nav-link text-light" href="#">A EMPRESA</a>
-    <a class="nav-item nav-link text-light" href="#">DICAS</a>
-    <a class="nav-item nav-link text-light" href="#">CONTATO</a>
-    {{--<a class="nav-item nav-link disabled" href="#">Disabled</a>--}}
-</nav>
+@include('page.include.menu')
 <!-- /. -->
 <!-- Page Content -->
 <section class="py-4 bg-light">
     <div class="container">
 
-
         <div class="">
             <div class="mb-4 text-center">
                 <h4>FORMULÁRIO DE CONTATO</h4>
             </div>
-            <div class="">
+            <form id="d_form">
+                {{csrf_field()}}
                 <div class="card-deck rounded">
                     <div class="card border-top-0 border-bottom-0 border-left-0 m-0 rounded-0">
                         <div class="card-body">
-                            <label class="d-block">Informacion Personal</label>
+                            <div class="d-block mb-3">
+                                <span class="text-secondary align-bottom">Informacion Personal</span>
+                                <img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid mb-1" width="100">
+                            </div>
                             <div class="row">
                                 <div class="col">
                                     <div class="form-group">
                                         {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Nome</label>--}}
-                                        <input type="text" class="form-control" id="inputEmail4" placeholder="Nome Completo">
+                                        <input type="text" class="form-control" id="d_name" placeholder="Nome Completo">
                                     </div>
                                     <div class="form-group">
                                         {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Email</label>--}}
-                                        <input type="text" class="form-control" id="inputEmail4" placeholder="Seu Email">
+                                        <input type="text" class="form-control" id="d_email" placeholder="Seu Email">
                                     </div>
                                 </div>
                             </div>
@@ -162,13 +120,13 @@
                                 <div class="col">
                                     <div class="form-group">
                                         {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Data</label>--}}
-                                        <input type="text" class="form-control form-control-sm" id="inputEmail4" placeholder="Data Viagem">
+                                        <input type="text" class="form-control form-control-sm" id="d_date" placeholder="Data Viagem">
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="form-group">
                                         {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Telefone</label>--}}
-                                        <input type="text" class="form-control form-control-sm" id="inputEmail4" placeholder="Número de Telefone">
+                                        <input type="tel" class="form-control form-control-sm" id="d_tel" placeholder="N° de Telefone">
                                     </div>
                                 </div>
                             </div>
@@ -176,13 +134,13 @@
                                 <div class="col">
                                     <div class="form-group">
                                         {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Dias</label>--}}
-                                        <input type="text" class="form-control form-control-sm" id="inputEmail4" placeholder="Número de Dias">
+                                        <input type="number" class="form-control form-control-sm" id="d_duration" placeholder="N° de Dias">
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="form-group">
                                         {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Passageiros</label>--}}
-                                        <input type="text" class="form-control form-control-sm" id="inputEmail4" placeholder="Número de Passageiros">
+                                        <input type="number" class="form-control form-control-sm" id="d_numero" placeholder="N° de Passageiros">
                                     </div>
                                 </div>
                             </div>
@@ -191,131 +149,88 @@
                     <div class="card border-0 m-0">
                         <div class="card-body">
                             {{--<h4 class="card-title">Card title</h4>--}}
-                            <label class="d-block">Eu Gostaria de visitar</label>
-                            <div class="" data-toggle="buttons">
-                                <label class="btn btn-outline-primary">
-                                    <input type="checkbox" checked autocomplete="off"> Machupicchu
-                                </label>
-                                <label class="btn btn-outline-primary">
-                                    <input type="checkbox" autocomplete="off"> Cusco
-                                </label>
-                                <label class="btn btn-outline-primary">
-                                    <input type="checkbox" autocomplete="off"> Lago titicaca
-                                </label>
-                                <label class="btn btn-outline-primary">
-                                    <input type="checkbox" autocomplete="off"> Lima
-                                </label>
-                                <label class="btn btn-outline-primary">
-                                    <input type="checkbox" autocomplete="off"> Puno
-                                </label>
+                            {{--<label class="d-block">Eu Gostaria de visitar</label>--}}
+                            <div class="d-block mb-3">
+                                <span class="text-secondary align-bottom">Eu Gostaria de visitar</span>
+                                <img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid mb-1" width="100">
+                            </div>
+                            <div class="">
+                                <div class="row">
+                                    <div class="col" data-toggle="buttons">
+                                        <label class="btn btn-outline-primary btn-block">
+                                            <input type="checkbox"  autocomplete="off" name="destinations[]" value="Machu Picchu"> Machu Picchu
+                                        </label>
+                                    </div>
+                                    <div class="col" data-toggle="buttons">
+                                        <label class="btn btn-outline-primary btn-block">
+                                            <input type="checkbox" autocomplete="off" name="destinations[]" value="Cusco"> Cusco
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col" data-toggle="buttons">
+                                        <label class="btn btn-outline-primary btn-block">
+                                            <input type="checkbox" checked autocomplete="off" name="destinations[]" value="Lago Titicaca"> Lago titicaca
+                                        </label>
+                                    </div>
+                                    <div class="col" data-toggle="buttons">
+                                        <label class="btn btn-outline-primary btn-block">
+                                            <input type="checkbox" autocomplete="off" name="destinations[]" value="Puno"> Puno
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col" data-toggle="buttons">
+                                        <label class="btn btn-outline-primary btn-block">
+                                            <input type="checkbox" checked autocomplete="off" name="destinations[]" value="Lima"> Lima
+                                        </label>
+                                    </div>
+                                    <div class="col" data-toggle="buttons">
+                                        <label class="btn btn-outline-primary btn-block">
+                                            <input type="checkbox" autocomplete="off" name="destinations[]" value="Lineas de Nazca"> Lineas de Nazca
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="input-group mt-3">
-                                <span class="input-group-addon" id="basic-addon3">Otros</span>
-                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                            <div class="input-group mt-2">
+                                <span class="input-group-addon" id="">Otros</span>
+                                <input type="text" class="form-control" id="d_otros" aria-describedby="basic-addon3">
                             </div>
                         </div>
                     </div>
                     <div class="card border-top-0 border-bottom-0 border-right-0 m-0 rounded-0">
                         <div class="card-body">
                             <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Example textarea</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <div class="d-block mb-3">
+                                    <span class="text-secondary align-bottom">Alguna duda?</span>
+                                    <img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid mb-1" width="100">
+                                </div>
+                                <textarea class="form-control" id="d_comment" rows="5" placeholder="Como você imagina uma viagem inesquecivel ao Perú, Sugestoes especiais, perguntas, comentarios"></textarea>
                             </div>
-                            <div class="mt-4">
-                                <button type="submit" class="btn btn-lg btn-block btn-primary">Submit</button>
+                            <div class="my-3">
+                                {{--<button type="submit" class="btn btn-lg btn-block btn-warning">Submit</button>--}}
+
+                                <button class="btn btn-lg btn-block btn-warning" id="d_send" type="button" onclick="design()">Submit
+                                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                </button>
+                                <ul class="fa-ul pull-right d-none" id="loader2">
+                                    <li><i class="fa-li fa fa-spinner fa-spin"></i> <i>Sending...</i></li>
+                                </ul>
+
                             </div>
                         </div>
+                    </div>
+
+                    <div class="alert alert-success alert-dismissible fade d-none" id="d_alert" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <strong>Muito obrigados</strong> por seu contato com ANDES VIAGENS,nas proximas 24 houras voce tera uma resposta de nossos agentes de viagens para ajuda-lo com o planejamento de sua viagem. :)
                     </div>
                 </div>
 
-
-                <form class="py-4 d-none">
-                    {{--<div class="row">--}}
-                        {{--<div class="col text-center">--}}
-                            {{--<p class="h3 py-2">FORMULÁRIO DE CONTATO</p>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                    <div class="row">
-                        <div class="col">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="form-group">
-                                        {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Nome</label>--}}
-                                        <input type="text" class="form-control" id="inputEmail4" placeholder="Nome Completo">
-                                    </div>
-                                    <div class="form-group">
-                                        {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Email</label>--}}
-                                        <input type="text" class="form-control" id="inputEmail4" placeholder="Seu Email">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="form-group">
-                                        {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Data</label>--}}
-                                        <input type="text" class="form-control form-control-sm" id="inputEmail4" placeholder="Data Viagem">
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="form-group">
-                                        {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Telefone</label>--}}
-                                        <input type="text" class="form-control form-control-sm" id="inputEmail4" placeholder="Número de Telefone">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="form-group">
-                                        {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Dias</label>--}}
-                                        <input type="text" class="form-control form-control-sm" id="inputEmail4" placeholder="Número de Dias">
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="form-group">
-                                        {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Passageiros</label>--}}
-                                        <input type="text" class="form-control form-control-sm" id="inputEmail4" placeholder="Número de Passageiros">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <label class="col-form-label d-block">Eu Gostaria de visitar</label>
-                            <div class="" data-toggle="buttons">
-                                <label class="btn btn-outline-primary btn-lg">
-                                    <input type="checkbox" checked autocomplete="off"> Machupicchu
-                                </label>
-                                <label class="btn btn-outline-primary btn-lg">
-                                    <input type="checkbox" autocomplete="off"> Cusco
-                                </label>
-                                <label class="btn btn-outline-primary btn-lg">
-                                    <input type="checkbox" autocomplete="off"> Lago titicaca
-                                </label>
-                                <label class="btn btn-outline-primary btn-lg">
-                                    <input type="checkbox" autocomplete="off"> Lima
-                                </label>
-                                <label class="btn btn-outline-primary btn-lg">
-                                    <input type="checkbox" autocomplete="off"> Puno
-                                </label>
-                            </div>
-
-                            <div class="input-group">
-                                <span class="input-group-addon" id="basic-addon3">Otros</span>
-                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Example textarea</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
-                            </div>
-                            <div class="form-group mt-4">
-                                <button type="submit" class="btn btn-lg btn-block btn-primary">sdsdSubmit</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
+            </form>
         </div>
     </div>
 </section>
@@ -374,22 +289,7 @@
         </div>
     </div>
 </section>
-{{--<section class="bg-light">--}}
-{{--<div class="container">--}}
-{{--<div class="row">--}}
-{{--<div class="col">--}}
-{{--sdsd--}}
-{{--</div>--}}
-{{--</div>--}}
-{{--</div>--}}
-{{--</section>--}}
-{{--<video id="sdsd" class="video-js vjs-default-skin" width="640px" height="267px"--}}
-{{--controls preload="none" poster='http://video-js.zencoder.com/oceans-clip.jpg'--}}
-{{--data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }'>--}}
-{{--<source src="https://vjs.zencdn.net/v/oceans.mp4" type='video/mp4' />--}}
-{{--<source src="https://vjs.zencdn.net/v/oceans.webm" type='video/webm' />--}}
-{{--</video>--}}
-<!-- Button trigger modal -->
+
 
 <section class="py-5 bg-light">
     <div class="container">
@@ -446,86 +346,47 @@
 
         <div class="mt-5">
             <div class="card-deck owl-carousel owl-theme">
+                @foreach($paquetes as $paquete)
                 <div class="card">
                     {{--<div class="card-header">--}}
                     {{--<h4 class="card-title">City tour em cusco</h4>--}}
                     {{--</div>--}}
-                    <a href="{{route('home_show_path', '1')}}"><img class="card-img-top " src="{{asset('images/packages/AV100.jpg')}}" alt="Card image cap"></a>
+                    <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquete->titulo)))}}"><img class="card-img-top " src="{{asset('images/packages/'.$paquete->imagen.'')}}" alt="Card image cap"></a>
 
                     <div class="card-body text-center">
-                        <h4 class="card-title">City tour em cusco</h4>
-                        <p class="text-left"><i class="fa fa-clock-o text-primary" aria-hidden="true"></i> 7 Days</p>
-                        <p class="text-left card-text"><i class="fa fa-map-marker text-primary" aria-hidden="true"></i> Machu Picchu, Cusco, Calca.</p>
+                        <h4 class="card-title"><a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquete->titulo)))}}" class="text-dark">{{$paquete->titulo}}</a></h4>
+                        <p class="text-left"><i class="fa fa-clock-o text-primary" aria-hidden="true"></i> {{$paquete->duracion}} Days</p>
+                        <p class="text-left card-text"><i class="fa fa-map-marker text-primary" aria-hidden="true"></i>
+                            @php
+                                $i = 1;
+                                $num_des = count($paquete_destinos->where('idpaquetes',$paquete->id));
+                            @endphp
+                            @foreach($paquete_destinos->where('idpaquetes',$paquete->id) as $paquete_destino)
+                                {{ucwords(strtolower($paquete_destino->destinos->nombre))}}@if($i < $num_des),@else.@endif
+                                @php $i++; @endphp
+                            @endforeach
+                        </p>
                         {{--<a href="#" class="btn btn-primary">Go somewhere</a>--}}
                     </div>
                     <div class="card-footer text-muted">
                         <div class="row">
                             <div class="col text-left">from</div>
-                            <div class="col text-right font-weight-bold text-primary font-montserrat"><sup>$</sup>2000</div>
+                            <div class="col text-right font-weight-bold text-primary font-montserrat"><sup>$</sup>
+                                @foreach($paquete->precio_paquetes as $precio)
+                                    @if($precio->estrellas == 2)
+                                        {{$precio->precio}}
+                                    @endif
+                                @endforeach
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    {{--<div class="card-header">--}}
-                    {{--<h4 class="card-title">City tour em cusco</h4>--}}
-                    {{--</div>--}}
-                    <img class="card-img-top " src="{{asset('images/packages/AV100.jpg')}}" alt="Card image cap">
-                    <div class="card-body text-center">
-                        <h4 class="card-title">City tour em cusco</h4>
-                        <p class="text-left"><i class="fa fa-clock-o text-primary" aria-hidden="true"></i> 7 Days</p>
-                        <p class="text-left card-text"><i class="fa fa-map-marker text-primary" aria-hidden="true"></i> Machu Picchu, Cusco, Calca. lorem</p>
-                        {{--<a href="#" class="btn btn-primary">Go somewhere</a>--}}
-                    </div>
-                    <div class="card-footer text-muted">
-                        <div class="row">
-                            <div class="col text-left">from</div>
-                            <div class="col text-right font-weight-bold text-primary font-montserrat"><sup>$</sup>2000</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    {{--<div class="card-header">--}}
-                    {{--<h4 class="card-title">City tour em cusco</h4>--}}
-                    {{--</div>--}}
-                    <img class="card-img-top " src="{{asset('images/packages/AV100.jpg')}}" alt="Card image cap">
-
-                    <div class="card-body text-center">
-                        <h4 class="card-title">City tour em cusco</h4>
-                        <p class="text-left"><i class="fa fa-clock-o text-primary" aria-hidden="true"></i> 7 Days</p>
-                        <p class="text-left card-text"><i class="fa fa-map-marker text-primary" aria-hidden="true"></i> Machu Picchu, Cusco, Calca.</p>
-                        {{--<a href="#" class="btn btn-primary">Go somewhere</a>--}}
-                    </div>
-                    <div class="card-footer text-muted">
-                        <div class="row">
-                            <div class="col text-left">from</div>
-                            <div class="col text-right font-weight-bold text-primary font-montserrat"><sup>$</sup>2000</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    {{--<div class="card-header">--}}
-                    {{--<h4 class="card-title">City tour em cusco</h4>--}}
-                    {{--</div>--}}
-                    <img class="card-img-top " src="{{asset('images/packages/AV100.jpg')}}" alt="Card image cap">
-
-                    <div class="card-body text-center">
-                        <h4 class="card-title">City tour em cusco</h4>
-                        <p class="text-left"><i class="fa fa-clock-o text-primary" aria-hidden="true"></i> 7 Days</p>
-                        <p class="text-left card-text"><i class="fa fa-map-marker text-primary" aria-hidden="true"></i> Machu Picchu, Cusco, Calca.</p>
-                        {{--<a href="#" class="btn btn-primary">Go somewhere</a>--}}
-                    </div>
-                    <div class="card-footer text-muted">
-                        <div class="row">
-                            <div class="col text-left">from</div>
-                            <div class="col text-right font-weight-bold text-primary font-montserrat"><sup>$</sup>2000</div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
         <div class="row mt-5">
             <div class="col text-center">
-                <a href="" class="btn btn-lg btn-primary">All Packages</a>
+                <a href="{{route('package_show_path')}}" class="btn btn-lg btn-primary">All Packages</a>
             </div>
         </div>
     </div>
@@ -617,135 +478,8 @@
     </div>
 </section>
 
-<section class="py-5 bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h3 class="text-secondary d-inline align-bottom h6">PERU EÉRIAS <img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid" width="100"></h3>
-                <h2 class="h3 pt-1">DESTINOS</h2>
+@include('page.include.footer')
 
-            </div>
-        </div>
-        <div class="row py-3">
-            <div class="col-8">
-                <div class="card text-white clearfix">
-                    <img class="card-img" src="{{asset('images/destinations/home/machupicchu-2.jpg')}}" alt="Card image">
-                    <div class="card-img-overlay card-overlay-rgba">
-                        <h4 class="card-title">Machu Picchu</h4>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text">Last updated 3 mins ago</p>
-                        <a href="" class="btn btn-success">View More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card text-white">
-                    <img class="card-img" src="{{asset('images/destinations/home/lima.jpg')}}" alt="Card image">
-                    <div class="card-img-overlay card-overlay-rgba">
-                        <h4 class="card-title">Lima</h4>
-                        <p class="card-text">This is a wider card with supporting...</p>
-                        <a href="" class="btn btn-success btn-info btn-sm">View More</a>
-                    </div>
-                </div>
-                <div class="card text-white mt-3">
-                    <img class="card-img" src="{{asset('images/destinations/home/titicaca.jpg')}}" alt="Card image">
-                    <div class="card-img-overlay card-overlay-rgba">
-                        <h4 class="card-title">Puno</h4>
-                        <p class="card-text">This is a wider card with supporting...</p>
-                        <a href="" class="btn btn-success btn-info btn-sm">View More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col text-center">
-                <a href="" class="btn btn-lg btn-primary">All Destinations</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h3 class="text-secondary d-inline align-bottom h6">PERU EÉRIAS <img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid" width="100"></h3>
-                <h2 class="h3 pt-1">Packages</h2>
-
-            </div>
-        </div>
-        <div class="row box-more py-5">
-            <div class="col">
-                <div class="row">
-                    <div class="col">
-                        <img src="https://cdn.goodlayers.com/traveltour/wp-content/uploads/2016/06/shutterstock_254090041-600x700.jpg" alt="" class="img-fluid">
-                    </div>
-                    <div class="col-6 mt-4 border border-top-0 border-left-0 border-bottom-0">
-                        <h4 class="card-title">City tour em cusco</h4>
-                        <p class="text-left"><i class="fa fa-clock-o text-primary" aria-hidden="true"></i> 7 Days</p>
-                        <p class="text-left card-text"><i class="fa fa-map-marker text-primary" aria-hidden="true"></i> Machu Picchu, Cusco, Calca.</p>
-                        <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus omnis temporibus totam vel? Blanditiis dolorem, dolores ex, excepturi incidunt molestias nesciunt nisi optio possimus praesentium quaerat sint velit voluptas.</p>
-                    </div>
-                    <div class="col text-center py-5 align-items-center card-deck">
-                        <div class="card border-0">
-                            <span class="text-secondary align-self-center h3">from</span>
-                            <p class="h1 font-montserrat font-weight-bold">$5000</p>
-                            <a href="" class="btn btn-primary btn-lg btn mt-3">View Details</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        {{--<div class="row box-more py-5">--}}
-        {{--<div class="col">--}}
-        {{--sdsdsd--}}
-        {{--</div>--}}
-        {{--</div>--}}
-        <div class="row">
-            <div class="col text-center">
-                <a href="#" class="btn btn-info text-center" id="loadMore">View More <i class="fa fa-chevron-down d-block" aria-hidden="true"></i></a>
-            </div>
-        </div>
-
-        <p class="totop">
-            <a href="#top">Back to top</a>
-        </p>
-    </div>
-</section>
-
-
-<div class="container-parallax">
-    <section>
-        <div class="image" data-type="background" data-speed="2"></div>
-        <div class="stuff" data-type="content">
-            <div class="row justify-content-center">
-                <div class="col-3">
-                    <img src="{{asset('images/logos/logo-andes.png')}}" alt="" class="img-fluid">
-                </div>
-            </div>
-            <div class="row pt-3">
-                <div class="col">
-                    <h5 class="font-weight-light text-light">CONFIANZA</h5>
-                    {{--<h3>Andes Viagens</h3>--}}
-                    <p class="py-3 lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto autem consequuntur culpa enim est harum id illo impedit ipsa iste, minima molestiae mollitia pariatur quasi quis vitae voluptate! Tenetur!</p>
-                    <a href="" class="btn btn-xs btn-success"><img src="{{asset('images/icons/whatsapp.png')}}" alt="" width="30"> chatea con nosotros ahora</a>
-                    <a href="" class="btn btn-xs btn-primary"><img src="{{asset('images/icons/messenger.png')}}" alt="" width="30"> chatea con nosotros ahora</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-</div>
-
-
-
-<!-- Footer -->
-<footer class="py-5 bg-dark">
-    <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
-    </div>
-    <!-- /.container -->
-</footer>
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
@@ -828,6 +562,98 @@
 
     parallaxIt();
 
+</script>
+<script>
+    function design(){
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('[name="_token"]').val()
+            }
+        });
+
+        $("#d_send").attr("disabled", true);
+
+        var filter=/^[A-Za-z][A-Za-z0-9_]*@[A-Za-z0-9_]+.[A-Za-z0-9_.]+[A-za-z]$/;
+
+
+        var s_destinations = document.getElementsByName('destinations[]');
+        var $destinations = "";
+        for (var i = 0, l = s_destinations.length; i < l; i++) {
+            if (s_destinations[i].checked) {
+                $destinations += s_destinations[i].value+' , ';
+            }
+        }
+        s_destinations = $destinations.substring(0,$destinations.length-3);
+
+
+        var s_name = $('#d_name').val();
+        var s_email = $('#d_email').val();
+        var s_date = $('#d_date').val();
+        var s_tel = $('#d_tel').val();
+        var s_duration = $('#d_duration').val();
+        var s_number = $('#d_numero').val();
+        var s_other = $('#d_otros').val();
+
+
+        var s_comment = $('#d_comment').val();
+
+
+        if (filter.test(s_email)){
+            sendMail = "true";
+        } else{
+            $('#d_email').css("border-bottom", "2px solid #FF0000");
+            sendMail = "false";
+        }
+        if (s_name.length == 0 ){
+            $('#d_name').css("border-bottom", "2px solid #FF0000");
+            var sendMail = "false";
+        }
+
+        if(sendMail == "true"){
+            var datos = {
+
+                "txt_destinations" : s_destinations,
+                "txt_other" : s_other,
+
+                "txt_name" : s_name,
+                "txt_email" : s_email,
+                "txt_date" : s_date,
+                "txt_tel" : s_tel,
+                "txt_duration" : s_duration,
+                "txt_number" : s_number,
+                "txt_comment" : s_comment,
+
+            };
+            $.ajax({
+                data:  datos,
+                url:   "{{route('contact_path')}}",
+                type:  'post',
+
+                beforeSend: function () {
+
+                    $('#d_send').removeClass('show');
+                    $("#d_send").addClass('d-none');
+
+                    $("#loader2").removeClass('d-none');
+                    $("#loader2").addClass('show');
+                },
+                success:  function (response) {
+                    $('#d_form')[0].reset();
+                    $('#d_send').removeClass('d-none');
+                    $('#d_send').addClass('show');
+                    $("#loader2").removeClass('show');
+                    $("#loader2").addClass('d-none');
+                    $('#d_alert').removeClass('d-none');
+                    $("#d_alert").addClass('show');
+                    $("#d_alert b").html(response);
+                    $("#d_alert").fadeIn('slow');
+                    $("#d_send").removeAttr("disabled");
+                }
+            });
+        } else{
+            $("#d_send").removeAttr("disabled");
+        }
+    }
 </script>
 
 </body>
