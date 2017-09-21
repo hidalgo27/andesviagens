@@ -101,9 +101,13 @@
     </div>
     <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active" style="background-image: url({{asset('images/sliders/slider-1.jpg')}})">
+            <div class="carousel-item active" style="background-image: url({{asset('images/destinations/slider-1.jpg')}})">
             </div>
-            <div class="carousel-item" style="background-image: url({{asset('images/sliders/slider-2.jpg')}})">
+            <div class="carousel-item" style="background-image: url({{asset('images/destinations/slider-2.jpg')}})">
+            </div>
+            <div class="carousel-item" style="background-image: url({{asset('images/destinations/slider-3.jpg')}})">
+            </div>
+            <div class="carousel-item" style="background-image: url({{asset('images/destinations/slider-4.jpg')}})">
             </div>
         </div>
     </div>
@@ -177,7 +181,7 @@
             <div class="col">
                 <div class="card-columns">
 
-                    @foreach($destinos->sortBy('nombre') as $destino)
+                    @foreach($destinos->sortBy('nombre')->where('estado', 1) as $destino)
 
                         <div class="card mb-4">
                             <a href="{{route('destinations_show', str_replace(' ', '-', strtolower($destino->nombre)))}}"><img class="card-img-top img-fluid" src="{{asset('images/destinations/home/machupicchu.jpg')}}" alt="Card image cap"></a>
@@ -201,10 +205,6 @@
         {{--</div>--}}
         {{--</div>--}}
 
-
-        <p class="totop">
-            <a href="#top">Back to top</a>
-        </p>
     </div>
 </section>
 
