@@ -211,16 +211,19 @@
                                             </thead>
                                             <tbody>
                                             <tr>
-                                                <td>
-                                                    @foreach($paquetes->precio_paquetes as $precio)
-                                                        @if($precio->estrellas == 2)
+
+                                                @foreach($paquetes->precio_paquetes->sortBy('estrellas') as $precio)
+                                                    @if($precio->precio > 0)
+                                                        <td>
                                                             <sup>$</sup>{{$precio->precio}}
-                                                        @endif
-                                                    @endforeach
-                                                </td>
-                                                <td>A pedido</td>
-                                                <td>A pedido</td>
-                                                <td>A pedido</td>
+                                                        </td>
+                                                        @else
+                                                        <td>
+                                                            A pedido
+                                                        </td>
+                                                    @endif
+                                                @endforeach
+
                                             </tr>
                                             </tbody>
                                         </table>

@@ -157,11 +157,11 @@
 </div>
 
 
-
 <!-- Footer -->
 <footer class="py-5 bg-dark">
     <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; GotoPeru 2017</p>
+        <p class="text-center text-white">GOTOPERU GROUP PROVIDES YOU WITH VACATIONS OF A LIFETIME SINCE 2009</p>
+        <p class="m-0 text-center text-white">ANDES VIAGENS is part of GOTOPERU GROUP © Copyright 2017 | GOTOPERU.COM   ANDESVIAGENS.COM</p>
     </div>
     <!-- /.container -->
     <p class="totop">

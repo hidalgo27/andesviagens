@@ -190,6 +190,9 @@
 
     </div>
 </section>
+
+@stop
+
 @push('script')
     <script>
         //full destinatiuns
@@ -336,5 +339,3 @@
         });
     </script>
 @endpush
-@stop
-
