@@ -8,7 +8,9 @@
     <meta name="author" content="">
     <link rel="icon" href="">
 
-    <title>Andes</title>
+    <title>Machu Picchu | Pacotes de Viagem e Tour ao Peru</title>
+    <meta name="description" content="Pacotes de Viagens para o Peru com um operador peruano autêntico, escritórios em Lima, Cusco, Arequipa e Puno. Em Machupicchu oferecemos saidas diarias">
+    <meta name="keywords" content="pacotes de viagem Peru, Cusco passeios, pacotes de viagem para o Peru, férias em Peru, Passeios a peru, ofertas para Machu Picchu">
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="{{asset("css/app.css")}}">
