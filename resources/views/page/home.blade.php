@@ -274,8 +274,8 @@
                                 <small>CEO</small>
                             </div>
                             <div class="col">
-                                <p class="mb-0">CEL: 958.198.847</p>
-                                <small>paul@gotoperu.org</small>
+                                {{--<p class="mb-0">CEL: 958.198.847</p>--}}
+                                <small>paul@gotoperu.com</small>
                             </div>
                         </div>
                     </div>
