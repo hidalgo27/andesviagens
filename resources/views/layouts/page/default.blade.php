@@ -13,7 +13,7 @@
     <meta name="keywords" content="pacotes de viagem Peru, Cusco passeios, pacotes de viagem para o Peru, férias em Peru, Passeios a peru, ofertas para Machu Picchu">
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="{{asset("css/app.css")}}">
+    <link rel="stylesheet" href="{{mix("css/app.css")}}">
 
 </head>
 
