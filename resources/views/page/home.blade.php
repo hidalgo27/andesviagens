@@ -323,10 +323,10 @@
                         <img src="{{asset('images/icons/include/entrances.png')}}" alt="" class="img-fluid">
                         <small class="d-block text-secondary">Entradas</small>
                     </div>
-                    <div class="col">
-                        <img src="{{asset('images/icons/include/flight.png')}}" alt="" class="img-fluid">
-                        <small class="d-block text-secondary">Voos</small>
-                    </div>
+                    {{--<div class="col">--}}
+                        {{--<img src="{{asset('images/icons/include/flight.png')}}" alt="" class="img-fluid">--}}
+                        {{--<small class="d-block text-secondary">Voos</small>--}}
+                    {{--</div>--}}
                     <div class="col">
                         <img src="{{asset('images/icons/include/hotels.png')}}" alt="" class="img-fluid">
                         <small class="d-block text-secondary">Hoteis</small>
