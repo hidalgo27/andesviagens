@@ -143,7 +143,8 @@ class HomeController extends Controller
 
     public function contact()
     {
-        $from = 'hidalgochpnce@gmail.com';
+        $from = 'diana@andesviagens.com';
+        $from2 = 'paul@gotoperu.com';
 
         $destinations = $_POST['txt_destinations'];
         $other = $_POST['txt_other'];
@@ -194,11 +195,11 @@ class HomeController extends Controller
                 'email' => $email,
                 'tel' => $tel,
                 'comment' => $comment
-            ], function ($messaje) use ($from) {
-                $messaje->to($from, 'Andes Viagens')
+            ], function ($messaje) use ($from2) {
+                $messaje->to($from2, 'Andes Viagens')
                     ->subject('AndesViagens')
                     /*->attach('ruta')*/
-                    ->from('info@andesviagens.com', 'andesviagens.com');
+                    ->from('diana@andesviagens.com', 'andesviagens.com');
             });
 
 
