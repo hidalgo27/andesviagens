@@ -8,7 +8,7 @@
                         <tbody>
                         <tr bgcolor="#ffffff">
                             <td valign="top" style="padding:10px 35px 0 35px;color:#ffffff">
-                                <img class="CToWUd" width="350" alt="logo peruvian destinations" src="http://beta.andesviagens.com/images/logos/logo-andes-c.png" style="vertical-align:top;max-width:220px">
+                                <img class="CToWUd" width="350" alt="logo peruvian destinations" src="http://andesviagens.com/images/logos/logo-andes-c.png" style="vertical-align:top;max-width:220px">
                             </td>
 
                         </tr>
@@ -27,10 +27,10 @@
                     <p>
                         100% OPERADORES DE VIAGENS PERUANOS COM ESCRITORIO PRINCIPAL EM CUSCO E SEDES EM LIMA,PUNO E AREQUIPA
                     </p>
-                    <p><a href="http://beta.andesviagens.com/" style="color:blue" target="_blank">Andes Viagens</a></p>
+                    <p><a href="http://andesviagens.com/" style="color:blue" target="_blank">Andes Viagens</a></p>
                 </td>
                 <td>
-                    <img class="CToWUd" width="250" alt="logo peruvian destinations" src="http://beta.andesviagens.com/images/logos/logo-andes-c.png" style="vertical-align:top;max-width:220px">
+                    <img class="CToWUd" width="250" alt="logo peruvian destinations" src="http://andesviagens.com/images/logos/logo-andes-c.png" style="vertical-align:top;max-width:220px">
                 </td>
             </tr>
             </tbody>
