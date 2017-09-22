@@ -389,51 +389,5 @@
     </div>
 </section>
 
-<section class="py-5 bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h3 class="text-secondary d-inline align-bottom h6">PERU EÉRIAS <img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid" width="100"></h3>
-                <h2 class="h3 pt-1">DESTINOS</h2>
-
-            </div>
-        </div>
-        <div class="row py-3">
-            <div class="col-8">
-                <div class="card bg-dark text-white">
-                    <img class="card-img" src="{{asset('images/destinations/home/machupicchu.jpg')}}" alt="Card image">
-                    <div class="card-img-overlay">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text">Last updated 3 mins ago</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card bg-dark text-white">
-                    <img class="card-img" src="{{asset('images/destinations/home/machupicchu.jpg')}}" alt="Card image">
-                    <div class="card-img-overlay">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text">Last updated 3 mins ago</p>
-                    </div>
-                </div>
-                <div class="card bg-dark text-white mt-3">
-                    <img class="card-img" src="{{asset('images/destinations/home/machupicchu.jpg')}}" alt="Card image">
-                    <div class="card-img-overlay">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text">Last updated 3 mins ago</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col text-center">
-                <a href="" class="btn btn-lg btn-primary">All Destinations</a>
-            </div>
-        </div>
-    </div>
-</section>
 
 @stop

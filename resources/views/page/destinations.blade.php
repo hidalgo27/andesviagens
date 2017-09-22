@@ -43,7 +43,7 @@
                 {{--</div>--}}
                 {{--</div>--}}
                 {{--</div>--}}
-                <div class="co">
+                <div class="col">
                     <div class="row">
                         <div class="col border border-top-0 border-left-0 border-secondary text-right">
                             <div class="d-inline font-montserrat">

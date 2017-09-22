@@ -160,8 +160,18 @@
 <!-- Footer -->
 <footer class="py-5 bg-dark">
     <div class="container">
-        <p class="text-center text-white">GOTOPERU GROUP PROVIDES YOU WITH VACATIONS OF A LIFETIME SINCE 2009</p>
-        <p class="m-0 text-center text-white">ANDES VIAGENS is part of GOTOPERU GROUP © Copyright 2017 | GOTOPERU.COM   ANDESVIAGENS.COM</p>
+
+        <div class="row justify-content-center">
+            <div class="col-2 my-2">
+                <a href="https://www.tripadvisor.com.br/ShowTopic-g294311-i818-k6665256-Alguem_ja_viajou_ao_Peru_com_a_ANDES_VIAGENS_COM-Peru.html" target="_blank"><img src="{{asset('images/trip.png')}}" alt="" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p class="text-center text-white">GOTOPERU GROUP PROVIDES YOU WITH VACATIONS OF A LIFETIME SINCE 2009</p>
+                <p class="m-0 text-center text-white">ANDES VIAGENS is part of GOTOPERU GROUP © Copyright 2017 | GOTOPERU.COM   ANDESVIAGENS.COM</p>
+            </div>
+        </div>
     </div>
     <!-- /.container -->
     <p class="totop">
