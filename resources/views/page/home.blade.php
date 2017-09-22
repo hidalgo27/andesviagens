@@ -115,7 +115,7 @@
                                     </div>
                                     <div class="form-group">
                                         {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Email</label>--}}
-                                        <input type="date" class="form-control" id="d_email" placeholder="Seu Email">
+                                        <input type="email" class="form-control" id="d_email" placeholder="Seu Email">
                                     </div>
                                 </div>
                             </div>
@@ -123,7 +123,7 @@
                                 <div class="col">
                                     <div class="form-group">
                                         {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Data</label>--}}
-                                        <input type="text" class="form-control form-control-sm" id="d_date" placeholder="Data Viagem">
+                                        <input type="date" class="form-control form-control-sm" id="d_date" placeholder="Data Viagem">
                                     </div>
                                 </div>
                                 <div class="col">
