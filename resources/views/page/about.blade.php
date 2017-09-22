@@ -1,21 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="">
+@extends('layouts.page.default')
 
-    <title>Andes</title>
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="{{asset("css/app.css")}}">
-
-</head>
-
-<body>
+@section('content')
 
 <header>
     <div class="header-menu-d clearfix">
@@ -32,8 +17,8 @@
                     {{--</div>--}}
 
                     <div class="row">
-                        <div class="col my-4">
-                            @include('page.include.logo')
+                        <div class="col my-4 text-center">
+                            @include('page.include.logo-b')
                         </div>
                     </div>
                     {{--<div class="row">--}}
@@ -58,11 +43,11 @@
                 {{--</div>--}}
                 {{--</div>--}}
                 {{--</div>--}}
-                <div class="col-8">
+                <div class="col">
                     <div class="row">
                         <div class="col border border-top-0 border-left-0 border-secondary text-right">
                             <div class="d-inline font-montserrat">
-                                <a href="" class="text-light">Register</a>
+                                <a href="/#contato" class="text-light">Contato</a>
                             </div>
                             <div class="d-inline font-montserrat">
                                 {{--<a href="" class="text-light">(813) 454-9707</a>--}}
@@ -73,7 +58,7 @@
                         <div class="col mt-40vh text-center">
                             {{--<p class="h1 text-light">Display 4</p>--}}
                             <blockquote class="blockquote text-center">
-                                <h1 class="display-3 text-light"><strong>About</strong></h1>
+                                <h1 class="display-3 text-light"><strong>A Empresa</strong></h1>
                             </blockquote>
                         </div>
                     </div>
@@ -101,10 +86,10 @@
     </div>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active" style="background-image: url({{asset('images/sliders/slider-1.jpg')}})">
+            <div class="carousel-item active" style="background-image: url({{asset('images/about.jpg')}})">
             </div>
-            <div class="carousel-item" style="background-image: url({{asset('images/sliders/slider-2.jpg')}})">
-            </div>
+            {{--<div class="carousel-item" style="background-image: url({{asset('images/sliders/slider-2.jpg')}})">--}}
+            {{--</div>--}}
         </div>
     </div>
 </header>
@@ -125,8 +110,8 @@
         <div class="row">
             <div class="col">
                 <blockquote class="blockquote text-center alert-primary py-3">
-                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                    <p class="mb-0">Em ANDESVIAGENS cremos na excelência, segurança, a atenção personalizada e a qualidade dos serviços é o nosso compromisso para com nossos turistas. Por isso nós, nos esforçamos em satisfazer as necessidades dos nossos clientes ao máximo.</p>
+                    {{--<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>--}}
                 </blockquote>
                 {{--<div class="row">--}}
                 {{--<div class="col">--}}
@@ -177,7 +162,7 @@
             <div class="col">
                 <div class="col">
                     <h3 class="align-middle">NOSSO COMPROMISSO</h3>
-                    <p class="align-middle">Não deixe escapar esta oportunidade de descobrir os encantos de Peru e viver uma aventura inesquecível.</p>
+                    <p class="align-middle">Não deixe fugir esta oportunidade de descobrir os encantos de Perú e viver uma aventura inesquecível.</p>
                 </div>
             </div>
 
@@ -197,8 +182,8 @@
 
             <div class="col">
                 <div class="border-0 p-2 text-center">
-                    <h3 class="text-primary">MISSION</h3>
-                    <p>POWER Dar aos nossos clientes com os melhores recursos peruanos para uma aventura inesquecível no Perú!</p>
+                    <h3 class="text-primary">MISSÃO</h3>
+                    <p>Oferecer aos nossos clientes os melhores recursos Peruanos para uma aventura inesquecível.</p>
                 </div>
             </div>
         </div>
@@ -219,14 +204,14 @@
         </div>
         <div class="row bg-warning no-gutters">
             <div class="col p-5 text-center">
-                <h3>Andes Viagens foi fundada com o objetivo de realizar um sonho pessoal:</h3>
+                <h3>Andes Viagens foi fundada com a finalidade de fazer um sonho pessoal:</h3>
                 <p>“Prover inesquecíveis e diferentes experiências para sua viagem ao Peru, fornecendo um serviço de 1º classe para toda a comunidade internacional. E com isso, gerar novas oportunidades de emprego local na área de turismo no Peru.”</p>
             </div>
         </div>
         <div class="row no-gutters align-items-center bg-light">
             <div class="col">
                 <div class="col p-5">
-                    <p class="lead font-weight-normal">Helping our travelers choose the perfect trip to the land of the Incas, to providing them with the most authentic life-changing adventure possible, from the Andes to the Amazon we will go out of our way to ensure a travel experience unlike anything they’ve ever imagined.</p>
+                    <p class="lead font-weight-normal">Ajudar a nosos passageiros a escolher a viagem perfeita á terra dos Incas, com a finalidade de viver a vida dos estrangeiros, desde os Andes até o Amazonas, sairemos da nossa rutina para assegurar uma experiência de viagem diferente, todo o que voce imaginou.</p>
                 </div>
             </div>
 
@@ -248,7 +233,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <p class="lead">“Andes Viagens” foi fundada para realizar um sonho pessoal: "Proporcionar experiência de primeira classe pela comunidade internacional, e gerando oportunidades de emprego a nível local". É extremamente gratificante empregar e premiar pessoas que estremam esforço, entusiasmo e compromisso de compartilhar o melhor do Peru e da América do Sul com o resto do mundo. “Andes Viagens” tornou-se uma família para todos nós. A melhor coisa de trabalhar em Andes Viagens é que isso me obriga a estar permanentemente conectado com o mundo da arte, cultura, arqueologia, geografia, conservação da vida selvagem, e cozinha. Por esta razão, isso me ajuda a entender mais do mundo das viagens e formular novos métodos que garantam memorável experiências de viagem de nossos clientes. E maravilhoso interagir com pessoas incríveis de todo o mundo diariamente, já que me ensina mais de sua cultura.</p>
+                    <p class="lead">“Andes Viagens” foi fundada para realizar um sonho pessoal: "Proporcionar experiência de primeira classe pela comunidade internacional, e gerando oportunidades de emprego a nível local". É extremamente gratificante empregar e premiar pessoas que estremam esforço, entusiasmo e compromisso de compartilhar o melhor do Peru e da América do Sul com o resto do mundo. “Andes Viagens” tornou-se uma família para todos nós. A melhor coisa de trabalhar em Andes Viagens é que isso me obriga a estar permanentemente conectado com o mundo da arte, cultura, arqueologia, geografia, conservação da vida selvagem, e cozinha. Por esta razão, isso me ajuda a entender mais do mundo das viagens e formular novos métodos que garantem memorável experiências de viagem de nossos clientes. E maravilhoso interagir com pessoas incríveis de todo o mundo diariamente, já que me ensina mais de sua cultura.</p>
                 </div>
             </div>
 
@@ -258,7 +243,7 @@
                 <div class="card text-white">
                     <img class="card-img-top" src="http://andesviagens.com/img/about/about-o.jpg" alt="Card image cap">
                     <div class="card-body text-center bg-dark">
-                        <p class="card-text"><span class="h4">PAUL CATANO</span> <small class="d-block">Director & Founder</small></p>
+                        <p class="card-text"><span class="h4">PAUL CATANO</span> <small class="d-block">Diretor & Fundador</small></p>
                     </div>
                 </div>
             </div>
@@ -266,7 +251,7 @@
                 <div class="card bg-light">
                     <img class="card-img-top" src="http://andesviagens.com/img/about/about-u.jpg" alt="Card image cap">
                     <div class="card-body text-center">
-                        <p class="card-text"><span class="h4">MARTIN CATANO</span> <small class="d-block">General Manager</small></p>
+                        <p class="card-text"><span class="h4">MARTIN CATANO</span> <small class="d-block">Diretor Geral</small></p>
                     </div>
                 </div>
             </div>
@@ -278,51 +263,7 @@
         {{--</div>--}}
 
 
-        <p class="totop">
-            <a href="#top">Back to top</a>
-        </p>
     </div>
 </section>
 
-@include('page.include.footer')
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="{{asset("js/app.js")}}"></script>
-<script src="{{asset("js/page/plugins.js")}}"></script>
-<script>
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        responsiveClass:true,
-        autoplay:true,
-        autoplayTimeout:10000,
-        autoplayHoverPause:true,
-        responsive:{
-            0:{
-                items:1,
-                nav:false
-            },
-            600:{
-                items:2,
-                nav:false
-            },
-            1000:{
-                items:3,
-                nav:true,
-                loop:false,
-                navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 3px;stroke: #007bff;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>','<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 3px;stroke: #007bff;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
-            }
-        }
-    });
-    $('body').scrollspy({ target: '#navbar-example' })
-</script>
-<!-- Popper -->
-
-<!-- Latest compiled and minified Bootstrap JavaScript -->
-{{--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>--}}
-{{--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>--}}
-
-</body>
-</html>
+@stop

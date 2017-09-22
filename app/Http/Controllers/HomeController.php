@@ -214,7 +214,8 @@ class HomeController extends Controller
 
     public function inquire()
     {
-        $from = 'hidalgochpnce@gmail.com';
+        $from = 'diana@andesviagens.com';
+        $from2 = 'paul@gotoperu.com';
 
         $accommodation = $_POST['txt_accommodation'];
         $number = $_POST['txt_number'];
@@ -265,11 +266,11 @@ class HomeController extends Controller
                 'email' => $email,
                 'package' => $package,
                 'comment' => $comment
-            ], function ($messaje) use ($from) {
-                $messaje->to($from, 'Andes Viagens')
+            ], function ($messaje) use ($from2) {
+                $messaje->to($from2, 'Andes Viagens')
                     ->subject('AndesViagens')
                     /*->attach('ruta')*/
-                    ->from('info@andesviagens.com', 'Andes Viagens');
+                    ->from('diana@andesviagens.com', 'Andes Viagens');
             });
 
 

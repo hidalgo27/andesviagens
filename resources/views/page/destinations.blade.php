@@ -1,21 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="">
+@extends('layouts.page.default')
 
-    <title>Andes</title>
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="{{asset("css/app.css")}}">
-
-</head>
-
-<body>
+@section('content')
 
 <header>
     <div class="header-menu-d clearfix">
@@ -32,7 +17,7 @@
                     {{--</div>--}}
 
                     <div class="row">
-                        <div class="col my-4">
+                        <div class="col my-4 text-center">
                             @include('page.include.logo')
                         </div>
                     </div>
@@ -58,11 +43,11 @@
                 {{--</div>--}}
                 {{--</div>--}}
                 {{--</div>--}}
-                <div class="col-8">
+                <div class="co">
                     <div class="row">
                         <div class="col border border-top-0 border-left-0 border-secondary text-right">
                             <div class="d-inline font-montserrat">
-                                <a href="" class="text-light">Register</a>
+                                <a href="/#contato" class="text-light">Contato</a>
                             </div>
                             <div class="d-inline font-montserrat">
                                 {{--<a href="" class="text-light">(813) 454-9707</a>--}}
@@ -73,7 +58,7 @@
                         <div class="col mt-40vh text-center">
                             {{--<p class="h1 text-light">Display 4</p>--}}
                             <blockquote class="blockquote text-center">
-                                <h1 class="display-3 text-light"><strong>All Destinations</strong></h1>
+                                <h1 class="display-3 text-light"><strong>TODOS OS DESTINOS</strong></h1>
                             </blockquote>
                         </div>
                     </div>
@@ -122,15 +107,15 @@
     <div class="container">
         <div class="row mb-5">
             <div class="col text-center">
-                <p class="h2 text-secondary pt-3">PERU EÉRIAS PASSEIOS E VIAGENS</p>
+                <p class="h2 text-secondary pt-3">TODOS OS DESTINOS</p>
                 {{--<p class="h4"></p>--}}
             </div>
         </div>
         <div class="row">
             <div class="col">
                 <blockquote class="blockquote text-center alert-primary py-3">
-                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                    <p class="mb-0">Entre nossos roteiros estão: Machu Picchu, Maravilha do Mundo, Cusco, capital do império Inca; As linhas de Nazca, um mistério a ser desvendado; Paracas, o encanto da vida marinha, Lago Titicaca, o lago das ilhas flutuantes; Manu, o paraíso da biodiversidade; Lima, imponentes construções coloniais, Arequipa, a famosa cidade branca.</p>
+                    {{--<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>--}}
                 </blockquote>
                 {{--<div class="row">--}}
                 {{--<div class="col">--}}
@@ -184,11 +169,11 @@
                     @foreach($destinos->sortBy('nombre')->where('estado', 1) as $destino)
 
                         <div class="card mb-4">
-                            <a href="{{route('destinations_show', str_replace(' ', '-', strtolower($destino->nombre)))}}"><img class="card-img-top img-fluid" src="{{asset('images/destinations/home/machupicchu.jpg')}}" alt="Card image cap"></a>
+                            <a href="{{route('destinations_show', str_replace(' ', '-', strtolower($destino->nombre)))}}"><img class="card-img-top img-fluid" src="{{asset('images/destinations/thumbnails/'.str_replace(' ', '-', strtolower($destino->nombre)).'.jpg')}}" alt="Card image cap"></a>
                             <div class="card-body">
                                 <h4 class="card-title">{{ucwords(strtolower($destino->nombre))}}</h4>
 {{--                                @php echo substr($destino->descripcion, 0,150); @endphp--}}
-                                <a href="{{route('destinations_show', str_replace(' ', '-', strtolower($destino->nombre)))}}" class="btn btn-primary btn-link float-right">Learn more <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                                <a href="{{route('destinations_show', str_replace(' ', '-', strtolower($destino->nombre)))}}" class="btn btn-primary btn-link float-right">Ler mais <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
                             </div>
                         </div>
                     @endforeach
@@ -208,45 +193,4 @@
     </div>
 </section>
 
-@include('page.include.footer')
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="{{asset("js/app.js")}}"></script>
-<script src="{{asset("js/page/plugins.js")}}"></script>
-<script>
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        responsiveClass:true,
-        autoplay:true,
-        autoplayTimeout:10000,
-        autoplayHoverPause:true,
-        responsive:{
-            0:{
-                items:1,
-                nav:false
-            },
-            600:{
-                items:2,
-                nav:false
-            },
-            1000:{
-                items:3,
-                nav:true,
-                loop:false,
-                navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 3px;stroke: #007bff;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>','<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 3px;stroke: #007bff;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
-            }
-        }
-    });
-    $('body').scrollspy({ target: '#navbar-example' })
-</script>
-<!-- Popper -->
-
-<!-- Latest compiled and minified Bootstrap JavaScript -->
-{{--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>--}}
-{{--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>--}}
-
-</body>
-</html>
+@stop

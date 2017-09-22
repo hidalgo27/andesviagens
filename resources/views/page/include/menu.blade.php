@@ -41,6 +41,6 @@
     <a class="nav-item nav-link text-light" href="{{route('destinations_show_path')}}">DESTINO</a>
     <a class="nav-item nav-link text-light" href="{{route('about_show_path')}}">A EMPRESA</a>
     <a class="nav-item nav-link text-light" href="{{route('faq_show_path')}}">DICAS</a>
-    <a class="nav-item nav-link text-light" href="#">CONTATO</a>
+    <a class="nav-item nav-link text-light" href="/#contato">CONTATO</a>
     {{--<a class="nav-item nav-link disabled" href="#">Disabled</a>--}}
 </nav>

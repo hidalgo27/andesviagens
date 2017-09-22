@@ -1,21 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="">
+@extends('layouts.page.default')
 
-    <title>Andes</title>
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="{{asset("css/app.css")}}">
-
-</head>
-
-<body>
+@section('content')
 
 <header class="">
     <div class="header-menu clearfix">
@@ -25,7 +10,7 @@
                     <div class="row">
                         <div class="col border border-top-0 border-right-0 border-secondary">
                             <div class="d-inline font-montserrat">
-                                <a href="" class="text-light">(813) 454-9707</a>
+                                <a href="" class="text-light"><i class="fa fa-phone"></i> (11) 3198-1385</a>
                             </div>
                             {{--<div class="d-inline bg-success">d-inline</div>--}}
                         </div>
@@ -33,7 +18,7 @@
                 </div>
                 <div class="col-3">
                     <div class="row justify-content-center">
-                        <div class="mt-2">
+                        <div class="mt-2 text-center text-center">
                             @include('page.include.logo')
                         </div>
                     </div>
@@ -42,7 +27,7 @@
                     <div class="row">
                         <div class="col border border-top-0 border-left-0 border-secondary text-right">
                             <div class="d-inline font-montserrat">
-                                <a href="" class="text-light">Register</a>
+                                <a href="#contato" class="text-light">Contato</a>
                             </div>
                             <div class="d-inline font-montserrat">
                                 {{--<a href="" class="text-light">(813) 454-9707</a>--}}
@@ -59,36 +44,54 @@
             </div>
         </div>
 
-        <div class="col mt-12p text-center">
+        <div class="col mt-20vh text-center">
             {{--<p class="h1 text-light">Display 4</p>--}}
             <blockquote class="blockquote text-center">
-                <p class="mb-0 h1 text-light">A <strong>BETTER</strong> WAY TO TRAVEL TO PERU</p>
+                <p class="h1 text-light font-weight-light"><strong>Agência de viagens</strong> e operador turístico com base em <strong>Cusco</strong></p>
                 {{--<footer class="blockquote-footer text-light">Someone famous in <cite title="Source Title">Source Title</cite></footer>--}}
-                <footer class=" text-light">$150 average saving | 24/7 local authentic assistance | 100s of testimonials</footer>
+                {{--<footer class=" text-light">$150 average saving | 24/7 local authentic assistance | 100s of testimonials</footer>--}}
             </blockquote>
-        </div>
-        <div class="mt-5 text-center">
-            <div class="d-inline">
-                <a href="" class="btn btn-xs btn-success"><img src="{{asset('images/icons/whatsapp.png')}}" alt="" width="30"> chatea con nosotros ahora</a>
+
+            <div class="row justify-content-center">
+                <div class="col-2 border border-warning rounded p-3 text-center">
+                    <h3 class="text-warning">Machu Picchu</h3>
+                    <dl class="row text-light h4">
+                        <dt class="col text-right">4 <small>Dias</small></dt>
+                        <dd class="col text-left"><sup>$</sup>550</dd>
+                    </dl>
+                    <dl class="row text-light h4">
+                        <dt class="col text-right">5 <small>Dias</small></dt>
+                        <dd class="col text-left"><sup>$</sup>585</dd>
+                    </dl>
+                    <dl class="row text-light h4">
+                        <dt class="col text-right">6 <small>Dias</small></dt>
+                        <dd class="col text-left"><sup>$</sup>650</dd>
+                    </dl>
+                </div>
             </div>
-            <div class="d-inline">
-                <a href="" class="btn btn-xs btn-primary"><img src="{{asset('images/icons/messenger.png')}}" alt="" width="30"> chatea con nosotros ahora</a>
-            </div>
         </div>
+        {{--<div class="mt-5 text-center">--}}
+            {{--<div class="d-inline">--}}
+                {{--<a href="" class="btn btn-xs btn-success"><img src="{{asset('images/icons/whatsapp.png')}}" alt="" width="30"> chatea con nosotros ahora</a>--}}
+            {{--</div>--}}
+            {{--<div class="d-inline">--}}
+                {{--<a href="" class="btn btn-xs btn-primary"><img src="{{asset('images/icons/messenger.png')}}" alt="" width="30"> chatea con nosotros ahora</a>--}}
+            {{--</div>--}}
+        {{--</div>--}}
     </div>
-    <video autoplay="autoplay" loop="loop" id="video_background" preload="auto" poster="{{asset('images/sliders/slider-1.jpg')}}" muted/>
+    <video autoplay="autoplay" loop="loop" id="video_background" preload="auto" poster="{{asset('images/sliders/package-1.jpg')}}" muted/>
         <source src="{{asset('media/video6.m4v')}}" type="video/mp4" />
         <source src="{{asset('media/video6.webm')}}" type="video/webm" />
         <source src="{{asset('media/video6.ogv')}}" type="video/ogg" />
         <source src="{{asset('media/video6.mp4')}}" />
-        <img alt="video6" src="{{asset('images/sliders/slider-1.jpg')}}" style="position:absolute;left:0;" width="100%" title="Video playback is not supported by your browser" />
+        <img alt="video6" src="{{asset('images/sliders/package-1.jpg')}}" style="position:absolute;left:0;" width="100%" title="Video playback is not supported by your browser" />
     </video/>
 </header>
 
 @include('page.include.menu')
 <!-- /. -->
 <!-- Page Content -->
-<section class="py-4 bg-light">
+<section class="py-4 bg-light" id="contato">
     <div class="container">
 
         <div class="">
@@ -101,8 +104,8 @@
                     <div class="card border-top-0 border-bottom-0 border-left-0 m-0 rounded-0">
                         <div class="card-body">
                             <div class="d-block mb-3">
-                                <span class="text-secondary align-bottom">Informacion Personal</span>
-                                <img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid mb-1" width="100">
+                                <span class="text-secondary align-bottom">Informação pessoal</span>
+                                {{--<img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid mb-1" width="100">--}}
                             </div>
                             <div class="row">
                                 <div class="col">
@@ -112,7 +115,7 @@
                                     </div>
                                     <div class="form-group">
                                         {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Email</label>--}}
-                                        <input type="text" class="form-control" id="d_email" placeholder="Seu Email">
+                                        <input type="date" class="form-control" id="d_email" placeholder="Seu Email">
                                     </div>
                                 </div>
                             </div>
@@ -152,7 +155,7 @@
                             {{--<label class="d-block">Eu Gostaria de visitar</label>--}}
                             <div class="d-block mb-3">
                                 <span class="text-secondary align-bottom">Eu Gostaria de visitar</span>
-                                <img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid mb-1" width="100">
+                                {{--<img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid mb-1" width="100">--}}
                             </div>
                             <div class="">
                                 <div class="row">
@@ -187,14 +190,14 @@
                                     </div>
                                     <div class="col" data-toggle="buttons">
                                         <label class="btn btn-outline-primary btn-block">
-                                            <input type="checkbox" autocomplete="off" name="destinations[]" value="Lineas de Nazca"> Lineas de Nazca
+                                            <input type="checkbox" autocomplete="off" name="destinations[]" value="Lineas de Nazca"> Linhas de Nazca
                                         </label>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="input-group mt-2">
-                                <span class="input-group-addon" id="">Otros</span>
+                                <span class="input-group-addon" id="">Outros</span>
                                 <input type="text" class="form-control" id="d_otros" aria-describedby="basic-addon3">
                             </div>
                         </div>
@@ -203,19 +206,19 @@
                         <div class="card-body">
                             <div class="form-group">
                                 <div class="d-block mb-3">
-                                    <span class="text-secondary align-bottom">Alguna duda?</span>
-                                    <img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid mb-1" width="100">
+                                    <span class="text-secondary align-bottom">Dúvidas?</span>
+                                    {{--<img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid mb-1" width="100">--}}
                                 </div>
-                                <textarea class="form-control" id="d_comment" rows="5" placeholder="Como você imagina uma viagem inesquecivel ao Perú, Sugestoes especiais, perguntas, comentarios"></textarea>
+                                <textarea class="form-control" id="d_comment" rows="5" placeholder="Como você imagina uma viagem inesquecivel ao Perú, sugestões especiais, perguntas, comentários"></textarea>
                             </div>
                             <div class="my-3">
                                 {{--<button type="submit" class="btn btn-lg btn-block btn-warning">Submit</button>--}}
 
-                                <button class="btn btn-lg btn-block btn-warning" id="d_send" type="button" onclick="design()">Submit
+                                <button class="btn btn-lg btn-block btn-warning" id="d_send" type="button" onclick="design()">Enviar
                                     <i class="fa fa-paper-plane" aria-hidden="true"></i>
                                 </button>
                                 <ul class="fa-ul pull-right d-none" id="loader2">
-                                    <li><i class="fa-li fa fa-spinner fa-spin"></i> <i>Sending...</i></li>
+                                    <li><i class="fa-li fa fa-spinner fa-spin"></i> <i>Enviando...</i></li>
                                 </ul>
 
                             </div>
@@ -295,14 +298,14 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h3 class="text-secondary d-inline align-bottom h6">PERU EÉRIAS <img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid" width="100"></h3>
-                <h2 class="h3 pt-1">SOMENTE PASSEIOS</h2>
+                <h3 class="text-secondary d-inline align-bottom h6">PERU FÉRIAS <img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid" width="100"></h3>
+                <h2 class="h3 pt-1">PACOTES MAIS VENDIDOS</h2>
 
             </div>
         </div>
         <div class="row py-4">
             <div class="col text-center">
-                <h5 class="text-secondary d-inline align-bottom h6">INCLUDED</h5>
+                <h5 class="text-secondary d-inline align-bottom h6">INCLUSO</h5>
             </div>
         </div>
         <div class="row mt-2 justify-content-center">
@@ -310,35 +313,35 @@
                 <div class="row text-center">
                     <div class="col">
                         <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="img-fluid">
-                        <small class="d-block text-secondary">Assistances</small>
+                        <small class="d-block text-secondary">Assistências</small>
                     </div>
                     <div class="col">
                         <img src="{{asset('images/icons/include/breakfast.png')}}" alt="" class="img-fluid">
-                        <small class="d-block text-secondary">breakfast</small>
+                        <small class="d-block text-secondary">Café da manhã</small>
                     </div>
                     <div class="col">
                         <img src="{{asset('images/icons/include/entrances.png')}}" alt="" class="img-fluid">
-                        <small class="d-block text-secondary">entrances</small>
+                        <small class="d-block text-secondary">Entradas</small>
                     </div>
                     <div class="col">
                         <img src="{{asset('images/icons/include/flight.png')}}" alt="" class="img-fluid">
-                        <small class="d-block text-secondary">flight</small>
+                        <small class="d-block text-secondary">Voos</small>
                     </div>
                     <div class="col">
                         <img src="{{asset('images/icons/include/hotels.png')}}" alt="" class="img-fluid">
-                        <small class="d-block text-secondary">hotels</small>
+                        <small class="d-block text-secondary">Hoteis</small>
                     </div>
                     <div class="col">
                         <img src="{{asset('images/icons/include/tours.png')}}" alt="" class="img-fluid">
-                        <small class="d-block text-secondary">tours</small>
+                        <small class="d-block text-secondary">Tours</small>
                     </div>
                     <div class="col">
                         <img src="{{asset('images/icons/include/trains.png')}}" alt="" class="img-fluid">
-                        <small class="d-block text-secondary">trains</small>
+                        <small class="d-block text-secondary">Trenes</small>
                     </div>
                     <div class="col">
                         <img src="{{asset('images/icons/include/transfers.png')}}" alt="" class="img-fluid">
-                        <small class="d-block text-secondary">transfers</small>
+                        <small class="d-block text-secondary">Traslados</small>
                     </div>
                 </div>
             </div>
@@ -355,7 +358,7 @@
 
                     <div class="card-body text-center">
                         <h4 class="card-title"><a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquete->titulo)))}}" class="text-dark">{{$paquete->titulo}}</a></h4>
-                        <p class="text-left"><i class="fa fa-clock-o text-primary" aria-hidden="true"></i> {{$paquete->duracion}} Days</p>
+                        <p class="text-left"><i class="fa fa-clock-o text-primary" aria-hidden="true"></i> {{$paquete->duracion}} Dias</p>
                         <p class="text-left card-text"><i class="fa fa-map-marker text-primary" aria-hidden="true"></i>
                             @php
                                 $i = 1;
@@ -370,13 +373,13 @@
                     </div>
                     <div class="card-footer text-muted">
                         <div class="row">
-                            <div class="col text-left">from</div>
+                            <div class="col text-left">Desde</div>
                             <div class="col text-right font-weight-bold text-primary font-montserrat"><sup>$</sup>
                                 @foreach($paquete->precio_paquetes as $precio)
                                     @if($precio->estrellas == 2)
                                         {{$precio->precio}}
                                     @endif
-                                @endforeach
+                                @endforeach <small>USD</small>
                             </div>
                         </div>
                     </div>
@@ -386,7 +389,7 @@
         </div>
         <div class="row mt-5">
             <div class="col text-center">
-                <a href="{{route('package_show_path')}}" class="btn btn-lg btn-primary">All Packages</a>
+                <a href="{{route('package_show_path')}}" class="btn btn-lg btn-primary">Todos os Pacotes</a>
             </div>
         </div>
     </div>
@@ -409,7 +412,7 @@
                 </div>
                 <div class="row text-center">
                     <div class="col">
-                        One of two columns
+                        Grupos pequenos e passeios privados
                     </div>
                 </div>
             </div>
@@ -421,7 +424,7 @@
                 </div>
                 <div class="row text-center">
                     <div class="col">
-                        One of two columns
+                        Moramos no perú, porém oferecemos assistencia 24/7
                     </div>
                 </div>
             </div>
@@ -433,7 +436,7 @@
                 </div>
                 <div class="row text-center">
                     <div class="col">
-                        One of two columns
+                        Escolha de programas prontos para comprar ou personalizar suas férias
                     </div>
                 </div>
             </div>
@@ -446,7 +449,7 @@
                 </div>
                 <div class="row text-center">
                     <div class="col">
-                        One of two columns
+                        Custos menores, somos uma agencia local
                     </div>
                 </div>
             </div>
@@ -458,7 +461,7 @@
                 </div>
                 <div class="row text-center">
                     <div class="col">
-                        One of two columns
+                        Excelentes coméntarios na tripadvisor
                     </div>
                 </div>
             </div>
@@ -470,7 +473,7 @@
                 </div>
                 <div class="row text-center">
                     <div class="col">
-                        One of two columns
+                        Temos passeios todos os dias do ano
                     </div>
                 </div>
             </div>
@@ -478,183 +481,100 @@
     </div>
 </section>
 
-@include('page.include.footer')
+    @push('scripts')
+        <script>
+            //form
+            function design(){
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('[name="_token"]').val()
+                    }
+                });
+
+                $("#d_send").attr("disabled", true);
+
+                var filter=/^[A-Za-z][A-Za-z0-9_.]*@[A-Za-z0-9_]+.[A-Za-z0-9_.]+[A-za-z]$/;
 
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="{{asset("js/app.js")}}"></script>
-{{--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>--}}
-{{--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>--}}
-<script src="{{asset("js/page/plugins.js")}}"></script>
-<script>
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        responsiveClass:true,
-        autoplay:true,
-        autoplayTimeout:10000,
-        autoplayHoverPause:true,
-        responsive:{
-            0:{
-                items:1,
-                nav:false
-            },
-            600:{
-                items:2,
-                nav:false
-            },
-            1000:{
-                items:3,
-                nav:true,
-                loop:false,
-                navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 3px;stroke: #007bff;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>','<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 3px;stroke: #007bff;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
-            }
-        }
-    });
+                var s_destinations = document.getElementsByName('destinations[]');
+                var $destinations = "";
+                for (var i = 0, l = s_destinations.length; i < l; i++) {
+                    if (s_destinations[i].checked) {
+                        $destinations += s_destinations[i].value+' , ';
+                    }
+                }
+                s_destinations = $destinations.substring(0,$destinations.length-3);
 
 
-    function parallaxIt() {
-
-        // create variables
-        var $fwindow = $(window);
-        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-        // on window scroll event
-        $fwindow.on('scroll resize', function() {
-            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        });
-
-        // for each of content parallax element
-        // $('[data-type="content"]').each(function (index, e) {
-        //     var $contentObj = $(this);
-        //     var fgOffset = parseInt($contentObj.offset().top);
-        //     var yPos;
-        //     var speed = ($contentObj.data('speed') || 1 );
-        //
-        //     $fwindow.on('scroll resize', function (){
-        //         yPos = fgOffset - scrollTop / speed;
-        //
-        //         $contentObj.css('top', yPos);
-        //     });
-        // });
-
-        // for each of background parallax element
-        $('[data-type="background"]').each(function(){
-            var $backgroundObj = $(this);
-            var bgOffset = parseInt($backgroundObj.offset().top);
-            var yPos;
-            var coords;
-            var speed = ($backgroundObj.data('speed') || 0 );
-
-            $fwindow.on('scroll resize', function() {
-                yPos = - ((scrollTop - bgOffset) / speed);
-                coords = yPos + 'px';
-
-                $backgroundObj.css({ backgroundPosition: coords });
-            });
-        });
-
-        // triggers winodw scroll for refresh
-        $fwindow.trigger('scroll');
-    };
-
-    parallaxIt();
-
-</script>
-<script>
-    function design(){
-        $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('[name="_token"]').val()
-            }
-        });
-
-        $("#d_send").attr("disabled", true);
-
-        var filter=/^[A-Za-z][A-Za-z0-9_]*@[A-Za-z0-9_]+.[A-Za-z0-9_.]+[A-za-z]$/;
+                var s_name = $('#d_name').val();
+                var s_email = $('#d_email').val();
+                var s_date = $('#d_date').val();
+                var s_tel = $('#d_tel').val();
+                var s_duration = $('#d_duration').val();
+                var s_number = $('#d_numero').val();
+                var s_other = $('#d_otros').val();
 
 
-        var s_destinations = document.getElementsByName('destinations[]');
-        var $destinations = "";
-        for (var i = 0, l = s_destinations.length; i < l; i++) {
-            if (s_destinations[i].checked) {
-                $destinations += s_destinations[i].value+' , ';
-            }
-        }
-        s_destinations = $destinations.substring(0,$destinations.length-3);
+                var s_comment = $('#d_comment').val();
 
 
-        var s_name = $('#d_name').val();
-        var s_email = $('#d_email').val();
-        var s_date = $('#d_date').val();
-        var s_tel = $('#d_tel').val();
-        var s_duration = $('#d_duration').val();
-        var s_number = $('#d_numero').val();
-        var s_other = $('#d_otros').val();
+                if (filter.test(s_email)){
+                    sendMail = "true";
+                } else{
+                    $('#d_email').css("border-bottom", "2px solid #FF0000");
+                    sendMail = "false";
+                }
+                if (s_name.length == 0 ){
+                    $('#d_name').css("border-bottom", "2px solid #FF0000");
+                    var sendMail = "false";
+                }
 
+                if(sendMail == "true"){
+                    var datos = {
 
-        var s_comment = $('#d_comment').val();
+                        "txt_destinations" : s_destinations,
+                        "txt_other" : s_other,
 
+                        "txt_name" : s_name,
+                        "txt_email" : s_email,
+                        "txt_date" : s_date,
+                        "txt_tel" : s_tel,
+                        "txt_duration" : s_duration,
+                        "txt_number" : s_number,
+                        "txt_comment" : s_comment,
 
-        if (filter.test(s_email)){
-            sendMail = "true";
-        } else{
-            $('#d_email').css("border-bottom", "2px solid #FF0000");
-            sendMail = "false";
-        }
-        if (s_name.length == 0 ){
-            $('#d_name').css("border-bottom", "2px solid #FF0000");
-            var sendMail = "false";
-        }
+                    };
+                    $.ajax({
+                        data:  datos,
+                        url:   "{{route('contact_path')}}",
+                        type:  'post',
 
-        if(sendMail == "true"){
-            var datos = {
+                        beforeSend: function () {
 
-                "txt_destinations" : s_destinations,
-                "txt_other" : s_other,
+                            $('#d_send').removeClass('show');
+                            $("#d_send").addClass('d-none');
 
-                "txt_name" : s_name,
-                "txt_email" : s_email,
-                "txt_date" : s_date,
-                "txt_tel" : s_tel,
-                "txt_duration" : s_duration,
-                "txt_number" : s_number,
-                "txt_comment" : s_comment,
-
-            };
-            $.ajax({
-                data:  datos,
-                url:   "{{route('contact_path')}}",
-                type:  'post',
-
-                beforeSend: function () {
-
-                    $('#d_send').removeClass('show');
-                    $("#d_send").addClass('d-none');
-
-                    $("#loader2").removeClass('d-none');
-                    $("#loader2").addClass('show');
-                },
-                success:  function (response) {
-                    $('#d_form')[0].reset();
-                    $('#d_send').removeClass('d-none');
-                    $('#d_send').addClass('show');
-                    $("#loader2").removeClass('show');
-                    $("#loader2").addClass('d-none');
-                    $('#d_alert').removeClass('d-none');
-                    $("#d_alert").addClass('show');
-                    $("#d_alert b").html(response);
-                    $("#d_alert").fadeIn('slow');
+                            $("#loader2").removeClass('d-none');
+                            $("#loader2").addClass('show');
+                        },
+                        success:  function (response) {
+                            $('#d_form')[0].reset();
+                            $('#d_send').removeClass('d-none');
+                            $('#d_send').addClass('show');
+                            $("#loader2").removeClass('show');
+                            $("#loader2").addClass('d-none');
+                            $('#d_alert').removeClass('d-none');
+                            $("#d_alert").addClass('show');
+                            $("#d_alert b").html(response);
+                            $("#d_alert").fadeIn('slow');
+                            $("#d_send").removeAttr("disabled");
+                        }
+                    });
+                } else{
                     $("#d_send").removeAttr("disabled");
                 }
-            });
-        } else{
-            $("#d_send").removeAttr("disabled");
-        }
-    }
-</script>
+            }
+        </script>
+    @endpush
 
-</body>
-</html>
+@stop
