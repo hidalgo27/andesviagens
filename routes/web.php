@@ -19,27 +19,27 @@ Route::get('/', [
     'uses' => 'HomeController@index',
     'as' => 'home_path',
 ]);
-Route::get('/packages', [
+Route::get('/pacotes-de-viagem', [
     'uses' => 'HomeController@package',
     'as' => 'package_show_path',
 ]);
-Route::get('/packages/{title}', [
+Route::get('/pacotes-de-viagem/{title}', [
     'uses' => 'HomeController@show',
     'as' => 'home_show_path',
 ]);
-Route::get('/destinations', [
+Route::get('/destino', [
     'uses' => 'HomeController@destinations',
     'as' => 'destinations_show_path',
 ]);
-Route::get('/destinations/{destinations}', [
+Route::get('/destino/{destinations}', [
     'uses' => 'HomeController@destinations_show',
     'as' => 'destinations_show',
 ]);
-Route::get('/about', [
+Route::get('/a-empresa', [
     'uses' => 'HomeController@about',
     'as' => 'about_show_path',
 ]);
-Route::get('/faq', [
+Route::get('/dicas', [
     'uses' => 'HomeController@faq',
     'as' => 'faq_show_path',
 ]);
