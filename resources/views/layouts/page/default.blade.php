@@ -33,8 +33,8 @@
 
             </div>
         </div>
-        <div class="row py-3">
-            <div class="col-8">
+        <div class="row">
+            <div class="col-12 col-sm-8 mt-3">
                 <div class="card text-white clearfix">
                     <img class="card-img" src="{{asset('images/destinations/home/machupicchu-2.jpg')}}" alt="Card image">
                     <div class="card-img-overlay card-overlay-rgba">
@@ -46,7 +46,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card text-white">
+                <div class="card text-white my-3">
                     <img class="card-img" src="{{asset('images/destinations/home/lima.jpg')}}" alt="Card image">
                     <div class="card-img-overlay card-overlay-rgba">
                         <h4 class="card-title">Lima</h4>
@@ -54,7 +54,7 @@
                         <a href="{{route('destinations_show', 'lima')}}" class="btn btn-success btn-info btn-sm">Ver Pacotes</a>
                     </div>
                 </div>
-                <div class="card text-white mt-3">
+                <div class="card text-white">
                     <img class="card-img" src="{{asset('images/destinations/home/titicaca.jpg')}}" alt="Card image">
                     <div class="card-img-overlay card-overlay-rgba">
                         <h4 class="card-title">Puno</h4>
@@ -72,11 +72,11 @@
     </div>
 </section>
 
-<section class="py-5">
+<section class="py-5 d-none d-lg-block">
     <div class="container">
         <div class="row">
             <div class="col">
-                <h3 class="text-secondary d-inline align-bottom h6">EÉRIAS NO PERÚ <img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid" width="100"></h3>
+                <h3 class="text-secondary d-inline align-bottom h6">FÉRIAS NO PERÚ <img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid" width="100"></h3>
                 <h2 class="h3 pt-1">TODOS OS PACOTES</h2>
 
             </div>
@@ -135,7 +135,7 @@
 </section>
 
 
-<div class="container-parallax">
+<div class="container-parallax d-none d-sm-inline">
     <section>
         <div class="image" data-type="background" data-speed="2"></div>
         <div class="stuff" data-type="content">
@@ -164,7 +164,7 @@
     <div class="container">
 
         <div class="row justify-content-center">
-            <div class="col-2 my-2">
+            <div class="col-8 col-sm-6 col-md-6 col-lg-3 my-2">
                 <a href="https://www.tripadvisor.com.br/ShowTopic-g294311-i818-k6665256-Alguem_ja_viajou_ao_Peru_com_a_ANDES_VIAGENS_COM-Peru.html" target="_blank"><img src="{{asset('images/trip.png')}}" alt="" class="img-fluid"></a>
             </div>
         </div>
@@ -214,6 +214,150 @@
         loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
     /* custom configuration goes here (www.olark.com/documentation) */
     olark.identify('9694-370-10-7793');/*]]>*/
+</script>
+<script>
+    //full destinatiuns
+    (function($) {
+        $.fn.shorten = function(settings) {
+            "use strict";
+
+            var config = {
+                showChars: 100,
+                minHideChars: 10,
+                ellipsesText: "...",
+                moreText: "<div class='row text-center my-4'><div class='col'><div class='btn btn-info btn-sm text-center'> Read More <i class='fa fa-chevron-down d-block'></i></div></div></div>",
+                lessText: "<div class='row text-center my-4'><div class='col'><div class='btn btn-success btn-sm text-center'> <i class='fa fa-chevron-up d-block'></i> Less</div></div></div>",
+                onLess: function() {},
+                onMore: function() {},
+                errMsg: null,
+                force: false
+            };
+
+            if (settings) {
+                $.extend(config, settings);
+            }
+
+            if ($(this).data('jquery.shorten') && !config.force) {
+                return false;
+            }
+            $(this).data('jquery.shorten', true);
+
+            $(document).off("click", '.morelink');
+
+            $(document).on({
+                click: function() {
+
+                    var $this = $(this);
+                    if ($this.hasClass('less')) {
+                        $this.removeClass('less');
+                        $this.html(config.moreText);
+                        $this.parent().prev().animate({'height':'0'+'%'}, function () { $this.parent().prev().prev().show(); }).hide('fast', function() {
+                            config.onLess();
+                        });
+
+                    } else {
+                        $this.addClass('less');
+                        $this.html(config.lessText);
+                        $this.parent().prev().animate({'height':'100'+'%'}, function () { $this.parent().prev().prev().hide(); }).show('fast', function() {
+                            config.onMore();
+                        });
+                    }
+                    return false;
+                }
+            }, '.morelink');
+
+            return this.each(function() {
+                var $this = $(this);
+
+                var content = $this.html();
+                var contentlen = $this.text().length;
+                if (contentlen > config.showChars + config.minHideChars) {
+                    var c = content.substr(0, config.showChars);
+                    if (c.indexOf('<') >= 0) // If there's HTML don't want to cut it
+                    {
+                        var inTag = false; // I'm in a tag?
+                        var bag = ''; // Put the characters to be shown here
+                        var countChars = 0; // Current bag size
+                        var openTags = []; // Stack for opened tags, so I can close them later
+                        var tagName = null;
+
+                        for (var i = 0, r = 0; r <= config.showChars; i++) {
+                            if (content[i] == '<' && !inTag) {
+                                inTag = true;
+
+                                // This could be "tag" or "/tag"
+                                tagName = content.substring(i + 1, content.indexOf('>', i));
+
+                                // If its a closing tag
+                                if (tagName[0] == '/') {
+
+
+                                    if (tagName != '/' + openTags[0]) {
+                                        config.errMsg = 'ERROR en HTML: the top of the stack should be the tag that closes';
+                                    } else {
+                                        openTags.shift(); // Pops the last tag from the open tag stack (the tag is closed in the retult HTML!)
+                                    }
+
+                                } else {
+                                    // There are some nasty tags that don't have a close tag like <br/>
+                                    if (tagName.toLowerCase() != 'br') {
+                                        openTags.unshift(tagName); // Add to start the name of the tag that opens
+                                    }
+                                }
+                            }
+                            if (inTag && content[i] == '>') {
+                                inTag = false;
+                            }
+
+                            if (inTag) { bag += content.charAt(i); } // Add tag name chars to the result
+                            else {
+                                r++;
+                                if (countChars <= config.showChars) {
+                                    bag += content.charAt(i); // Fix to ie 7 not allowing you to reference string characters using the []
+                                    countChars++;
+                                } else // Now I have the characters needed
+                                {
+                                    if (openTags.length > 0) // I have unclosed tags
+                                    {
+                                        //console.log('They were open tags');
+                                        //console.log(openTags);
+                                        for (j = 0; j < openTags.length; j++) {
+                                            //console.log('Cierro tag ' + openTags[j]);
+                                            bag += '</' + openTags[j] + '>'; // Close all tags that were opened
+
+                                            // You could shift the tag from the stack to check if you end with an empty stack, that means you have closed all open tags
+                                        }
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+                        c = $('<div/>').html(bag + '<span class="ellip">' + config.ellipsesText + '</span>').html();
+                    }else{
+                        c+=config.ellipsesText;
+                    }
+
+                    var html = '<div class="shortcontent">' + c +
+                        '</div><div class="allcontent">' + content +
+                        '</div><span><a href="javascript://nop/" class="morelink">' + config.moreText + '</a></span>';
+
+                    $this.html(html);
+                    $this.find(".allcontent").hide(); // Hide all text
+                    $('.shortcontent p:last', $this).css('margin-bottom', 0); //Remove bottom margin on last paragraph as it's likely shortened
+                }
+            });
+
+        };
+
+    })(jQuery);
+
+    $(document).ready(function() {
+
+        $(".comment").shorten({showChars: 550});
+
+        $(".comment-small").shorten({showChars: 50});
+
+    });
 </script>
 @stack('scripts')
 

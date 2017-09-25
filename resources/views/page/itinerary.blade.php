@@ -5,10 +5,10 @@
 <header>
     <div class="header-menu-d clearfix">
         <div class="col">
-            <div class="row justify-content-between">
-                <div class="col-4">
+            <div class="row justify-content-center">
+                <div class="col d-none d-sm-inline">
                     <div class="row">
-                        <div class="col border border-top-0 border-right-0 border-secondary">
+                        <div class="col border border-top-0 border-right-0 border-left-0 border-secondary">
                             <div class="d-inline font-montserrat">
                                 <a href="" class="text-light"><i class="fa fa-phone"></i> (11) 3198-1385</a>
                             </div>
@@ -16,35 +16,66 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-8 col-sm-4 col-md-5 col-lg-3">
                     <div class="row justify-content-center">
-                        <div class="mt-2 text-center">
+                        <div class="mt-2 text-center text-center">
                             @include('page.include.logo')
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                {{--<div class="col-8 d-sm-none">--}}
+                {{--<div class="row justify-content-center">--}}
+                {{--<div class="mt-2 text-center text-center">--}}
+                {{--@include('page.include.logo')--}}
+                {{--</div>--}}
+                {{--</div>--}}
+                {{--</div>--}}
+                <div class="col d-none d-sm-inline">
                     <div class="row">
-                        <div class="col border border-top-0 border-left-0 border-secondary text-right">
+                        <div class="col border border-top-0 border-left-0 border-right-0 border-secondary text-right">
                             <div class="d-inline font-montserrat">
-                                <a href="/#contato" class="text-light">Contato</a>
+                                <a href="#contato" class="text-light">Contato</a>
                             </div>
                             <div class="d-inline font-montserrat">
                                 {{--<a href="" class="text-light">(813) 454-9707</a>--}}
                             </div>
+                            {{--<div class="d-inline">--}}
+                            {{--<a href=""><img src="{{asset('images/icons/whatsapp.png')}}" alt=""></a>--}}
+                            {{--</div>--}}
+                            {{--<div class="d-inline">--}}
+                            {{--<a href=""><img src="{{asset('images/icons/messenger.png')}}" alt=""></a>--}}
+                            {{--</div>--}}
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="col mt-25vh text-center">
+
+        <div class="col mt-25vh text-center d-none d-sm-block">
+            {{--<p class="h1 text-light">Display 4</p>--}}
+            @foreach($paquete as $paquetes)
+                <blockquote class="blockquote text-center">
+                    <p class="mb-0 display-4 text-light my-3 font-weight-normal text-capitalize"><strong>Pacote de Viagem:</strong> {{strtolower($paquetes->titulo)}}</p>
+                    {{--<footer class="blockquote-footer text-light">Someone famous in <cite title="Source Title">Source Title</cite></footer>--}}
+                    <footer class=" text-warning h1 font-montserrat font-weight-normal">{{$paquetes->duracion}} dias | de
+                        @foreach($paquetes->precio_paquetes as $precio)
+                            @if($precio->estrellas == 2)
+                                <sup>$</sup>{{$precio->precio}}
+                            @endif
+                        @endforeach
+                    </footer>
+                </blockquote>
+            @endforeach
+        </div>
+
+        <div class="col text-center my-5 d-sm-none">
             {{--<p class="h1 text-light">Display 4</p>--}}
             @foreach($paquete as $paquetes)
             <blockquote class="blockquote text-center">
-                <p class="mb-0 display-4 text-light my-3 font-weight-normal text-capitalize"><strong>Pacote de Viagem:</strong> {{strtolower($paquetes->titulo)}}</p>
+                <p class="mb-0 h1 text-light my-3 font-weight-normal text-capitalize"><strong>Pacote de Viagem:</strong> {{strtolower($paquetes->titulo)}}</p>
                 {{--<footer class="blockquote-footer text-light">Someone famous in <cite title="Source Title">Source Title</cite></footer>--}}
-                <footer class=" text-warning h1 font-montserrat font-weight-normal">{{$paquetes->duracion}} dias | de
+                <footer class=" text-warning h2 font-montserrat font-weight-normal">{{$paquetes->duracion}} dias | de
                     @foreach($paquetes->precio_paquetes as $precio)
                         @if($precio->estrellas == 2)
                             <sup>$</sup>{{$precio->precio}}
@@ -74,14 +105,14 @@
 </header>
 
 <!-- Navigation -->
-@include('page.include.menu');
+@include('page.include.menu')
 
 <!-- /. -->
 <!-- Page Content -->
 <section class="py-5">
     <div class="container">
         <div class="row">
-            <div class="col-8">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-8">
 
                 <div class="row">
                     <div class="col">
@@ -93,10 +124,33 @@
                     </div>
                 </div>
 
+                <div class="row my-4 d-sm-block d-md-block d-lg-none">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <div class="d-block text-left">
+                                    <span class="text-primary h4 font-weight-bold align-bottom">{{$paquetes->duracion}} Dias</span>
+                                    <img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid mb-1" width="100">
+                                </div>
+                                {{--<p class="text-primary h4 font-weight-bold">10 Day</p>--}}
+                                <p class="h3 text-secondary"></p>
+                                <p class="h1 font-montserrat py-2"><small class="text-secondary h5">desde </small>
+                                    @foreach($paquetes->precio_paquetes as $precio)
+                                        @if($precio->estrellas == 2)
+                                            <sup>$</sup>{{$precio->precio}}
+                                        @endif
+                                    @endforeach
+                                    <small>USD</small></p>
+                                <a href="#book-now" class="btn btn-warning btn-block btn-lg btn-info">Consulte</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="row position-relative">
                     <div class="col">
-                        <ul id="navbar-example" class="nav nav-pills nav-fill sticky-top bg-light mt-3">
+                        <ul id="navbar-example" class="nav nav-pills nav-fill sticky-top bg-light mt-3 d-none d-sm-flex">
                             <li class="nav-item">
                                 <a class="nav-link" href="#Overview">Visão geral</a>
                             </li>
@@ -112,7 +166,7 @@
 
                         </ul>
                         <div data-spy="scroll" data-target="#navbar-example" data-offset="200" class="scrollspy-example">
-                            <div id="Overview" class="pt-4">
+                            <div id="Overview" class="pt-4 d-none d-sm-block">
                                 <h3 class="h3 py-2">Visão geral</h3>
                                 <div class="col my-4">
                                     <div class="row">
@@ -236,7 +290,7 @@
                 </div>
 
             </div>
-            <div class="col">
+            <div class="col d-none d-sm-none d-md-none d-lg-inline">
                 <div class="sticky-top">
                     <div class="card">
                         <div class="card-body text-center">
@@ -294,7 +348,7 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-6">
+            <div class="col-12 col-sm-9 col-md-9 col-lg-8">
                 <form id="d_form" role="form">
                     {{csrf_field()}}
                     <h3 class="text-secondary mt-4">Acomodação</h3>

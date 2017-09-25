@@ -5,10 +5,10 @@
 <header class="">
     <div class="header-menu clearfix">
         <div class="col">
-            <div class="row justify-content-between">
-                <div class="col-4">
+            <div class="row justify-content-center">
+                <div class="col d-none d-sm-inline">
                     <div class="row">
-                        <div class="col border border-top-0 border-right-0 border-secondary">
+                        <div class="col border border-top-0 border-right-0 border-left-0 border-secondary">
                             <div class="d-inline font-montserrat">
                                 <a href="" class="text-light"><i class="fa fa-phone"></i> (11) 3198-1385</a>
                             </div>
@@ -16,16 +16,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-8 col-sm-4 col-md-5 col-lg-3">
                     <div class="row justify-content-center">
                         <div class="mt-2 text-center text-center">
                             @include('page.include.logo')
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                {{--<div class="col-8 d-sm-none">--}}
+                    {{--<div class="row justify-content-center">--}}
+                        {{--<div class="mt-2 text-center text-center">--}}
+                            {{--@include('page.include.logo')--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+                <div class="col d-none d-sm-inline">
                     <div class="row">
-                        <div class="col border border-top-0 border-left-0 border-secondary text-right">
+                        <div class="col border border-top-0 border-left-0 border-right-0 border-secondary text-right">
                             <div class="d-inline font-montserrat">
                                 <a href="#contato" class="text-light">Contato</a>
                             </div>
@@ -47,13 +54,16 @@
         <div class="col mt-20vh text-center">
             {{--<p class="h1 text-light">Display 4</p>--}}
             <blockquote class="blockquote text-center">
-                <p class="h1 text-light font-weight-light"><strong>Agência de viagens</strong> e operador turístico com base em <strong>Cusco</strong></p>
+                <p class="h1 text-light font-weight-light d-none d-sm-inline"><strong>Agência de viagens</strong> e operador turístico com base em <strong>Cusco</strong></p>
+                <p class="h1 text-light font-weight-light d-sm-none"><strong><a href="tel:+1131981385" class="text-white">(11) 3198-1385</a></strong> </p>
+                <a href="https://api.whatsapp.com/send?phone=51980385734" class="d-sm-none"><img src="{{asset('images/icons/whatsapp.png')}}" alt=""></a>
+                <a href="https://m.me/GOTOPERUcom/" class="d-sm-none"><img src="{{asset('images/icons/messenger.png')}}" alt=""></a>
                 {{--<footer class="blockquote-footer text-light">Someone famous in <cite title="Source Title">Source Title</cite></footer>--}}
                 {{--<footer class=" text-light">$150 average saving | 24/7 local authentic assistance | 100s of testimonials</footer>--}}
             </blockquote>
 
             <div class="row justify-content-center">
-                <div class="col-2 border border-warning rounded p-3 text-center">
+                <div class="col-2 col-sm-4 col-md-4 col-lg-2 border border-warning rounded p-3 text-center d-none d-sm-inline">
                     <h3 class="text-warning">Machu Picchu</h3>
                     <dl class="row text-light h4">
                         <dt class="col text-right">4 <small>Dias</small></dt>
@@ -80,11 +90,11 @@
         {{--</div>--}}
     </div>
     <video autoplay="autoplay" loop="loop" id="video_background" preload="auto" poster="{{asset('images/sliders/package-1.jpg')}}" muted/>
-        <source src="{{asset('media/video6.m4v')}}" type="video/mp4" />
-        <source src="{{asset('media/video6.webm')}}" type="video/webm" />
-        <source src="{{asset('media/video6.ogv')}}" type="video/ogg" />
-        <source src="{{asset('media/video6.mp4')}}" />
-        <img alt="video6" src="{{asset('images/sliders/package-1.jpg')}}" style="position:absolute;left:0;" width="100%" title="Video playback is not supported by your browser" />
+        {{--<source src="{{asset('media/video6.m4v')}}" type="video/mp4" />--}}
+        {{--<source src="{{asset('media/video6.webm')}}" type="video/webm" />--}}
+        {{--<source  src="{{asset('media/video6.ogv')}}" type="video/ogg" />--}}
+        {{--<source src="{{asset('media/video6.mp4')}}" />--}}
+        {{--<img alt="video6" src="{{asset('images/sliders/package-1.jpg')}}" style="position:absolute;left:0;" width="100%" title="Video playback is not supported by your browser" />--}}
     </video/>
 </header>
 
@@ -245,7 +255,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-7">
+            <div class="col col-sm-12 col-md-12 col-lg-7 d-none d-sm-inline">
                 <div class="row">
                     <div class="col">
                         <div class="d-block">
@@ -258,11 +268,11 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col">
+                    <div class="col-12 col-sm">
                         <h4 class="pt-1">Nossa Promesa</h4>
                         <p>Não deixe escapar esta oportunidade de descobrir os encantos de Peru e viver uma aventura inesquecível.</p>
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-sm">
                         <div class="row justify-content-center">
                             <div class="col-5">
                                 <img src="{{asset('images/firma-paul.jpg')}}" alt="" class="img-fluid">
@@ -281,7 +291,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col mt-5">
+            <div class="col mt-5 d-none d-sm-inline">
                 <div class="content-video-1">
                     <img src="{{asset('images/prom-peru-4.jpg')}}" alt="video" class="img-fluid">
                     <div class="content-video-btn-1">
@@ -309,37 +319,37 @@
             </div>
         </div>
         <div class="row mt-2 justify-content-center">
-            <div class="col-8">
+            <div class="col-12 col-sm-8 col-md-12 col-lg-8">
                 <div class="row text-center">
-                    <div class="col">
+                    <div class="col-4 col-sm">
                         <img src="{{asset('images/icons/include/assistances.png')}}" alt="" class="img-fluid">
                         <small class="d-block text-secondary">Assistências</small>
                     </div>
-                    <div class="col">
+                    <div class="col-4 col-sm">
                         <img src="{{asset('images/icons/include/breakfast.png')}}" alt="" class="img-fluid">
                         <small class="d-block text-secondary">Café da manhã</small>
                     </div>
-                    <div class="col">
+                    <div class="col-4 col-sm">
                         <img src="{{asset('images/icons/include/entrances.png')}}" alt="" class="img-fluid">
                         <small class="d-block text-secondary">Entradas</small>
                     </div>
-                    {{--<div class="col">--}}
+                    {{--<div class="col-4 col-sm">--}}
                         {{--<img src="{{asset('images/icons/include/flight.png')}}" alt="" class="img-fluid">--}}
                         {{--<small class="d-block text-secondary">Voos</small>--}}
                     {{--</div>--}}
-                    <div class="col">
+                    <div class="col-4 col-sm">
                         <img src="{{asset('images/icons/include/hotels.png')}}" alt="" class="img-fluid">
                         <small class="d-block text-secondary">Hoteis</small>
                     </div>
-                    <div class="col">
+                    <div class="col-4 col-sm">
                         <img src="{{asset('images/icons/include/tours.png')}}" alt="" class="img-fluid">
                         <small class="d-block text-secondary">Tours</small>
                     </div>
-                    <div class="col">
+                    <div class="col-4 col-sm">
                         <img src="{{asset('images/icons/include/trains.png')}}" alt="" class="img-fluid">
                         <small class="d-block text-secondary">Trenes</small>
                     </div>
-                    <div class="col">
+                    <div class="col-4 col-sm">
                         <img src="{{asset('images/icons/include/transfers.png')}}" alt="" class="img-fluid">
                         <small class="d-block text-secondary">Traslados</small>
                     </div>
@@ -398,15 +408,15 @@
     <div class="container">
 
         <div class="row pb-5 justify-content-center">
-            <div class="col-4">
+            <div class="col-12 col-sm-8 col-md-8 col-lg-4">
                 <img src="{{asset('images/logos/logo-andes-c.png')}}" alt="" class="img-fluid">
             </div>
         </div>
 
         <div class="row pt-4">
-            <div class="col">
+            <div class="col-12 col-sm-4 mb-5">
                 <div class="row justify-content-center">
-                    <div class="col-4">
+                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
                         <img src="{{asset('images/icons/group.png')}}" alt="" class="img-fluid">
                     </div>
                 </div>
@@ -416,9 +426,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-sm-4 mb-5">
                 <div class="row justify-content-center">
-                    <div class="col-4">
+                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
                         <img src="{{asset('images/icons/assistance.png')}}" alt="" class="img-fluid">
                     </div>
                 </div>
@@ -428,9 +438,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-sm-4 mb-5">
                 <div class="row justify-content-center">
-                    <div class="col-4">
+                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
                         <img src="{{asset('images/icons/customize.png')}}" alt="" class="img-fluid">
                     </div>
                 </div>
@@ -440,10 +450,11 @@
                     </div>
                 </div>
             </div>
-            <div class="w-100 py-4"></div>
-            <div class="col">
+
+            {{--<div class="w-100 py-4"></div>--}}
+            <div class="col-12 col-sm-4 mb-5">
                 <div class="row justify-content-center">
-                    <div class="col-4">
+                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
                         <img src="{{asset('images/icons/location.png')}}" alt="" class="img-fluid">
                     </div>
                 </div>
@@ -453,9 +464,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-sm-4 mb-5">
                 <div class="row justify-content-center">
-                    <div class="col-4">
+                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
                         <img src="{{asset('images/icons/trip.png')}}" alt="" class="img-fluid">
                     </div>
                 </div>
@@ -465,9 +476,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-sm-4 mb-5">
                 <div class="row justify-content-center">
-                    <div class="col-4">
+                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
                         <img src="{{asset('images/icons/departure.png')}}" alt="" class="img-fluid">
                     </div>
                 </div>

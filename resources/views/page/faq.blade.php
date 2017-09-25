@@ -5,46 +5,24 @@
     <div class="header-menu-d clearfix">
         <div class="col">
             <div class="row justify-content-between">
-                <div class="col-3 header-packages">
-                    {{--<div class="row">--}}
-                    {{--<div class="col border border-top-0 border-right-0 border-secondary">--}}
-                    {{--<div class="d-inline font-montserrat">--}}
-                    {{--<a href="" class="text-light">(813) 454-9707</a>--}}
-                    {{--</div>--}}
-                    {{--<div class="d-inline bg-success">d-inline</div>--}}
-                    {{--</div>--}}
-                    {{--</div>--}}
-
+                <div class="col-12 col-sm-5 col-md-5 col-lg-3 header-packages">
                     <div class="row">
                         <div class="col my-4 text-center">
                             @include('page.include.logo')
                         </div>
                     </div>
-                    {{--<div class="row">--}}
-                    {{--<div class="col text-center">--}}
-                    {{--<h3 class="font-weight-normal text-secondary">Viagem a machupicchu, uma viagem de ensonho</h3>--}}
-                    {{--</div>--}}
-                    {{--</div>--}}
-                    {{--<div class="row my-3">--}}
-                    {{--<div class="col">--}}
-                    {{--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <strong class="text-warning">Adipisci consectetur</strong> cumque cupiditate distinctio dolor eaque eveniet</p>--}}
-                    {{--<blockquote class="blockquote">--}}
-                    {{--<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing erat a ante.</p>--}}
-                    {{--<footer class="blockquote-footer">Someone<cite title="Source Title">Source Title</cite></footer>--}}
-                    {{--</blockquote>--}}
-                    {{--</div>--}}
-                    {{--</div>--}}
+
+                    <div class="col mt-25vh text-center d-sm-none">
+                        {{--<p class="h1 text-light">Display 4</p>--}}
+                        <blockquote class="blockquote text-center">
+                            <h1 class="h1 text-light font-weight-light"><strong>Preguntas Frequentes</strong></h1>
+                        </blockquote>
+                    </div>
+
                 </div>
-                {{--<div class="col-3">--}}
-                {{--<div class="row justify-content-center">--}}
-                {{--<div class="mt-2">--}}
-                {{--<img src="{{asset('images/logos/logo-andes-b.png')}}" alt="" class="img-fluid">--}}
-                {{--</div>--}}
-                {{--</div>--}}
-                {{--</div>--}}
                 <div class="col">
                     <div class="row">
-                        <div class="col border border-top-0 border-left-0 border-secondary text-right">
+                        <div class="col border border-top-0 border-left-0 border-right-0 border-secondary text-right d-none d-sm-block">
                             <div class="d-inline font-montserrat">
                                 <a href="/#contato" class="text-light">Contato</a>
                             </div>
@@ -54,10 +32,10 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col mt-40vh text-center">
+                        <div class="col mt-40vh text-center d-none d-sm-block">
                             {{--<p class="h1 text-light">Display 4</p>--}}
                             <blockquote class="blockquote text-center">
-                                <h1 class="display-3 text-light"><strong>PREGUNTAS FREQUENTES</strong></h1>
+                                <h1 class="display-3 text-light"><strong>Preguntas Frequentes</strong></h1>
                             </blockquote>
                         </div>
                     </div>

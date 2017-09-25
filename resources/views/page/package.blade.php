@@ -6,7 +6,7 @@
     <div class="header-menu-d clearfix">
         <div class="col">
             <div class="row justify-content-between">
-                <div class="col-2 header-packages bg-light-t">
+                <div class="col-7 col-sm-4 col-md-4 col-lg-2 header-packages bg-light-t d-none d-sm-block">
                     {{--<div class="row">--}}
                         {{--<div class="col border border-top-0 border-right-0 border-secondary">--}}
                             {{--<div class="d-inline font-montserrat">--}}
@@ -36,6 +36,15 @@
                         </div>
                     </div>
                 </div>
+                <div class="col d-sm-none">
+                    <div class="col-8 col-sm-4 col-md-3 col-lg-3">
+                        <div class="row justify-content-center">
+                            <div class="mt-2 text-center text-center">
+                                @include('page.include.logo-b')
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 {{--<div class="col-3">--}}
                     {{--<div class="row justify-content-center">--}}
                         {{--<div class="mt-2">--}}
@@ -45,7 +54,7 @@
                 {{--</div>--}}
                 <div class="col">
                     <div class="row">
-                        <div class="col border border-top-0 border-left-0 border-secondary text-right">
+                        <div class="col border border-top-0 border-left-0 border-right-0 border-secondary text-right d-none d-sm-inline">
                             <div class="d-inline font-montserrat">
                                 <a href="/#contato" class="text-light">Contato</a>
                             </div>
@@ -55,7 +64,13 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col mt-40vh text-center">
+                        <div class="col mt-25vh text-center d-sm-none">
+                            {{--<p class="h1 text-light">Display 4</p>--}}
+                            <blockquote class="blockquote text-center">
+                                <h1 class="display-4 text-light"><strong>Pacotes de Viagem</strong></h1>
+                            </blockquote>
+                        </div>
+                        <div class="col mt-40vh text-center d-none d-sm-block">
                             {{--<p class="h1 text-light">Display 4</p>--}}
                             <blockquote class="blockquote text-center">
                                 <h1 class="display-3 text-light"><strong>Pacotes de Viagem</strong></h1>
@@ -95,7 +110,7 @@
 </header>
 
 <!-- Navigation -->
-@include('page.include.menu');
+@include('page.include.menu')
 
 <!-- /. -->
 <!-- Page Content -->
@@ -107,7 +122,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-7">
+            <div class="col col-sm-12 col-md-12 col-lg-7 d-none d-sm-inline">
                 <div class="row">
                     <div class="col">
                         <div class="d-block">
@@ -146,7 +161,7 @@
                     {{--</div>--}}
                 {{--</div>--}}
             </div>
-            <div class="col mt-5">
+            <div class="col mt-5 d-none d-md-block">
                 <div class="content-video-1">
                     <img src="{{asset('images/prom-peru-4.jpg')}}" alt="video" class="img-fluid">
                     <div class="content-video-btn-1">
@@ -171,7 +186,7 @@
             <div class="col-12">
                 <div class="row d-flex my-4">
                     @foreach($paquetes->sortBy('duracion') as $paquete)
-                    <div class="col-4 d-flex mb-4">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 d-flex mb-4">
                         <div class="card">
                             {{--<div class="card-header">--}}
                             {{--<h4 class="card-title">City tour em cusco</h4>--}}
