@@ -16,19 +16,13 @@
                     <a class="nav-link" href="{{route('package_show_path')}}">Pacotes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Destino</a>
+                    <a class="nav-link" href="{{route('destinations_show_path')}}">Destino</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">A empresa</a>
+                    <a class="nav-link" href="{{route('about_show_path')}}">A empresa</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Depoimentos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Dicas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contato</a>
+                    <a class="nav-link" href="{{route('faq_show_path')}}">Dicas</a>
                 </li>
             </ul>
         </div>
