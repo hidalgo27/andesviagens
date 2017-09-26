@@ -92,17 +92,17 @@
                 </div>
             </div>
 
-            <div class="col-md-auto d-sm-none d-md-none d-lg-inline">
+            <div class="col-12 col-md-auto d-sm-none d-md-none d-lg-inline">
                 <img src="{{asset('images/about/about12.jpg')}}" alt="" class="img-fluid">
             </div>
         </div>
         <div class="row w-100 no-gutters align-items-center bg-light">
-            <div class="col-md-auto">
+            <div class="col-12 col-md-auto d-none d-sm-inline">
                 <img src="{{asset('images/about/about28.jpg')}}" alt="" class="img-fluid d-sm-none d-md-none d-lg-inline">
             </div>
 
 
-            <div class="col-md-auto">
+            <div class="col-12 col-md-auto">
                 <img src="{{asset('images/about/about6.jpg')}}" alt="" class="img-fluid">
             </div>
 
@@ -114,16 +114,16 @@
             </div>
         </div>
         <div class="row w-100 no-gutters align-items-center bg-dark">
-            <div class="col-md-auto">
+            <div class="col-12 col-md-auto">
                 <img src="{{asset('images/about/about-l.jpg')}}" alt="" class="img-fluid">
             </div>
             <div class="col text-white text-center">
                 <div class="row justify-content-center">
-                    <div class="col-6 my-3">
-                        <img src="{{asset('images/logos/logo-andes.png')}}" alt="" class="img-fluid">
+                    <div class="col-12 my-3">
+                        <img src="{{asset('images/logos/logo-andes-b.png')}}" alt="" class="img-fluid">
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-12">
                     <p>A filosofia da Andes Viagens é criada de um princípio muito simples:“Fazer todas as coisas certas, tanto para nossos passageiros, nossa equipe, como para os lugares em que passarmos.”</p>
                 </div>
             </div>
@@ -141,13 +141,15 @@
                 </div>
             </div>
 
-            <div class="col-md-auto">
+            <div class="col-12 col-md-auto">
                 <img src="{{asset('images/about/about-j.jpg')}}" alt="" class="img-fluid">
             </div>
         </div>
 
         <div class="row no-gutters">
-            <img src="{{asset('images/about/about-n.jpg')}}" alt="" class="img-fluid">
+            <div class="col">
+                <img src="{{asset('images/about/about-n.jpg')}}" alt="" class="img-fluid">
+            </div>
         </div>
 
         <div class="row bg-dark no-gutters align-items-center py-5">
