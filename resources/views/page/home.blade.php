@@ -91,7 +91,7 @@
 </header>
 
 <header class="d-lg-none">
-    <div class="header-menu-d clearfix">
+    <div class="header-menu-d header-bg-t clearfix">
         <div class="col">
             <div class="row justify-content-between">
                 <div class="col-12 col-sm-5 col-md-5 col-lg-3 header-packages">

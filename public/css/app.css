@@ -15635,6 +15635,10 @@ form.registration-form fieldset {
   background-color: #ffdd00;
 }
 
+.header-bg-t {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 .box-more {
   display: none;
 }
