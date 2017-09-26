@@ -16,7 +16,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-8 col-sm-4 col-md-5 col-lg-3">
+                <div class="col-11 col-sm-4 col-md-5 col-lg-3">
                     <div class="row justify-content-center">
                         <div class="mt-2 text-center text-center">
                             @include('page.include.logo')
@@ -340,7 +340,7 @@
 <section class="py-5 bg-light" id="book-now">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-6 text-center">
+            <div class="col-12 col-sm-9 col-md-9 col-lg-8 text-center">
                 <span class="text-secondary font-weight-bold">PACOTE</span>
                 <h2 class="text-primary font-weight-bold">{{$paquetes->titulo}} {{$paquetes->duracion}} DIAS</h2>
                 {{--<h5 class="text-secondary">{{$paquetes->duracion}} Days</h5>--}}

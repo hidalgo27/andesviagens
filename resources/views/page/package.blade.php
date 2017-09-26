@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <div class="col d-sm-none">
-                    <div class="col-8 col-sm-4 col-md-3 col-lg-3">
+                    <div class="col-12 col-sm-4 col-md-3 col-lg-3">
                         <div class="row justify-content-center">
                             <div class="mt-2 text-center text-center">
                                 @include('page.include.logo-b')
