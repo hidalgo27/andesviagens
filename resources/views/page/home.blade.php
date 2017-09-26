@@ -2,7 +2,7 @@
 
 @section('content')
 
-<header class="">
+<header class="d-none d-lg-block">
     <div class="header-menu clearfix">
         <div class="col">
             <div class="row justify-content-center">
@@ -63,20 +63,11 @@
             </blockquote>
 
             <div class="row justify-content-center">
-                <div class="col-2 col-sm-4 col-md-4 col-lg-2 border border-warning rounded p-3 text-center d-none d-sm-inline">
-                    <h3 class="text-warning">Machu Picchu</h3>
-                    <dl class="row text-light h4">
-                        <dt class="col text-right">4 <small>Dias</small></dt>
-                        <dd class="col text-left"><sup>$</sup>550</dd>
-                    </dl>
-                    <dl class="row text-light h4">
-                        <dt class="col text-right">5 <small>Dias</small></dt>
-                        <dd class="col text-left"><sup>$</sup>585</dd>
-                    </dl>
-                    <dl class="row text-light h4">
-                        <dt class="col text-right">6 <small>Dias</small></dt>
-                        <dd class="col text-left"><sup>$</sup>650</dd>
-                    </dl>
+                <div class="col-2 col-sm-4 col-md-4 col-lg-3 border border-warning rounded p-3 text-center d-none d-sm-inline">
+                    <h2 class="text-warning">Machu Picchu & Cusco</h2>
+                    <p class="text-white h1">5 <small>Dias</small></p>
+                    <p class="text-white h5 font-weight-light">PARCELAMIENTO</p>
+                    <p class="text-white h2 text-warning">5 <small>X</small> <span class="text-white"><sup>$</sup>650 USD</span></p>
                 </div>
             </div>
         </div>
@@ -90,12 +81,85 @@
         {{--</div>--}}
     </div>
     <video autoplay="autoplay" loop="loop" id="video_background" preload="auto" poster="{{asset('images/sliders/package-1.jpg')}}" muted/>
-        {{--<source src="{{asset('media/video6.m4v')}}" type="video/mp4" />--}}
-        {{--<source src="{{asset('media/video6.webm')}}" type="video/webm" />--}}
-        {{--<source  src="{{asset('media/video6.ogv')}}" type="video/ogg" />--}}
-        <source src="{{asset('media/video6.mp4')}}" />
-        {{--<img alt="video6" src="{{asset('images/sliders/package-1.jpg')}}" style="position:absolute;left:0;" width="100%" title="Video playback is not supported by your browser" />--}}
+    <source src="{{asset('media/video6.mp4')}}" />
+    <source src="{{asset('media/video6.m4v')}}" type="video/mp4" />
+    <source src="{{asset('media/video6.webm')}}" type="video/webm" />
+    <source  src="{{asset('media/video6.ogv')}}" type="video/ogg" />
+        <img alt="video6" src="{{asset('images/sliders/package-1.jpg')}}" style="position:absolute;left:0;" width="100%" title="Video playback is not supported by your browser" />
     </video/>
+
+</header>
+
+<header class="d-lg-none">
+    <div class="header-menu-d clearfix">
+        <div class="col">
+            <div class="row justify-content-between">
+                <div class="col-12 col-sm-5 col-md-5 col-lg-3 header-packages">
+                    <div class="row">
+                        <div class="col my-4 text-center">
+                            @include('page.include.logo')
+                        </div>
+                    </div>
+
+                    <div class="col mt-5 text-center d-sm-none">
+                        {{--<p class="h1 text-light">Display 4</p>--}}
+                        <blockquote class="blockquote text-center">
+                            <p class="h1 text-light font-weight-light d-none d-sm-inline"><strong>Agência de viagens</strong> e operador turístico com base em <strong>Cusco</strong></p>
+                            <p class="h2 text-light font-weight-light d-sm-none"><strong><a href="tel:+1131981385" class="text-white">(11) 3198-1385</a></strong> </p>
+                            <a href="https://api.whatsapp.com/send?phone=51980385734" class="d-sm-none"><img src="{{asset('images/icons/whatsapp.png')}}" alt=""></a>
+                            <a href="https://m.me/GOTOPERUcom/" class="d-sm-none"><img src="{{asset('images/icons/messenger.png')}}" alt=""></a>
+                            {{--<footer class="blockquote-footer text-light">Someone famous in <cite title="Source Title">Source Title</cite></footer>--}}
+                            {{--<footer class=" text-light">$150 average saving | 24/7 local authentic assistance | 100s of testimonials</footer>--}}
+                        </blockquote>
+                    </div>
+
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col border border-top-0 border-left-0 border-right-0 border-secondary text-right d-none d-sm-block">
+                            <div class="d-inline font-montserrat">
+                                <a href="/#contato" class="text-light">Contato</a>
+                            </div>
+                            <div class="d-inline font-montserrat">
+                                {{--<a href="" class="text-light">(813) 454-9707</a>--}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col mt-30vh text-center d-none d-sm-block">
+                            {{--<p class="h1 text-light">Display 4</p>--}}
+
+                            <blockquote class="blockquote text-center">
+                                <p class="h1 text-light font-weight-light d-none d-sm-inline"><strong>Agência de viagens</strong> e operador turístico com base em <strong>Cusco</strong></p>
+                                <p class="h2 text-light font-weight-bold d-none d-sm-block my-4 font-montserrat"><strong><a href="tel:+1131981385" class="text-white"><i class="fa fa-phone"></i> (11) 3198-1385</a></strong> </p>
+                            </blockquote>
+                            <div class="row justify-content-center">
+                                <div class="col-2 col-sm-10 col-md-10 col-lg-3 border border-warning rounded p-3 text-center d-none d-sm-inline">
+                                    <h2 class="text-warning">Machu Picchu & Cusco</h2>
+                                    <p class="text-white h1">5 <small>Dias</small></p>
+                                    <p class="text-white h5 font-weight-light">PARCELAMIENTO</p>
+                                    <p class="text-white h2 text-warning">5 <small>X</small> <span class="text-white"><sup>$</sup>650 USD</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active" style="background-image: url({{asset('images/destinations/slider-1.jpg')}})">
+            </div>
+            <div class="carousel-item" style="background-image: url({{asset('images/destinations/slider-2.jpg')}})">
+            </div>
+            <div class="carousel-item" style="background-image: url({{asset('images/destinations/slider-3.jpg')}})">
+            </div>
+            <div class="carousel-item" style="background-image: url({{asset('images/destinations/slider-4.jpg')}})">
+            </div>
+        </div>
+    </div>
 </header>
 
 @include('page.include.menu')
@@ -104,63 +168,65 @@
 <section class="py-4 bg-light" id="contato">
     <div class="container">
 
-        <div class="">
-            <div class="mb-4 text-center">
-                <h4>FORMULÁRIO DE CONTATO</h4>
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-9 col-md-9">
+                <div class="mb-4 text-center">
+                    <h4>FORMULÁRIO DE CONTATO</h4>
+                </div>
             </div>
-            <form id="d_form">
+            <form id="d_form" class="col-12 col-sm-9 col-md-9 bg-white p-3 rounded">
                 {{csrf_field()}}
-                <div class="card-deck rounded">
-                    <div class="card border-top-0 border-bottom-0 border-left-0 m-0 rounded-0">
-                        <div class="card-body">
-                            <div class="d-block mb-3">
-                                <span class="text-secondary align-bottom">Informação pessoal</span>
-                                {{--<img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid mb-1" width="100">--}}
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="form-group">
-                                        {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Nome</label>--}}
-                                        <input type="text" class="form-control" id="d_name" placeholder="Nome Completo">
-                                    </div>
-                                    <div class="form-group">
-                                        {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Email</label>--}}
-                                        <input type="email" class="form-control" id="d_email" placeholder="Seu Email">
-                                    </div>
+                <div class="row">
+                    <div class="col-12 col-sm border-secondary border-right-0  m-0">
+
+                        <div class="d-block mb-3">
+                            <span class="text-secondary align-bottom">Informação pessoal</span>
+                            {{--<img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid mb-1" width="100">--}}
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Nome</label>--}}
+                                    <input type="text" class="form-control" id="d_name" placeholder="Nome Completo">
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-sm-12 col-md-12 col-lg">
-                                    <div class="form-group">
-                                        {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Data</label>--}}
-                                        <input type="date" class="form-control form-control-sm" id="d_date" placeholder="Data Viagem">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-12 col-md-12 col-lg">
-                                    <div class="form-group">
-                                        {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Telefone</label>--}}
-                                        <input type="tel" class="form-control form-control-sm" id="d_tel" placeholder="N° de Telefone">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-sm-12 col-md-12 col-lg">
-                                    <div class="form-group">
-                                        {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Dias</label>--}}
-                                        <input type="number" class="form-control form-control-sm" id="d_duration" placeholder="N° de Dias">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-12 col-md-12 col-lg">
-                                    <div class="form-group">
-                                        {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Passageiros</label>--}}
-                                        <input type="number" class="form-control form-control-sm" id="d_numero" placeholder="N° de Passageiros">
-                                    </div>
+                                <div class="form-group">
+                                    {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Email</label>--}}
+                                    <input type="email" class="form-control" id="d_email" placeholder="Seu Email">
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg">
+                                <div class="form-group">
+                                    {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Data</label>--}}
+                                    <input type="text" class="form-control" id="d_date" placeholder="Data Viagem">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg">
+                                <div class="form-group">
+                                    {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Telefone</label>--}}
+                                    <input type="tel" class="form-control" id="d_tel" placeholder="N° de Telefone">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 col-sm-12 col-md-12 col-lg">
+                                <div class="form-group">
+                                    {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Dias</label>--}}
+                                    <input type="number" class="form-control" id="d_duration" placeholder="N° de Dias">
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-12 col-md-12 col-lg">
+                                <div class="form-group">
+                                    {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Passageiros</label>--}}
+                                    <input type="number" class="form-control" id="d_numero" placeholder="N° de Passageiros">
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="card border-0 m-0">
-                        <div class="card-body">
+                    <div class="col-12 col-sm border-secondary border-right-0 border-left-0 m-0">
+
                             {{--<h4 class="card-title">Card title</h4>--}}
                             {{--<label class="d-block">Eu Gostaria de visitar</label>--}}
                             <div class="d-block mb-3">
@@ -169,36 +235,36 @@
                             </div>
                             <div class="">
                                 <div class="row">
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg" data-toggle="buttons">
+                                    <div class="col-6 col-sm-12 col-md-12 col-lg mb-2" data-toggle="buttons">
                                         <label class="btn btn-outline-primary btn-block">
                                             <input type="checkbox"  autocomplete="off" name="destinations[]" value="Machu Picchu"> Machu Picchu
                                         </label>
                                     </div>
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg" data-toggle="buttons">
+                                    <div class="col-6 col-sm-12 col-md-12 col-lg mb-2" data-toggle="buttons">
                                         <label class="btn btn-outline-primary btn-block">
                                             <input type="checkbox" autocomplete="off" name="destinations[]" value="Cusco"> Cusco
                                         </label>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg" data-toggle="buttons">
+                                    <div class="col-6 col-sm-12 col-md-12 col-lg mb-2" data-toggle="buttons">
                                         <label class="btn btn-outline-primary btn-block">
                                             <input type="checkbox" checked autocomplete="off" name="destinations[]" value="Lago Titicaca"> Lago titicaca
                                         </label>
                                     </div>
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg" data-toggle="buttons">
+                                    <div class="col-6 col-sm-12 col-md-12 col-lg mb-2" data-toggle="buttons">
                                         <label class="btn btn-outline-primary btn-block">
                                             <input type="checkbox" autocomplete="off" name="destinations[]" value="Puno"> Puno
                                         </label>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg" data-toggle="buttons">
+                                    <div class="col-6 col-sm-12 col-md-12 col-lg mb-2" data-toggle="buttons">
                                         <label class="btn btn-outline-primary btn-block">
                                             <input type="checkbox" checked autocomplete="off" name="destinations[]" value="Lima"> Lima
                                         </label>
                                     </div>
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg" data-toggle="buttons">
+                                    <div class="col-6 col-sm-12 col-md-12 col-lg mb-2" data-toggle="buttons">
                                         <label class="btn btn-outline-primary btn-block">
                                             <input type="checkbox" autocomplete="off" name="destinations[]" value="Lineas de Nazca"> Linhas de Nazca
                                         </label>
@@ -206,34 +272,34 @@
                                 </div>
                             </div>
 
-                            <div class="input-group mt-2">
+                            <div class="input-group">
                                 <span class="input-group-addon" id="">Outros</span>
                                 <input type="text" class="form-control" id="d_otros" aria-describedby="basic-addon3">
                             </div>
-                        </div>
+
                     </div>
-                    <div class="card border-top-0 border-bottom-0 border-right-0 m-0 rounded-0">
-                        <div class="card-body">
-                            <div class="form-group">
-                                <div class="d-block mb-3">
-                                    <span class="text-secondary align-bottom">Dúvidas?</span>
+                    {{--<div class="col border-secondary border-left-0 m-0 d-none">--}}
+
+                            {{--<div class="form-group">--}}
+                                {{--<div class="d-block mb-3">--}}
+                                    {{--<span class="text-secondary align-bottom">Dúvidas?</span>--}}
                                     {{--<img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid mb-1" width="100">--}}
-                                </div>
-                                <textarea class="form-control" id="d_comment" rows="5" placeholder="Como você imagina uma viagem inesquecivel ao Perú, sugestões especiais, perguntas, comentários"></textarea>
-                            </div>
-                            <div class="my-3">
+                                {{--</div>--}}
+                                {{--<textarea class="form-control" id="d_comment" rows="5" placeholder="Como você imagina uma viagem inesquecivel ao Perú, sugestões especiais, perguntas, comentários"></textarea>--}}
+                            {{--</div>--}}
+                            {{--<div class="my-3">--}}
                                 {{--<button type="submit" class="btn btn-lg btn-block btn-warning">Submit</button>--}}
 
-                                <button class="btn btn-lg btn-block btn-warning" id="d_send" type="button" onclick="design()">Enviar
-                                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
-                                </button>
-                                <ul class="fa-ul pull-right d-none" id="loader2">
-                                    <li><i class="fa-li fa fa-spinner fa-spin"></i> <i>Enviando...</i></li>
-                                </ul>
+                                {{--<button class="btn btn-lg btn-block btn-warning" id="d_send" type="button" onclick="design()">Enviar--}}
+                                    {{--<i class="fa fa-paper-plane" aria-hidden="true"></i>--}}
+                                {{--</button>--}}
+                                {{--<ul class="fa-ul pull-right d-none" id="loader2">--}}
+                                    {{--<li><i class="fa-li fa fa-spinner fa-spin"></i> <i>Enviando...</i></li>--}}
+                                {{--</ul>--}}
 
-                            </div>
-                        </div>
-                    </div>
+                            {{--</div>--}}
+
+                    {{--</div>--}}
 
                     <div class="alert alert-success alert-dismissible fade d-none" id="d_alert" role="alert">
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -242,7 +308,18 @@
                         <strong>Muito obrigados</strong> por seu contato com ANDES VIAGENS,nas proximas 24 houras voce tera uma resposta de nossos agentes de viagens para ajuda-lo com o planejamento de sua viagem. :)
                     </div>
                 </div>
+                <div class="row mt-3">
+                    <div class="col">
+                    {{--<button type="submit" class="btn btn-lg btn-block btn-warning">Submit</button>--}}
 
+                    <button class="btn btn-lg btn-block btn-warning" id="d_send" type="button" onclick="design()">Enviar
+                        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                    </button>
+                    <ul class="fa-ul pull-right d-none" id="loader2">
+                        <li><i class="fa-li fa fa-spinner fa-spin"></i> <i>Enviando...</i></li>
+                    </ul>
+                    </div>
+                </div>
             </form>
         </div>
     </div>
@@ -585,6 +662,12 @@
                     $("#d_send").removeAttr("disabled");
                 }
             }
+
+            $('#d_date').datepicker({
+                dateFormat: 'yy-mm-dd',
+                changeMonth: true,
+                changeYear: true,
+            });
         </script>
     @endpush
 

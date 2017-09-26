@@ -15597,6 +15597,10 @@ form.registration-form fieldset {
   margin-top: 25vh;
 }
 
+.mt-30vh {
+  margin-top: 30vh;
+}
+
 #video_background {
   position: absolute;
   bottom: 0px;
