@@ -354,7 +354,7 @@
                     <h3 class="text-secondary mt-4">Acomodação</h3>
 
                     <div class="row">
-                        <div class="col" data-toggle="buttons">
+                        <div class="col-6 col-sm" data-toggle="buttons">
                             <label class="btn btn-outline-primary btn-block">
                                 <input type="checkbox" autocomplete="off" name="accommodation[]" value="Econômico"> Econômico
                                 <div class="d-block text-warning">
@@ -363,7 +363,7 @@
                                 </div>
                             </label>
                         </div>
-                        <div class="col" data-toggle="buttons">
+                        <div class="col-6 col-sm" data-toggle="buttons">
                             <label class="btn btn-outline-primary btn-block">
                                 <input type="checkbox" autocomplete="off" name="accommodation[]" value="Turista"> Turista
                                 <div class="d-block text-warning">
@@ -373,7 +373,7 @@
                                 </div>
                             </label>
                         </div>
-                        <div class="col" data-toggle="buttons">
+                        <div class="col-6 col-sm" data-toggle="buttons">
                             <label class="btn btn-outline-primary btn-block">
                                 <input type="checkbox" autocomplete="off" name="accommodation[]" value="Superior"> Superior
                                 <div class="d-block text-warning">
@@ -384,7 +384,7 @@
                                 </div>
                             </label>
                         </div>
-                        <div class="col" data-toggle="buttons">
+                        <div class="col-6 col-sm" data-toggle="buttons">
                             <label class="btn btn-outline-primary btn-block">
                                 <input type="checkbox" autocomplete="off" name="accommodation[]" value="Luxo"> Luxo
                                 <div class="d-block text-warning">
