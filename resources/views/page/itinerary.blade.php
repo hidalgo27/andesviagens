@@ -200,7 +200,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div id="Itinerary" class="">
+                            <div id="Itinerary" class="d-none d-sm-block">
                                 <h3 class="h3 py-5">Roteiro</h3>
                                 @php
                                     $i = 1;
@@ -244,6 +244,23 @@
                                 @endforeach
 
                             </div>
+
+
+                            <div id="Itinerary" class="d-sm-none">
+                                <h3 class="h3 pt-5">Roteiro</h3>
+                                @foreach($paquetes->itinerario->sortBy('dia') as $itinerario)
+                                    <div class="d-block timeline-title mt-5">
+                                        <span class="rounded-circle bg-info text-white py-4 font-weight-bold">DIA {{$itinerario->dia}}</span>
+                                    </div>
+                                    <div class="d-block bg-light p-3 mt-2">
+                                        <h5 class="location-name">{{ucwords(strtolower($itinerario->titulo))}} <i class="fa fa-map-marker icon-marker"></i></h5>
+                                        @php echo $itinerario->descripcion @endphp
+                                    </div>
+                                @endforeach
+
+                            </div>
+
+
                             <div id="Optionals" class="pt-4">
                                 <h3 class="h3 py-2">Opçoes</h3>
                                 @php echo $paquetes->opcional; @endphp
