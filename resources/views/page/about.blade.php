@@ -93,17 +93,17 @@
             </div>
 
             <div class="col-md-auto d-sm-none d-md-none d-lg-inline">
-                <img src="http://andesviagens.com/img/about/about12.jpg" alt="" class="img-fluid">
+                <img src="{{asset('images/about/about12.jpg')}}" alt="" class="img-fluid">
             </div>
         </div>
         <div class="row w-100 no-gutters align-items-center bg-light">
             <div class="col-md-auto">
-                <img src="http://andesviagens.com/img/about/about28.jpg" alt="" class="img-fluid d-sm-none d-md-none d-lg-inline">
+                <img src="{{asset('images/about/about28.jpg')}}" alt="" class="img-fluid d-sm-none d-md-none d-lg-inline">
             </div>
 
 
             <div class="col-md-auto">
-                <img src="http://andesviagens.com/img/about/about6.jpg" alt="" class="img-fluid">
+                <img src="{{asset('images/about/about6.jpg')}}" alt="" class="img-fluid">
             </div>
 
             <div class="col">
@@ -115,12 +115,12 @@
         </div>
         <div class="row w-100 no-gutters align-items-center bg-dark">
             <div class="col-md-auto">
-                <img src="http://andesviagens.com/img/about/about-l.jpg" alt="" class="img-fluid">
+                <img src="{{asset('images/about/about-l.jpg')}}" alt="" class="img-fluid">
             </div>
             <div class="col text-white text-center">
                 <div class="row justify-content-center">
                     <div class="col-6 my-3">
-                        <img src="http://viagens.nu/images/logos/logo-andes.png" alt="" class="img-fluid">
+                        <img src="{{asset('images/logos/logo-andes.png')}}" alt="" class="img-fluid">
                     </div>
                 </div>
                 <div class="col">
@@ -142,12 +142,12 @@
             </div>
 
             <div class="col-md-auto">
-                <img src="http://andesviagens.com/img/about/about-j.jpg" alt="" class="img-fluid">
+                <img src="{{asset('images/about/about-j.jpg')}}" alt="" class="img-fluid">
             </div>
         </div>
 
         <div class="row no-gutters">
-            <img src="http://andesviagens.com/img/about/about-n.jpg" alt="" class="img-fluid">
+            <img src="{{asset('images/about/about-n.jpg')}}" alt="" class="img-fluid">
         </div>
 
         <div class="row bg-dark no-gutters align-items-center py-5">
@@ -155,7 +155,7 @@
             <div class="col text-white text-justify">
                 <div class="row justify-content-center">
                     <div class="col-3 mb-4">
-                        <img src="http://viagens.nu/images/logos/logo-andes-b.png" alt="" class="img-fluid">
+                        <img src="{{asset('images/logos/logo-andes-b.png')}}" alt="" class="img-fluid">
                     </div>
                 </div>
                 <div class="col">
@@ -165,17 +165,17 @@
 
         </div>
         <div class="row my-4">
-            <div class="col">
+            <div class="col-12 col-sm my-3">
                 <div class="card text-white">
-                    <img class="card-img-top" src="http://andesviagens.com/img/about/about-o.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="{{asset('images/about/about-o.jpg')}}" alt="Card image cap">
                     <div class="card-body text-center bg-dark">
                         <p class="card-text"><span class="h4">PAUL CATANO</span> <small class="d-block">Diretor & Fundador</small></p>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-sm my-3">
                 <div class="card bg-light">
-                    <img class="card-img-top" src="http://andesviagens.com/img/about/about-u.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="{{asset('images/about/about-u.jpg')}}" alt="Card image cap">
                     <div class="card-body text-center">
                         <p class="card-text"><span class="h4">MARTIN CATANO</span> <small class="d-block">Diretor Geral</small></p>
                     </div>

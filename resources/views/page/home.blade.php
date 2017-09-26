@@ -93,7 +93,7 @@
         {{--<source src="{{asset('media/video6.m4v')}}" type="video/mp4" />--}}
         {{--<source src="{{asset('media/video6.webm')}}" type="video/webm" />--}}
         {{--<source  src="{{asset('media/video6.ogv')}}" type="video/ogg" />--}}
-        {{--<source src="{{asset('media/video6.mp4')}}" />--}}
+        <source src="{{asset('media/video6.mp4')}}" />
         {{--<img alt="video6" src="{{asset('images/sliders/package-1.jpg')}}" style="position:absolute;left:0;" width="100%" title="Video playback is not supported by your browser" />--}}
     </video/>
 </header>
