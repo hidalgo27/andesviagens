@@ -72,7 +72,7 @@
 </header>
 
 <!-- Navigation -->
-@include('page.include.menu');
+@include('page.include.menu')
 
 <!-- /. -->
 <!-- Page Content -->
@@ -134,12 +134,12 @@
                 <h3>Como prevenir o mal-star causado pela altitude?</h3>
                 <p>R: Fato é que não tem como fugir das escadas e das subidas. Então cuide-se principalmente nos 2 primeiros dias! Não abuse dos cigarros e nem das bebidas alcoólicas. Não exagere na alimentação e faça tudo devagar mesmo</p>
             </div>
-            <div class="col-4">
+            <div class="col-4 d-none d-sm-inline">
                 <img src="{{asset('images/icons/faq/1-icon.png')}}" alt="" class="img-fluid">
             </div>
         </div>
         <div class="row my-4">
-            <div class="col-4">
+            <div class="col-4 d-none d-sm-inline">
                 <img src="{{asset('images/icons/faq/2-icon.png')}}" alt="" class="img-fluid">
             </div>
             <div class="col">
@@ -155,12 +155,12 @@
                 <p>O segredo é negociar sempre, até as corridas de táxi. Você poderá até se sentir desconfortável nas primeiras vezes, mas depois perceberá que está vivenciando parte da cultura andina, o ato da negociação, pois estão acostumados a receber turistas do mundo todo e os preços são ainda mais inflacionados.</p>
                 <p>Segurança. O melhor e mais seguro, é ainda no Brasil, antes de viajar já estar combinado com um translado do Aeroporto ou da rodoviária para seu Hotel. Ao trocar dinheiro, seja discreto, evite que as pessoas na rua saibam onde você o guardou.Não descuide de sua carteira ou bolsa, principalmente em mercados e estação de trem. Não economize em pegar táxis (que são bem mais baratos que no Brasil.</p>
             </div>
-            <div class="col-4">
+            <div class="col-4 d-none d-sm-inline">
                 <img src="{{asset('images/icons/faq/3-icon.png')}}" alt="" class="img-fluid">
             </div>
         </div>
         <div class="row my-4">
-            <div class="col-4">
+            <div class="col-4 d-none d-sm-inline">
                 <img src="{{asset('images/icons/faq/4-icon.png')}}" alt="" class="img-fluid">
             </div>
             <div class="col">
@@ -176,12 +176,12 @@
                 <h3>Quais cidades visitar?</h3>
                 <p>Provavelmente terá vontade de ir para muitas, mas o importante na hora de dedicir é saber o foco: história, cultura, gastronomia, festas; facilitando na definição do seu roteiro. Vale a pena que por onde passe, seja sem pressa, para curtir cada detalhe. E concerteza o país merece mais de uma visita.</p>
             </div>
-            <div class="col-4">
+            <div class="col-4 d-none d-sm-inline">
                 <img src="{{asset('images/icons/faq/5-icon.png')}}" alt="" class="img-fluid">
             </div>
         </div>
         <div class="row my-4">
-            <div class="col-4">
+            <div class="col-4 d-none d-sm-inline">
                 <img src="{{asset('images/icons/faq/6-icon.png')}}" alt="" class="img-fluid">
             </div>
             <div class="col">
@@ -197,7 +197,7 @@
                 <p>É uma pequena e espetacular cidadezinha, construída a base de pedra encima das montanhas da Cordilheira dos Andes. Até 1911, se encontrava perdida pelos enevoados. Está a 2.400 m. acima do nível do mar, poderíamos dizer que está muito perto das nuvens, está mais alta que o Vale Sagrado, onde era a agricultura inca. Sendo sem dúvida o monumento mais conhecido dos Incas.</p>
                 <p>A cada ano, milhares de viajeiros chegam a este enigmático lugar através de diversos meios, como por exemplo por trem ou caminhadas. Partindo de Cusco (a antiga capital inca), em alguns casos atravessando os picos das montanhas escarpadas e em outros casos o lindo vale e claro as ruínas de Ollantaytambo entre outros.</p>
             </div>
-            <div class="col-4">
+            <div class="col-4 d-none d-sm-inline">
                 <img src="{{asset('images/icons/faq/7-icon.png')}}" alt="" class="img-fluid">
             </div>
         </div>
