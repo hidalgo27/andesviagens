@@ -628,7 +628,7 @@
                         "txt_date" : s_date,
                         "txt_tel" : s_tel,
                         "txt_duration" : s_duration,
-                        "txt_number" : s_number,
+                        "txt_number" : s_number
 //                        "txt_comment" : s_comment,
 
                     };

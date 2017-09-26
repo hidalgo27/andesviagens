@@ -175,7 +175,7 @@ class HomeController extends Controller
                 'date' => $date,
                 'name' => $name,
                 'email' => $email,
-                'tel' => $tel,
+                'tel' => $tel
 //                'comment' => $comment
             ], function ($messaje) use ($from) {
                 $messaje->to($from, 'Andes Viagens')
@@ -193,7 +193,7 @@ class HomeController extends Controller
                 'date' => $date,
                 'name' => $name,
                 'email' => $email,
-                'tel' => $tel,
+                'tel' => $tel
 //                'comment' => $comment
             ], function ($messaje) use ($from2) {
                 $messaje->to($from2, 'Andes Viagens')
