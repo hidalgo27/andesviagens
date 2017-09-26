@@ -63,7 +63,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col mt-25vh text-center d-sm-none">
+                        <div class="col-12 mt-25vh text-center d-sm-none">
                             {{--<p class="h1 text-light">Display 4</p>--}}
                             <blockquote class="blockquote text-center">
                                 <h1 class="display-4 text-light"><strong>{{ucwords(strtolower($destinations))}}</strong></h1>
