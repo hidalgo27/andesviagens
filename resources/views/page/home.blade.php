@@ -130,13 +130,13 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg">
                                     <div class="form-group">
                                         {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Data</label>--}}
                                         <input type="date" class="form-control form-control-sm" id="d_date" placeholder="Data Viagem">
                                     </div>
                                 </div>
-                                <div class="col">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg">
                                     <div class="form-group">
                                         {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Telefone</label>--}}
                                         <input type="tel" class="form-control form-control-sm" id="d_tel" placeholder="N° de Telefone">
@@ -144,13 +144,13 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg">
                                     <div class="form-group">
                                         {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Dias</label>--}}
                                         <input type="number" class="form-control form-control-sm" id="d_duration" placeholder="N° de Dias">
                                     </div>
                                 </div>
-                                <div class="col">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg">
                                     <div class="form-group">
                                         {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Passageiros</label>--}}
                                         <input type="number" class="form-control form-control-sm" id="d_numero" placeholder="N° de Passageiros">
@@ -169,36 +169,36 @@
                             </div>
                             <div class="">
                                 <div class="row">
-                                    <div class="col" data-toggle="buttons">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg" data-toggle="buttons">
                                         <label class="btn btn-outline-primary btn-block">
                                             <input type="checkbox"  autocomplete="off" name="destinations[]" value="Machu Picchu"> Machu Picchu
                                         </label>
                                     </div>
-                                    <div class="col" data-toggle="buttons">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg" data-toggle="buttons">
                                         <label class="btn btn-outline-primary btn-block">
                                             <input type="checkbox" autocomplete="off" name="destinations[]" value="Cusco"> Cusco
                                         </label>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col" data-toggle="buttons">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg" data-toggle="buttons">
                                         <label class="btn btn-outline-primary btn-block">
                                             <input type="checkbox" checked autocomplete="off" name="destinations[]" value="Lago Titicaca"> Lago titicaca
                                         </label>
                                     </div>
-                                    <div class="col" data-toggle="buttons">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg" data-toggle="buttons">
                                         <label class="btn btn-outline-primary btn-block">
                                             <input type="checkbox" autocomplete="off" name="destinations[]" value="Puno"> Puno
                                         </label>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col" data-toggle="buttons">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg" data-toggle="buttons">
                                         <label class="btn btn-outline-primary btn-block">
                                             <input type="checkbox" checked autocomplete="off" name="destinations[]" value="Lima"> Lima
                                         </label>
                                     </div>
-                                    <div class="col" data-toggle="buttons">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg" data-toggle="buttons">
                                         <label class="btn btn-outline-primary btn-block">
                                             <input type="checkbox" autocomplete="off" name="destinations[]" value="Lineas de Nazca"> Linhas de Nazca
                                         </label>
