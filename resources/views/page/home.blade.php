@@ -169,12 +169,12 @@
     <div class="container">
 
         <div class="row justify-content-center">
-            <div class="col-12 col-sm-12">
+            <div class="col-12 col-sm-12 col-lg-8">
                 <div class="mb-4 text-center">
                     <h4>FORMULÁRIO DE CONTATO</h4>
                 </div>
             </div>
-            <div class="col-12 col-sm-12 bg-white p-3 rounded">
+            <div class="col-12 col-sm-12 col-lg-8 bg-white p-3 rounded">
             <form id="d_form">
                 {{csrf_field()}}
                 <div class="row">
