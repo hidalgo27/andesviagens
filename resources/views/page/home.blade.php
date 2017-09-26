@@ -67,7 +67,7 @@
                     <h2 class="text-warning">Machu Picchu & Cusco</h2>
                     <p class="text-white h1">5 <small>Dias</small></p>
                     <p class="text-white h5 font-weight-light">PARCELAMIENTO</p>
-                    <p class="text-white h2 text-warning">5 <small>X</small> <span class="text-white"><sup>$</sup>650 USD</span></p>
+                    <p class="text-white h2 text-warning">5 <small>X</small> <span class="text-white"><sup>$</sup>110 USD</span></p>
                 </div>
             </div>
         </div>
@@ -138,7 +138,7 @@
                                     <h2 class="text-warning">Machu Picchu & Cusco</h2>
                                     <p class="text-white h1">5 <small>Dias</small></p>
                                     <p class="text-white h5 font-weight-light">PARCELAMIENTO</p>
-                                    <p class="text-white h2 text-warning">5 <small>X</small> <span class="text-white"><sup>$</sup>650 USD</span></p>
+                                    <p class="text-white h2 text-warning">5 <small>X</small> <span class="text-white"><sup>$</sup>110 USD</span></p>
                                 </div>
                             </div>
                         </div>
