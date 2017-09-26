@@ -36,7 +36,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col d-sm-none">
+                <div class="col-12 d-sm-none">
                     <div class="col-12 col-sm-4 col-md-3 col-lg-3">
                         <div class="row justify-content-center">
                             <div class="mt-2 text-center text-center">
@@ -64,7 +64,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col mt-25vh text-center d-sm-none">
+                        <div class="col-12 mt-25vh text-center d-sm-none">
                             {{--<p class="h1 text-light">Display 4</p>--}}
                             <blockquote class="blockquote text-center">
                                 <h1 class="display-4 text-light"><strong>Pacotes de Viagem</strong></h1>
