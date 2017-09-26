@@ -161,7 +161,7 @@
                     {{--</div>--}}
                 {{--</div>--}}
             </div>
-            <div class="col mt-5 d-none d-md-block">
+            <div class="col mt-5 d-none d-lg-block">
                 <div class="content-video-1">
                     <img src="{{asset('images/prom-peru-4.jpg')}}" alt="video" class="img-fluid">
                     <div class="content-video-btn-1">
