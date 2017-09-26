@@ -109,7 +109,11 @@
                                 <p class="h1 font-montserrat font-weight-bold">
                                     @foreach($paquete->precio_paquetes as $precio)
                                         @if($precio->estrellas == 2)
-                                            <sup>$</sup>{{$precio->precio}}
+                                            @if($precio->precio > 0)
+                                                <sup>$</sup> {{$precio->precio}} <small>USD</small>
+                                            @else
+                                                A Pedido
+                                            @endif
                                         @endif
                                     @endforeach
                                 </p>

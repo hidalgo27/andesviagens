@@ -211,12 +211,16 @@
                             <div class="card-footer text-muted">
                                 <div class="row">
                                     <div class="col text-left">desde</div>
-                                    <div class="col text-right font-weight-bold text-primary font-montserrat"><sup>$</sup>
+                                    <div class="col text-right font-weight-bold text-primary font-montserrat">
                                         @foreach($paquete->precio_paquetes as $precio)
                                             @if($precio->estrellas == 2)
-                                                {{$precio->precio}}
+                                                @if($precio->precio > 0)
+                                                    <sup>$</sup> {{$precio->precio}} <small>USD</small>
+                                                @else
+                                                    A Pedido
+                                                @endif
                                             @endif
-                                        @endforeach <small>USD</small>
+                                        @endforeach
                                     </div>
                                 </div>
                             </div>

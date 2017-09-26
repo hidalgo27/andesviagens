@@ -23776,20 +23776,20 @@ function parallaxIt() {
     // });
 
     // for each of background parallax element
-    $('[data-type="background"]').each(function(){
-        var $backgroundObj = $(this);
-        var bgOffset = parseInt($backgroundObj.offset().top);
-        var yPos;
-        var coords;
-        var speed = ($backgroundObj.data('speed') || 0 );
-
-        $fwindow.on('scroll resize', function() {
-            yPos = - ((scrollTop - bgOffset) / speed);
-            coords = yPos + 'px';
-
-            $backgroundObj.css({ backgroundPosition: coords });
-        });
-    });
+    // $('[data-type="background"]').each(function(){
+    //     var $backgroundObj = $(this);
+    //     var bgOffset = parseInt($backgroundObj.offset().top);
+    //     var yPos;
+    //     var coords;
+    //     var speed = ($backgroundObj.data('speed') || 0 );
+    //
+    //     $fwindow.on('scroll resize', function() {
+    //         yPos = - ((scrollTop - bgOffset) / speed);
+    //         coords = yPos + 'px';
+    //
+    //         $backgroundObj.css({ backgroundPosition: coords });
+    //     });
+    // });
 
     // triggers winodw scroll for refresh
     $fwindow.trigger('scroll');
