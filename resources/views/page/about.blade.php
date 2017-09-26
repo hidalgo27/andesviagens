@@ -85,12 +85,12 @@
     <div class="container">
 
         <div class="row no-gutters align-items-center bg-light">
-            <div class="col">
-                <div class="col">
+
+                <div class="col-12 col-md p-4">
                     <h3 class="align-middle">NOSSO COMPROMISSO</h3>
                     <p class="align-middle">Não deixe fugir esta oportunidade de descobrir os encantos de Perú e viver uma aventura inesquecível.</p>
                 </div>
-            </div>
+
 
             <div class="col-12 col-md-auto d-sm-none d-md-none d-lg-inline">
                 <img src="{{asset('images/about/about12.jpg')}}" alt="" class="img-fluid">
@@ -106,7 +106,7 @@
                 <img src="{{asset('images/about/about6.jpg')}}" alt="" class="img-fluid">
             </div>
 
-            <div class="col">
+            <div class="col-12 col-md">
                 <div class="border-0 p-2 text-center">
                     <h3 class="text-primary">MISSÃO</h3>
                     <p>Oferecer aos nossos clientes os melhores recursos Peruanos para uma aventura inesquecível.</p>
