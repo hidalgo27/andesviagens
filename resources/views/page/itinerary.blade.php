@@ -10,7 +10,7 @@
                     <div class="row">
                         <div class="col border border-top-0 border-right-0 border-left-0 border-secondary">
                             <div class="d-inline font-montserrat">
-                                <a href="" class="text-light"><i class="fa fa-phone"></i> (11) 3198-1385</a>
+                                <a href="" class="text-light"><i class="fa fa-phone"></i> (11) 4349-6191</a>
                             </div>
                             {{--<div class="d-inline bg-success">d-inline</div>--}}
                         </div>

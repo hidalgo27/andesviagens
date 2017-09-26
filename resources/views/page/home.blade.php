@@ -10,7 +10,7 @@
                     <div class="row">
                         <div class="col border border-top-0 border-right-0 border-left-0 border-secondary">
                             <div class="d-inline font-montserrat">
-                                <a href="" class="text-light"><i class="fa fa-phone"></i> (11) 3198-1385</a>
+                                <a href="tel:+1143496191" class="text-warning"><i class="fa fa-phone"></i> (11) 4349-6191</a>
                             </div>
                             {{--<div class="d-inline bg-success">d-inline</div>--}}
                         </div>
@@ -55,9 +55,9 @@
             {{--<p class="h1 text-light">Display 4</p>--}}
             <blockquote class="blockquote text-center">
                 <p class="h1 text-light font-weight-light d-none d-sm-inline"><strong>Agência de viagens</strong> e operador turístico com base em <strong>Cusco</strong></p>
-                <p class="h1 text-light font-weight-light d-sm-none"><strong><a href="tel:+1131981385" class="text-white">(11) 3198-1385</a></strong> </p>
+                <p class="h1 text-light font-weight-light d-sm-none"><strong><a href="tel:+1143496191" class="text-white">(11) 4349-6191</a></strong> </p>
                 <a href="https://api.whatsapp.com/send?phone=51980385734" class="d-sm-none"><img src="{{asset('images/icons/whatsapp.png')}}" alt=""></a>
-                <a href="https://m.me/GOTOPERUcom/" class="d-sm-none"><img src="{{asset('images/icons/messenger.png')}}" alt=""></a>
+                <a href="https://m.me/ANDESVIAGENS/" class="d-sm-none"><img src="{{asset('images/icons/messenger.png')}}" alt=""></a>
                 {{--<footer class="blockquote-footer text-light">Someone famous in <cite title="Source Title">Source Title</cite></footer>--}}
                 {{--<footer class=" text-light">$150 average saving | 24/7 local authentic assistance | 100s of testimonials</footer>--}}
             </blockquote>
@@ -105,9 +105,9 @@
                         {{--<p class="h1 text-light">Display 4</p>--}}
                         <blockquote class="blockquote text-center">
                             <p class="h1 text-light font-weight-light d-none d-sm-inline"><strong>Agência de viagens</strong> e operador turístico com base em <strong>Cusco</strong></p>
-                            <p class="h2 text-light font-weight-light d-sm-none"><strong><a href="tel:+1131981385" class="text-white">(11) 3198-1385</a></strong> </p>
+                            <p class="h2 text-light font-weight-light d-sm-none"><strong><a href="tel:+1143496191" class="text-white">(11) 4349-6191</a></strong> </p>
                             <a href="https://api.whatsapp.com/send?phone=51980385734" class="d-sm-none"><img src="{{asset('images/icons/whatsapp.png')}}" alt=""></a>
-                            <a href="https://m.me/GOTOPERUcom/" class="d-sm-none"><img src="{{asset('images/icons/messenger.png')}}" alt=""></a>
+                            <a href="https://m.me/ANDESVIAGENS/" class="d-sm-none"><img src="{{asset('images/icons/messenger.png')}}" alt=""></a>
                             {{--<footer class="blockquote-footer text-light">Someone famous in <cite title="Source Title">Source Title</cite></footer>--}}
                             {{--<footer class=" text-light">$150 average saving | 24/7 local authentic assistance | 100s of testimonials</footer>--}}
                         </blockquote>
@@ -131,7 +131,7 @@
 
                             <blockquote class="blockquote text-center">
                                 <p class="h1 text-light font-weight-light d-none d-sm-inline"><strong>Agência de viagens</strong> e operador turístico com base em <strong>Cusco</strong></p>
-                                <p class="h2 text-light font-weight-bold d-none d-sm-block my-4 font-montserrat"><strong><a href="tel:+1131981385" class="text-white"><i class="fa fa-phone"></i> (11) 3198-1385</a></strong> </p>
+                                <p class="h2 text-light font-weight-bold d-none d-sm-block my-4 font-montserrat"><strong><a href="tel:+1143496191" class="text-white"><i class="fa fa-phone"></i> (11) 4349-6191</a></strong> </p>
                             </blockquote>
                             <div class="row justify-content-center">
                                 <div class="col-2 col-sm-10 col-md-10 col-lg-3 border border-warning rounded p-3 text-center d-none d-sm-inline">
