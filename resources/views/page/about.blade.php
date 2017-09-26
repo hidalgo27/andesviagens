@@ -114,9 +114,6 @@
             </div>
         </div>
         <div class="row w-100 no-gutters align-items-center bg-dark">
-            <div class="col-12 col-md-auto">
-                <img src="{{asset('images/about/about-l.jpg')}}" alt="" class="img-fluid">
-            </div>
             <div class="col text-white text-center">
                 <div class="row justify-content-center">
                     <div class="col-12 my-3">
@@ -136,7 +133,7 @@
         </div>
         <div class="row no-gutters align-items-center bg-light">
             <div class="col">
-                <div class="col p-5">
+                <div class="col-12 col-md p-5">
                     <p class="lead font-weight-normal">Ajudar a nosos passageiros a escolher a viagem perfeita á terra dos Incas, com a finalidade de viver a vida dos estrangeiros, desde os Andes até o Amazonas, sairemos da nossa rutina para assegurar uma experiência de viagem diferente, todo o que voce imaginou.</p>
                 </div>
             </div>
