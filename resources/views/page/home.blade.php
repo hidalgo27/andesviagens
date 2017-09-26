@@ -169,12 +169,12 @@
     <div class="container">
 
         <div class="row justify-content-center">
-            <div class="col-12 col-sm-9 col-md-9">
+            <div class="col-12 col-sm-12">
                 <div class="mb-4 text-center">
                     <h4>FORMULÁRIO DE CONTATO</h4>
                 </div>
             </div>
-            <div class="col-12 col-sm-9 col-md-9 bg-white p-3 rounded">
+            <div class="col-12 col-sm-12 bg-white p-3 rounded">
             <form id="d_form">
                 {{csrf_field()}}
                 <div class="row">
@@ -197,13 +197,13 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12 col-sm-12 col-md-12 col-lg">
+                            <div class="col-12 col-sm">
                                 <div class="form-group">
                                     {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Data</label>--}}
                                     <input type="text" class="form-control" id="d_date" placeholder="Data Viagem">
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-12 col-md-12 col-lg">
+                            <div class="col-12 col-sm">
                                 <div class="form-group">
                                     {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Telefone</label>--}}
                                     <input type="tel" class="form-control" id="d_tel" placeholder="N° de Telefone">
@@ -211,13 +211,13 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-6 col-sm-12 col-md-12 col-lg">
+                            <div class="col-6 col-sm-6">
                                 <div class="form-group">
                                     {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Dias</label>--}}
                                     <input type="number" class="form-control" id="d_duration" placeholder="N° de Dias">
                                 </div>
                             </div>
-                            <div class="col-6 col-sm-12 col-md-12 col-lg">
+                            <div class="col-6 col-sm-6">
                                 <div class="form-group">
                                     {{--<label for="inputEmail4" class="col-form-label"><sup class="text-danger">*</sup>Passageiros</label>--}}
                                     <input type="number" class="form-control" id="d_numero" placeholder="N° de Passageiros">
@@ -236,36 +236,36 @@
                             </div>
                             <div class="">
                                 <div class="row">
-                                    <div class="col-6 col-sm-12 col-md-12 col-lg mb-2" data-toggle="buttons">
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg mb-2" data-toggle="buttons">
                                         <label class="btn btn-outline-primary btn-block">
                                             <input type="checkbox"  autocomplete="off" name="destinations[]" value="Machu Picchu"> Machu Picchu
                                         </label>
                                     </div>
-                                    <div class="col-6 col-sm-12 col-md-12 col-lg mb-2" data-toggle="buttons">
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg mb-2" data-toggle="buttons">
                                         <label class="btn btn-outline-primary btn-block">
                                             <input type="checkbox" autocomplete="off" name="destinations[]" value="Cusco"> Cusco
                                         </label>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-6 col-sm-12 col-md-12 col-lg mb-2" data-toggle="buttons">
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg mb-2" data-toggle="buttons">
                                         <label class="btn btn-outline-primary btn-block">
                                             <input type="checkbox" autocomplete="off" name="destinations[]" value="Lago Titicaca"> Lago titicaca
                                         </label>
                                     </div>
-                                    <div class="col-6 col-sm-12 col-md-12 col-lg mb-2" data-toggle="buttons">
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg mb-2" data-toggle="buttons">
                                         <label class="btn btn-outline-primary btn-block">
                                             <input type="checkbox" autocomplete="off" name="destinations[]" value="Puno"> Puno
                                         </label>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-6 col-sm-12 col-md-12 col-lg mb-2" data-toggle="buttons">
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg mb-2" data-toggle="buttons">
                                         <label class="btn btn-outline-primary btn-block">
                                             <input type="checkbox" autocomplete="off" name="destinations[]" value="Lima"> Lima
                                         </label>
                                     </div>
-                                    <div class="col-6 col-sm-12 col-md-12 col-lg mb-2" data-toggle="buttons">
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg mb-2" data-toggle="buttons">
                                         <label class="btn btn-outline-primary btn-block">
                                             <input type="checkbox" autocomplete="off" name="destinations[]" value="Lineas de Nazca"> Linhas de Nazca
                                         </label>
