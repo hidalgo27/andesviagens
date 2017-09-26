@@ -17,7 +17,7 @@
                             <p><strong>Duration: {{$duration}}</strong></p>
                             <p><strong>Travellers: {{$number}}</strong></p>
                             <p><strong>Date: {{$date}}</strong></p>
-                            <p><strong>Comment: {{$comment}}</strong></p>
+                            {{--<p><strong>Comment: {{$comment}}</strong></p>--}}
                         </td>
                     </tr>
                     </tbody>

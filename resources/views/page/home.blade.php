@@ -63,7 +63,7 @@
             </blockquote>
 
             <div class="row justify-content-center">
-                <div class="col-2 col-sm-4 col-md-4 col-lg-3 border border-warning rounded p-3 text-center d-none d-sm-inline">
+                <div class="col-2 col-sm-4 col-md-4 col-lg-auto border border-warning rounded p-3 text-center d-none d-sm-inline">
                     <h2 class="text-warning">Machu Picchu & Cusco</h2>
                     <p class="text-white h1">5 <small>Dias</small></p>
                     <p class="text-white h5 font-weight-light">PARCELAMIENTO</p>
@@ -174,7 +174,8 @@
                     <h4>FORMULÁRIO DE CONTATO</h4>
                 </div>
             </div>
-            <form id="d_form" class="col-12 col-sm-9 col-md-9 bg-white p-3 rounded">
+            <div class="col-12 col-sm-9 col-md-9 bg-white p-3 rounded">
+            <form id="d_form">
                 {{csrf_field()}}
                 <div class="row">
                     <div class="col-12 col-sm border-secondary border-right-0  m-0">
@@ -249,7 +250,7 @@
                                 <div class="row">
                                     <div class="col-6 col-sm-12 col-md-12 col-lg mb-2" data-toggle="buttons">
                                         <label class="btn btn-outline-primary btn-block">
-                                            <input type="checkbox" checked autocomplete="off" name="destinations[]" value="Lago Titicaca"> Lago titicaca
+                                            <input type="checkbox" autocomplete="off" name="destinations[]" value="Lago Titicaca"> Lago titicaca
                                         </label>
                                     </div>
                                     <div class="col-6 col-sm-12 col-md-12 col-lg mb-2" data-toggle="buttons">
@@ -261,7 +262,7 @@
                                 <div class="row">
                                     <div class="col-6 col-sm-12 col-md-12 col-lg mb-2" data-toggle="buttons">
                                         <label class="btn btn-outline-primary btn-block">
-                                            <input type="checkbox" checked autocomplete="off" name="destinations[]" value="Lima"> Lima
+                                            <input type="checkbox" autocomplete="off" name="destinations[]" value="Lima"> Lima
                                         </label>
                                     </div>
                                     <div class="col-6 col-sm-12 col-md-12 col-lg mb-2" data-toggle="buttons">
@@ -321,6 +322,7 @@
                     </div>
                 </div>
             </form>
+            </div>
         </div>
     </div>
 </section>
@@ -593,6 +595,7 @@
                 }
                 s_destinations = $destinations.substring(0,$destinations.length-3);
 
+//                alert(s_destinations);
 
                 var s_name = $('#d_name').val();
                 var s_email = $('#d_email').val();
@@ -629,7 +632,6 @@
                         "txt_tel" : s_tel,
                         "txt_duration" : s_duration,
                         "txt_number" : s_number
-//                        "txt_comment" : s_comment,
 
                     };
                     $.ajax({
