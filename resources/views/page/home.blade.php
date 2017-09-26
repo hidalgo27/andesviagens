@@ -603,7 +603,7 @@
                 var s_other = $('#d_otros').val();
 
 
-                var s_comment = $('#d_comment').val();
+//                var s_comment = $('#d_comment').val();
 
 
                 if (filter.test(s_email)){
@@ -629,7 +629,7 @@
                         "txt_tel" : s_tel,
                         "txt_duration" : s_duration,
                         "txt_number" : s_number,
-                        "txt_comment" : s_comment,
+//                        "txt_comment" : s_comment,
 
                     };
                     $.ajax({

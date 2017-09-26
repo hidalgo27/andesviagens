@@ -155,7 +155,7 @@ class HomeController extends Controller
         $tel = $_POST['txt_tel'];
         $duration = $_POST['txt_duration'];
         $number = $_POST['txt_number'];
-        $comment = $_POST['txt_comment'];
+//        $comment = $_POST['txt_comment'];
 
 
         try {
@@ -176,7 +176,7 @@ class HomeController extends Controller
                 'name' => $name,
                 'email' => $email,
                 'tel' => $tel,
-                'comment' => $comment
+//                'comment' => $comment
             ], function ($messaje) use ($from) {
                 $messaje->to($from, 'Andes Viagens')
                     ->subject('AndesViagens')
@@ -194,7 +194,7 @@ class HomeController extends Controller
                 'name' => $name,
                 'email' => $email,
                 'tel' => $tel,
-                'comment' => $comment
+//                'comment' => $comment
             ], function ($messaje) use ($from2) {
                 $messaje->to($from2, 'Andes Viagens')
                     ->subject('AndesViagens')
