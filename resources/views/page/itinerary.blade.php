@@ -441,7 +441,7 @@
                     <div class="row">
                         <div class="col">
                             <h3 class="text-secondary mt-4">Data de Viagem</h3>
-                            <input type="date" class="form-control" id="d_date" placeholder="Fecha de Viaje">
+                            <input type="text" class="form-control" id="d_date" placeholder="Fecha de Viaje">
                             <input type="hidden" id="d_package" value="{{$paquetes->codigo}}: {{$paquetes->titulo}} {{$paquetes->duracion}} DAYS">
                         </div>
                         <div class="col">
