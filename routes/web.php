@@ -16,9 +16,15 @@
 //});
 
 Route::get('/', [
-    'uses' => 'HomeController@index',
+    'uses' => 'HomeController@home2',
     'as' => 'home_path',
 ]);
+
+//Route::get('/home', [
+//    'uses' => 'HomeController@home2',
+//    'as' => 'home2_path',
+//]);
+
 Route::get('/pacotes-de-viagem', [
     'uses' => 'HomeController@package',
     'as' => 'package_show_path',

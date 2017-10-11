@@ -23,6 +23,14 @@ class HomeController extends Controller
         return view('page.home',['paquetes'=>$paquetes, 'paquete_destinos'=>$paquete_destinos, 'paquetes_r'=>$paquetes_r]);
     }
 
+    public function home2()
+    {
+        $paquetes = TPaquete::with('precio_paquetes')->where('estado', 1)->get();
+        $paquetes_r = TPaquete::with('precio_paquetes')->get();
+        $paquete_destinos = TPaqueteDestino::with('destinos')->get();
+        return view('page.home2',['paquetes'=>$paquetes, 'paquete_destinos'=>$paquete_destinos, 'paquetes_r'=>$paquetes_r]);
+    }
+
     /**
      * Show the form for creating a new resource.
      *

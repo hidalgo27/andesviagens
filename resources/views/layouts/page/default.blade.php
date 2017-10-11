@@ -138,6 +138,94 @@
     </div>
 </section>
 
+<section class="py-5 bg-light">
+    <div class="container">
+
+        <div class="row pb-5 justify-content-center">
+            <div class="col-12 col-sm-8 col-md-8 col-lg-4">
+                <img src="{{asset('images/logos/logo-andes-c.png')}}" alt="" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="row pt-4">
+            <div class="col-12 col-sm-4 mb-5">
+                <div class="row justify-content-center">
+                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
+                        <img src="{{asset('images/icons/group.png')}}" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col">
+                        Grupos pequenos e passeios privados
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4 mb-5">
+                <div class="row justify-content-center">
+                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
+                        <img src="{{asset('images/icons/assistance.png')}}" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col">
+                        Moramos no perú, porém oferecemos assistencia 24/7
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4 mb-5">
+                <div class="row justify-content-center">
+                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
+                        <img src="{{asset('images/icons/customize.png')}}" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col">
+                        Escolha de programas prontos para comprar ou personalizar suas férias
+                    </div>
+                </div>
+            </div>
+
+            {{--<div class="w-100 py-4"></div>--}}
+            <div class="col-12 col-sm-4 mb-5">
+                <div class="row justify-content-center">
+                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
+                        <img src="{{asset('images/icons/location.png')}}" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col">
+                        Custos menores, somos uma agencia local
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4 mb-5">
+                <div class="row justify-content-center">
+                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
+                        <img src="{{asset('images/icons/trip.png')}}" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col">
+                        Excelentes coméntarios na tripadvisor
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-4 mb-5">
+                <div class="row justify-content-center">
+                    <div class="col-6 col-sm-4 col-md-6 col-lg-4">
+                        <img src="{{asset('images/icons/departure.png')}}" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col">
+                        Temos passeios todos os dias do ano
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <div class="container-parallax d-none d-sm-inline">
     <section>
