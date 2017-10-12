@@ -214,11 +214,11 @@
                                     <div class="col-8">
                                         <div class="row">
                                             <div class="col text-white h3 text-center text-warning">
-                                                (11) 2528-2456 <span class="d-block h5 text-dark">Grande Sao Paulo</span>
+                                                (11) 4349 6191 <span class="d-block h5 text-dark">Brasil</span>
                                             </div>
-                                            <div class="col text-white h3 text-center text-warning">
-                                                0800 006 6020 <span class="d-block h5 text-dark">Demais Localidades</span>
-                                            </div>
+                                            {{--<div class="col text-white h3 text-center text-warning">--}}
+                                                {{--0800 006 6020 <span class="d-block h5 text-dark">Demais Localidades</span>--}}
+                                            {{--</div>--}}
                                             <div class="col text-white h3 text-center text-success">
                                                 (51) 992051190 <span class="d-block h5 text-success"><i class="fa fa-whatsapp"></i> Whatsapp</span>
                                             </div>
