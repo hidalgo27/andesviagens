@@ -8,7 +8,9 @@
     <meta name="author" content="">
     <link rel="icon" href="">
 
-    <title>Andes</title>
+    {!! SEOMeta::generate() !!}
+    {!! OpenGraph::generate() !!}
+    {{--{!! Twitter::generate() !!}--}}
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="{{asset("css/app.css")}}">
