@@ -408,8 +408,8 @@
                                     <a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquete->titulo)))}}"><img class="card-img-top " src="{{asset('images/packages/'.$paquete->imagen.'')}}" alt="Card image cap"></a>
 
                                     <div class="card-body text-center">
-                                        <h4 class="card-title"><a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquete->titulo)))}}" class="text-dark">{{$paquete->titulo}}</a></h4>
-                                        <p class="text-left"><i class="fa fa-clock-o text-primary" aria-hidden="true"></i> {{$paquete->duracion}} Dias</p>
+                                        <h4 class="card-title"><a href="{{route('home_show_path', str_replace(' ','-',strtolower($paquete->titulo)))}}" class="text-dark"><span class="text-primary">{{$paquete->duracion}} Dias</span> {{$paquete->titulo}}</a></h4>
+{{--                                        <p class="text-left"><i class="fa fa-clock-o text-primary" aria-hidden="true"></i> {{$paquete->duracion}} Dias</p>--}}
                                         <p class="text-left card-text"><i class="fa fa-map-marker text-primary" aria-hidden="true"></i>
                                             @php
                                                 $i = 1;
@@ -431,7 +431,7 @@
                                                 @foreach($paquete->precio_paquetes as $precio)
                                                     @if($precio->estrellas == 2)
                                                         @if($precio->precio > 0)
-                                                            <p class="h4 text-info m-o">10X <b class="text-dark"><sup>$</sup> {{$precio->precio/10}}</b> <small>USD</small> <small class="text-secondary h6 text-secondary">sem juros</small></p>
+                                                            <p class="h4 text-info m-o">10X <b class="text-dark"><sup>$</sup> {{$precio->precio/10}}</b> <small>USD</small> <small class="text-secondary h6 text-secondary">semjuros</small></p>
                                                             <span class="d-block h4 text-warning">Total ${{$precio->precio}}</span>
                                                         @else
                                                             A Pedido

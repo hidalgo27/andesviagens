@@ -317,14 +317,16 @@
                             </div>
                             {{--<p class="text-primary h4 font-weight-bold">10 Day</p>--}}
                             <p class="h3 text-secondary"></p>
-                            <p class="h1 font-montserrat py-2"><small class="text-secondary h5">desde </small>
+                            <p class="h1 font-montserrat pt-2 m-0"><small class="text-secondary h5">
+                                </small>
                                 @foreach($paquetes->precio_paquetes as $precio)
                                     @if($precio->estrellas == 2)
-                                        <sup>$</sup>{{$precio->precio}}
+                                        <span class="text-info">10X</span><sup>$</sup>{{$precio->precio/10}}
                                     @endif
                                 @endforeach
                                 <small>USD</small></p>
-                            <a href="#book-now" class="btn btn-warning btn-block btn-lg btn-info">Consulte</a>
+                            <p class="text-secondary h3 m-0">semjuros</p>
+                            <a href="#book-now" class="btn btn-warning btn-block btn-lg btn-info mt-3">Consulte</a>
 
                         </div>
                     </div>
