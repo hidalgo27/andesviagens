@@ -1,4 +1,30 @@
-// makes the parallax elements
+//home
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    autoplay:true,
+    autoplayTimeout:10000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        600:{
+            items:2,
+            nav:false
+        },
+        1000:{
+            items:3,
+            nav:true,
+            loop:false,
+            navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 3px;stroke: #007bff;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>','<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 3px;stroke: #007bff;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
+        }
+    }
+});
+
+
 function parallaxIt() {
 
     // create variables
@@ -25,26 +51,31 @@ function parallaxIt() {
     // });
 
     // for each of background parallax element
-    $('[data-type="background"]').each(function(){
-        var $backgroundObj = $(this);
-        var bgOffset = parseInt($backgroundObj.offset().top);
-        var yPos;
-        var coords;
-        var speed = ($backgroundObj.data('speed') || 0 );
-
-        $fwindow.on('scroll resize', function() {
-            yPos = - ((scrollTop - bgOffset) / speed);
-            coords = '40% '+ yPos + 'px';
-
-            $backgroundObj.css({ backgroundPosition: coords });
-        });
-    });
+    // $('[data-type="background"]').each(function(){
+    //     var $backgroundObj = $(this);
+    //     var bgOffset = parseInt($backgroundObj.offset().top);
+    //     var yPos;
+    //     var coords;
+    //     var speed = ($backgroundObj.data('speed') || 0 );
+    //
+    //     $fwindow.on('scroll resize', function() {
+    //         yPos = - ((scrollTop - bgOffset) / speed);
+    //         coords = yPos + 'px';
+    //
+    //         $backgroundObj.css({ backgroundPosition: coords });
+    //     });
+    // });
 
     // triggers winodw scroll for refresh
     $fwindow.trigger('scroll');
 };
 
 parallaxIt();
+
+
+
+// makes the parallax elements
+
 
 $(function(){
     var $refreshButton = $('#refresh');
@@ -71,10 +102,10 @@ $(function(){
 */
 
 $(function () {
-    $(".box-more").slice(0, 4).show();
+    $(".box-more").slice(0, 1).show();
     $("#loadMore").on('click', function (e) {
         e.preventDefault();
-        $(".box-more:hidden").slice(0, 4).slideDown();
+        $(".box-more:hidden").slice(0, 1).slideDown();
         if ($(".box-more:hidden").length == 0) {
             $("#loadMore").fadeOut('slow');
         }
@@ -84,19 +115,18 @@ $(function () {
     });
 });
 
-$('a[href=#top]').click(function () {
+$('.totop a.top').click(function () {
     $('body,html').animate({
         scrollTop: 0
-    }, 600);
+    }, 800);
     return false;
 });
 
 $(window).scroll(function () {
-    if ($(this).scrollTop() > 50) {
+    if ($(this).scrollTop() > 250) {
         $('.totop a').fadeIn();
     } else {
         $('.totop a').fadeOut();
     }
 });
-
 
