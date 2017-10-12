@@ -176,7 +176,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
+//        Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
     ],
 
     /*
@@ -227,11 +227,11 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         // other Facades ommited
-        'SEOMeta'   => Artesaos\SEOTools\Facades\SEOMeta::class,
-        'OpenGraph' => Artesaos\SEOTools\Facades\OpenGraph::class,
-        'Twitter'   => Artesaos\SEOTools\Facades\TwitterCard::class,
-        // or
-        'SEO' => Artesaos\SEOTools\Facades\SEOTools::class,
+//        'SEOMeta'   => Artesaos\SEOTools\Facades\SEOMeta::class,
+//        'OpenGraph' => Artesaos\SEOTools\Facades\OpenGraph::class,
+//        'Twitter'   => Artesaos\SEOTools\Facades\TwitterCard::class,
+//        // or
+//        'SEO' => Artesaos\SEOTools\Facades\SEOTools::class,
 
     ],
 
