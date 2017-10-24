@@ -272,10 +272,10 @@
 
         <div class="row no-gutters d-flex">
             <div class="col-12 col-sm-4">
-                <img src="{{asset("images/doriam.jpg")}}" alt="" class="img-fluid">
+                <img src="{{asset("images/doriam.jpg")}}" alt="ramses & moises andes viagens" class="img-fluid">
             </div>
             <div class="col-12 col-sm bg-light">
-                <img src="{{asset("images/banner-moises.jpg")}}" alt="" class="img-fluid">
+                <img src="{{asset("images/banner-moises.jpg")}}" alt="ramses & moises" class="img-fluid">
                 <div class="p-2 text-center">
                     <h5 class="mt-3">Viajantes Recentes:</h5>
                     <p class="m-0"><i class="fa fa-check text-warning"></i> Guilherme Winter</p>
