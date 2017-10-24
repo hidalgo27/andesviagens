@@ -226,6 +226,66 @@
     </div>
 </section>
 
+<section class="py-5">
+    <div class="container">
+
+        <div class="row">
+            <div class="col">
+                <h3 class="text-secondary d-inline align-bottom h6">Andes Viagens <img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid" width="100"></h3>
+                <h2 class="h3 pt-1">DEPOIMENTOS</h2>
+
+            </div>
+        </div>
+
+        <div class="row mt-5 d-flex">
+            <div class="col-12 col-sm-6 text-justify">
+                <i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>
+                <p>Estou planejando viajar com minha mulher e meus filhos ao Perú, procurando informacoes achei a GOTO PERU.ORG com a ANDES VIAGENS.COM no Brasil, até o momento o atendimento está sendo ótimo mais gostaria conhecer pessoas que já tenham viajado com eles e possam me dizer se o servico prestado foi de qualidade.</p>
+                <small class="my-5 text-right font-montserrat text-secondary d-block">Eduardo N - São Paulo, SP</small>
+            </div>
+            <div class="col-12 col-sm-6 text-justify">
+                <i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>
+                <p>Fizemos uma viagem ( 04 pessoas / 06 dias) Cusco/Vale perdido dos Incas/Aguas Calientes/Matchu Picchu com tudo organizado pela GotoPeru org/Andes Viagens e ficamos muito satisfeitos com o excelente atendimento e profissionalismo da equipe.</p>
+                <small class="my-5 text-right font-montserrat text-secondary d-block">Henrique L - São Paulo, SP</small>
+            </div>
+        </div>
+
+        <div class="row mt-5 d-flex">
+            <div class="col-12 col-sm-6 text-justify">
+                <i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>
+                <p>Foi uma experiencia incrível conhecer a cultura do Peru. Quero agradecer em especial a Magaly pelo excelente atendimento e eficiência em nos atender. A equipe GotoPeru é sem dúvidas de primeiríssimo nível. Aguardo sugestões de novos passeios.</p>
+                <small class="my-5 text-right font-montserrat text-secondary d-block">bellini_rr - Boa Vista, RR</small>
+            </div>
+            <div class="col-12 col-sm-6 text-justify">
+                <i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>
+                <p>Já viajei e foi muito bom! O acompanhamento aos passeios, sugestões, restaurantes, translados foi tudo muito organizado e de excelente qualidade e assistência. A pessoa que nos recebeu, inclusive falava portugues, foi muito disponivel e simpatica e nos deu muitas dicas sobre a cidade e os passeios que fizemos. Parabéns a empresa e pode confiar. Vale a pena!</p>
+                <small class="my-5 text-right font-montserrat text-secondary d-block">Denise B - Rio de Janeiro, RJ</small>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col text-center">
+                <a class="btn btn-lg btn-success" href="https://www.tripadvisor.com.br/ShowTopic-g294311-i818-k6665256-Alguem_ja_viajou_ao_Peru_com_a_ANDES_VIAGENS_COM-Peru.html" target="_blank">
+                    <i class="fa fa-tripadvisor fa-lg"></i> Ver Tudo</a>
+            </div>
+        </div>
+
+        <div class="row no-gutters d-flex">
+            <div class="col-12 col-sm-4">
+                <img src="{{asset("images/doriam.jpg")}}" alt="" class="img-fluid">
+            </div>
+            <div class="col-12 col-sm bg-light">
+                <img src="{{asset("images/banner-moises.jpg")}}" alt="" class="img-fluid">
+                <div class="p-2 text-center">
+                    <h5 class="mt-3">Viajantes Recentes:</h5>
+                    <p class="m-0"><i class="fa fa-check text-warning"></i> Guilherme Winter</p>
+                    <p class="m-0"><i class="fa fa-check text-warning"></i> Sérgio Marone</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
 
 <div class="container-parallax d-none d-sm-inline">
     <section>
