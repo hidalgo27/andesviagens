@@ -287,45 +287,51 @@
     </div>
 </section>
 
-<div class="container-parallax d-none d-sm-inline">
-    <section>
-        <div class="image" data-type="background" data-speed="2"></div>
-        <div class="stuff" data-type="content">
-            <div class="row justify-content-center">
-                <div class="col-3">
-                    <img src="{{asset('images/logos/logo-andes.png')}}" alt="" class="img-fluid">
-                </div>
-            </div>
-            <div class="row pt-3">
-                <div class="col">
-                    <h5 class="font-weight-light text-light">CONFIANÇA</h5>
-                    {{--<h3>Andes Viagens</h3>--}}
-                    <p class="py-3 lead">Agência de viagens com grande experiência no campo do turismo. Dispomos de um grupo de profissionais qualificados e com serviços de primeira qualidade, que se encarregarão para que sua estadia em nosso país seja de seu completo agrado.</p>
-                    <a href="https://api.whatsapp.com/send?phone=51992051190" target="_blank" class="btn btn-xs btn-success"><img src="{{asset('images/icons/whatsapp.png')}}" alt="" width="30"> Fale com nós agora</a>
-                    <a href="https://m.me/ANDESVIAGENS/" target="_blank" class="btn btn-xs btn-primary"><img src="{{asset('images/icons/messenger.png')}}" alt="" width="30"> Fale com nós agora</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-</div>
-
-
-<!-- Footer -->
-<footer class="py-5 bg-dark">
+<section class="bg-light d-none d-sm-block py-5">
     <div class="container">
 
         <div class="row justify-content-center">
-            <div class="col-8 col-sm-6 col-md-6 col-lg-3 my-2">
-                <a href="https://www.tripadvisor.com.br/ShowTopic-g294311-i818-k6665256-Alguem_ja_viajou_ao_Peru_com_a_ANDES_VIAGENS_COM-Peru.html" target="_blank"><img src="{{asset('images/trip.png')}}" alt="" class="img-fluid"></a>
+            <div class="col-3 py-2">
+                <img src="{{asset('images/logos/logo-andes-c.png')}}" alt="" class="img-fluid">
             </div>
         </div>
-        <div class="row">
+        <div class="row pt-3">
             <div class="col">
-                <p class="text-center text-white">GOTOPERU GROUP PROVIDES YOU WITH VACATIONS OF A LIFETIME SINCE 2009</p>
-                <p class="m-0 text-center text-white">ANDES VIAGENS is part of GOTOPERU GROUP © Copyright 2017 | GOTOPERU.COM   ANDESVIAGENS.COM</p>
+                <img src="{{asset("images/group.jpg")}}" alt="" class="img-fluid rounded">
+            </div>
+            <div class="col text-center">
+                <h5 class="font-weight-bold mt-4">CONFIANÇA</h5>
+                {{--<h3>Andes Viagens</h3>--}}
+                <p class="py-3 lead">Agência de viagens com grande experiência no campo do turismo. Dispomos de um grupo de profissionais qualificados e com serviços de primeira qualidade, que se encarregarão para que sua estadia em nosso país seja de seu completo agrado.</p>
+                <a href="https://api.whatsapp.com/send?phone=51992051190" target="_blank" class="btn btn-xs btn-success"><img src="{{asset('images/icons/whatsapp.png')}}" alt="" width="30"> Fale com nós agora</a>
+                <a href="https://m.me/ANDESVIAGENS/" target="_blank" class="btn btn-xs btn-primary"><img src="{{asset('images/icons/messenger.png')}}" alt="" width="30"> Fale com nós agora</a>
             </div>
         </div>
+
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="pt-5 pb-2 bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <p class="text-center text-white"><img src="{{asset("images/logos/logo-gotoperu.png")}}" width="100" alt="logo gotoperu"> GROUP PROVIDES YOU WITH VACATIONS OF A LIFETIME SINCE 2009</p>
+                <p class="m-0 text-center text-white"><img src="{{asset("images/logos/logo-andes.png")}}" width="120" alt="logo andesviagens"> is part of GOTOPERU GROUP © Copyright 2017 | GOTOPERU.COM   ANDESVIAGENS.COM</p>
+            </div>
+
+                    <div class="col my-2">
+                        <a href="https://www.tripadvisor.com.br/ShowTopic-g294311-i818-k6665256-Alguem_ja_viajou_ao_Peru_com_a_ANDES_VIAGENS_COM-Peru.html" target="_blank"><img src="{{asset('images/trip.png')}}" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="col text-center font-montserrat">
+                        <p class="text-white m-0"><i class="fa fa-phone"></i> (11) 4349 6191</p>
+                        <p class="text-white m-2"><i class="fa fa-whatsapp"></i> (51) 992051190</p>
+                        <a href="" class="btn btn-warning btn-lg btn-block">Solicitar un Orçamento</a>
+                    </div>
+
+        </div>
+        <p class="mt-5 text-center text-white">Avenida Collasuyo 896 Urb. Manantial - Cusco - Cusco - Perú</p>
     </div>
     <!-- /.container -->
     <p class="totop">
