@@ -34,7 +34,7 @@
                     <div class="row">
                         <div class="col border border-top-0 border-left-0 border-right-0 border-secondary text-right">
                             <div class="d-inline font-montserrat">
-                                <a href="#contato" class="text-light">Contato</a>
+                                <a href="/#contato" class="text-light">Contato</a>
                             </div>
                             <div class="d-inline font-montserrat">
                                 {{--<a href="" class="text-light">(813) 454-9707</a>--}}

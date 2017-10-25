@@ -327,7 +327,7 @@
                     <div class="col text-center font-montserrat">
                         <p class="text-white m-0"><i class="fa fa-phone"></i> (11) 4349 6191</p>
                         <p class="text-white m-2"><i class="fa fa-whatsapp"></i> (51) 992051190</p>
-                        <a href="" class="btn btn-warning btn-lg btn-block">Solicitar un Orçamento</a>
+                        <a href="/" class="btn btn-warning btn-lg btn-block">Solicitar un Orçamento</a>
                     </div>
 
         </div>
