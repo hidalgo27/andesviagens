@@ -226,73 +226,73 @@
     </div>
 </section>
 
-<section class="py-5">
-    <div class="container">
+{{--<section class="py-5">--}}
+    {{--<div class="container">--}}
 
-        <div class="row">
-            <div class="col">
-                <h3 class="text-secondary d-inline align-bottom h6">Andes Viagens <img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid" width="100"></h3>
-                <h2 class="h3 pt-1">DEPOIMENTOS</h2>
+        {{--<div class="row">--}}
+            {{--<div class="col">--}}
+                {{--<h3 class="text-secondary d-inline align-bottom h6">Andes Viagens <img src="{{asset('images/icons/subtitle.png')}}" alt="" class="img-fluid" width="100"></h3>--}}
+                {{--<h2 class="h3 pt-1">DEPOIMENTOS</h2>--}}
 
-            </div>
-        </div>
+            {{--</div>--}}
+        {{--</div>--}}
 
-        <div class="row mt-5 d-flex">
-            <div class="col-12 col-sm-6 text-justify">
-                <i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>
-                <p>Estou planejando viajar com minha mulher e meus filhos ao Perú, procurando informacoes achei a GOTO PERU.ORG com a ANDES VIAGENS.COM no Brasil, até o momento o atendimento está sendo ótimo mais gostaria conhecer pessoas que já tenham viajado com eles e possam me dizer se o servico prestado foi de qualidade.</p>
-                <small class="my-5 text-right font-montserrat text-secondary d-block">Eduardo N - São Paulo, SP</small>
-            </div>
-            <div class="col-12 col-sm-6 text-justify">
-                <i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>
-                <p>Fizemos uma viagem ( 04 pessoas / 06 dias) Cusco/Vale perdido dos Incas/Aguas Calientes/Matchu Picchu com tudo organizado pela GotoPeru org/Andes Viagens e ficamos muito satisfeitos com o excelente atendimento e profissionalismo da equipe.</p>
-                <small class="my-5 text-right font-montserrat text-secondary d-block">Henrique L - São Paulo, SP</small>
-            </div>
-        </div>
+        {{--<div class="row mt-5 d-flex">--}}
+            {{--<div class="col-12 col-sm-6 text-justify">--}}
+                {{--<i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>--}}
+                {{--<p>Estou planejando viajar com minha mulher e meus filhos ao Perú, procurando informacoes achei a GOTO PERU.ORG com a ANDES VIAGENS.COM no Brasil, até o momento o atendimento está sendo ótimo mais gostaria conhecer pessoas que já tenham viajado com eles e possam me dizer se o servico prestado foi de qualidade.</p>--}}
+                {{--<small class="my-5 text-right font-montserrat text-secondary d-block">Eduardo N - São Paulo, SP</small>--}}
+            {{--</div>--}}
+            {{--<div class="col-12 col-sm-6 text-justify">--}}
+                {{--<i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>--}}
+                {{--<p>Fizemos uma viagem ( 04 pessoas / 06 dias) Cusco/Vale perdido dos Incas/Aguas Calientes/Matchu Picchu com tudo organizado pela GotoPeru org/Andes Viagens e ficamos muito satisfeitos com o excelente atendimento e profissionalismo da equipe.</p>--}}
+                {{--<small class="my-5 text-right font-montserrat text-secondary d-block">Henrique L - São Paulo, SP</small>--}}
+            {{--</div>--}}
+        {{--</div>--}}
 
-        <div class="row mt-5 d-flex">
-            <div class="col-12 col-sm-6 text-justify">
-                <i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>
-                <p>Foi uma experiencia incrível conhecer a cultura do Peru. Quero agradecer em especial a Magaly pelo excelente atendimento e eficiência em nos atender. A equipe GotoPeru é sem dúvidas de primeiríssimo nível. Aguardo sugestões de novos passeios.</p>
-                <small class="my-5 text-right font-montserrat text-secondary d-block">bellini_rr - Boa Vista, RR</small>
-            </div>
-            <div class="col-12 col-sm-6 text-justify">
-                <i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>
-                <p>Já viajei e foi muito bom! O acompanhamento aos passeios, sugestões, restaurantes, translados foi tudo muito organizado e de excelente qualidade e assistência. A pessoa que nos recebeu, inclusive falava portugues, foi muito disponivel e simpatica e nos deu muitas dicas sobre a cidade e os passeios que fizemos. Parabéns a empresa e pode confiar. Vale a pena!</p>
-                <small class="my-5 text-right font-montserrat text-secondary d-block">Denise B - Rio de Janeiro, RJ</small>
-            </div>
-        </div>
+        {{--<div class="row mt-5 d-flex">--}}
+            {{--<div class="col-12 col-sm-6 text-justify">--}}
+                {{--<i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>--}}
+                {{--<p>Foi uma experiencia incrível conhecer a cultura do Peru. Quero agradecer em especial a Magaly pelo excelente atendimento e eficiência em nos atender. A equipe GotoPeru é sem dúvidas de primeiríssimo nível. Aguardo sugestões de novos passeios.</p>--}}
+                {{--<small class="my-5 text-right font-montserrat text-secondary d-block">bellini_rr - Boa Vista, RR</small>--}}
+            {{--</div>--}}
+            {{--<div class="col-12 col-sm-6 text-justify">--}}
+                {{--<i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>--}}
+                {{--<p>Já viajei e foi muito bom! O acompanhamento aos passeios, sugestões, restaurantes, translados foi tudo muito organizado e de excelente qualidade e assistência. A pessoa que nos recebeu, inclusive falava portugues, foi muito disponivel e simpatica e nos deu muitas dicas sobre a cidade e os passeios que fizemos. Parabéns a empresa e pode confiar. Vale a pena!</p>--}}
+                {{--<small class="my-5 text-right font-montserrat text-secondary d-block">Denise B - Rio de Janeiro, RJ</small>--}}
+            {{--</div>--}}
+        {{--</div>--}}
 
-        <div class="row mb-5">
-            <div class="col text-center">
-                <a class="btn btn-lg btn-success" href="https://www.tripadvisor.com.br/ShowTopic-g294311-i818-k6665256-Alguem_ja_viajou_ao_Peru_com_a_ANDES_VIAGENS_COM-Peru.html" target="_blank">
-                    <i class="fa fa-tripadvisor fa-lg"></i> Ver Tudo</a>
-            </div>
-        </div>
+        {{--<div class="row mb-5">--}}
+            {{--<div class="col text-center">--}}
+                {{--<a class="btn btn-lg btn-success" href="https://www.tripadvisor.com.br/ShowTopic-g294311-i818-k6665256-Alguem_ja_viajou_ao_Peru_com_a_ANDES_VIAGENS_COM-Peru.html" target="_blank">--}}
+                    {{--<i class="fa fa-tripadvisor fa-lg"></i> Ver Tudo</a>--}}
+            {{--</div>--}}
+        {{--</div>--}}
 
-        <div class="row no-gutters d-flex">
-            <div class="col-12 col-sm-4">
-                <img src="{{asset("images/doriam.jpg")}}" alt="ramses & moises andes viagens" class="img-fluid">
-            </div>
-            <div class="col-12 col-sm bg-light">
-                <img src="{{asset("images/banner-moises.jpg")}}" alt="ramses & moises" class="img-fluid">
-                <div class="p-2 text-center">
-                    <h5 class="mt-3">Viajantes Recentes:</h5>
-                    <p class="m-0"><i class="fa fa-check text-warning"></i> Guilherme Winter</p>
-                    <p class="m-0"><i class="fa fa-check text-warning"></i> Sérgio Marone</p>
-                </div>
-            </div>
-        </div>
+        {{--<div class="row no-gutters d-flex">--}}
+            {{--<div class="col-12 col-sm-4">--}}
+                {{--<img src="{{asset("images/doriam.jpg")}}" alt="ramses & moises andes viagens" class="img-fluid">--}}
+            {{--</div>--}}
+            {{--<div class="col-12 col-sm bg-light">--}}
+                {{--<img src="{{asset("images/banner-moises.jpg")}}" alt="ramses & moises" class="img-fluid">--}}
+                {{--<div class="p-2 text-center">--}}
+                    {{--<h5 class="mt-3">Viajantes Recentes:</h5>--}}
+                    {{--<p class="m-0"><i class="fa fa-check text-warning"></i> Guilherme Winter</p>--}}
+                    {{--<p class="m-0"><i class="fa fa-check text-warning"></i> Sérgio Marone</p>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
 
-    </div>
-</section>
+    {{--</div>--}}
+{{--</section>--}}
 
-<section class="bg-light d-none d-sm-block py-5">
+<section class="bg-dark d-none d-sm-block py-5">
     <div class="container">
 
         <div class="row justify-content-center">
             <div class="col-3 py-2">
-                <img src="{{asset('images/logos/logo-andes-c.png')}}" alt="" class="img-fluid">
+                <img src="{{asset('images/logos/logo-andes.png')}}" alt="" class="img-fluid">
             </div>
         </div>
         <div class="row pt-3">
@@ -300,9 +300,9 @@
                 <img src="{{asset("images/group.jpg")}}" alt="" class="img-fluid rounded">
             </div>
             <div class="col text-center">
-                <h5 class="font-weight-bold mt-4">CONFIANÇA</h5>
+                <h5 class="font-weight-bold mt-4 text-white">CONFIANÇA</h5>
                 {{--<h3>Andes Viagens</h3>--}}
-                <p class="py-3 lead">Agência de viagens com grande experiência no campo do turismo. Dispomos de um grupo de profissionais qualificados e com serviços de primeira qualidade, que se encarregarão para que sua estadia em nosso país seja de seu completo agrado.</p>
+                <p class="py-3 text-white lead">Agência de viagens com grande experiência no campo do turismo. Dispomos de um grupo de profissionais qualificados e com serviços de primeira qualidade, que se encarregarão para que sua estadia em nosso país seja de seu completo agrado.</p>
                 <a href="https://api.whatsapp.com/send?phone=51992051190" target="_blank" class="btn btn-xs btn-success"><img src="{{asset('images/icons/whatsapp.png')}}" alt="" width="30"> Fale com nós agora</a>
                 <a href="https://m.me/ANDESVIAGENS/" target="_blank" class="btn btn-xs btn-primary"><img src="{{asset('images/icons/messenger.png')}}" alt="" width="30"> Fale com nós agora</a>
             </div>
@@ -313,14 +313,11 @@
 
 
 <!-- Footer -->
-<footer class="pt-5 pb-2 bg-dark">
+<footer class="pt-4 pb-2 bg-dark">
     <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <p class="text-center text-white"><img src="{{asset("images/logos/logo-gotoperu.png")}}" width="100" alt="logo gotoperu"> GROUP PROVIDES YOU WITH VACATIONS OF A LIFETIME SINCE 2009</p>
-                <p class="m-0 text-center text-white"><img src="{{asset("images/logos/logo-andes.png")}}" width="120" alt="logo andesviagens"> is part of GOTOPERU GROUP © Copyright 2017 | GOTOPERU.COM   ANDESVIAGENS.COM</p>
-            </div>
-
+        <div class="row justify-content-center">
+            <div class="col-6 border border-left-0 border-bottom-0 border-right-0 border-light">
+                <div class="row mt-5">
                     <div class="col my-2">
                         <a href="https://www.tripadvisor.com.br/ShowTopic-g294311-i818-k6665256-Alguem_ja_viajou_ao_Peru_com_a_ANDES_VIAGENS_COM-Peru.html" target="_blank"><img src="{{asset('images/trip.png')}}" alt="" class="img-fluid"></a>
                     </div>
@@ -329,9 +326,17 @@
                         <p class="text-white m-2"><i class="fa fa-whatsapp"></i> (51) 992051190</p>
                         <a href="/" class="btn btn-warning btn-lg btn-block">Solicitar un Orçamento</a>
                     </div>
-
+                </div>
+            </div>
         </div>
-        <p class="mt-5 text-center text-white">Avenida Collasuyo 896 Urb. Manantial - Cusco - Cusco - Perú</p>
+
+        <div class="row mt-5">
+            <div class="col">
+                <p class="text-center text-white"><img src="{{asset("images/logos/logo-gotoperu.png")}}" width="100" alt="logo gotoperu"> GROUP PROVIDES YOU WITH VACATIONS OF A LIFETIME SINCE 2009</p>
+                <p class="m-0 text-center text-white"><img src="{{asset("images/logos/logo-andes.png")}}" width="120" alt="logo andesviagens"> is part of GOTOPERU GROUP © Copyright 2017 | GOTOPERU.COM   ANDESVIAGENS.COM</p>
+                <p class="mt-5 text-center text-white">Avenida Collasuyo 896 Urb. Miravalle - Cusco - Cusco - Perú</p>
+            </div>
+        </div>
     </div>
     <!-- /.container -->
     <p class="totop">
