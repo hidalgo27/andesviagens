@@ -171,8 +171,8 @@ class HomeController extends Controller
 
     public function contact()
     {
-        $from = 'doriam@gotoperu.com';
-        $from2 = 'emails.gotoperu@gmail.com';
+        $from = 'diana@andesviagens.com';
+        $from2 = 'paul@gotoperu.com';
 
         $destinations = $_POST['txt_destinations'];
         $other = $_POST['txt_other'];
@@ -243,8 +243,8 @@ class HomeController extends Controller
 
     public function inquire()
     {
-        $from = 'doriam@gotoperu.com';
-        $from2 = 'emails.gotoperu@gmail.com';
+        $from = 'diana@andesviagens.com';
+        $from2 = 'paul@gotoperu.com';
 
         $accommodation = $_POST['txt_accommodation'];
         $number = $_POST['txt_number'];
