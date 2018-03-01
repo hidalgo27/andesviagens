@@ -23,6 +23,7 @@
                         </div>
                     </div>
                 </div>
+                
                 {{--<div class="col-8 d-sm-none">--}}
                     {{--<div class="row justify-content-center">--}}
                         {{--<div class="mt-2 text-center text-center">--}}
